@@ -20,15 +20,12 @@
 <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.skinFlat.css')}}">
 <link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
 <link rel="stylesheet" href="{{asset('public/frontend/css/media.css')}}">
-    <link href="{{asset('public/lity/dist/lity.css')}}" rel="stylesheet">
-    <script src="{{asset('public/lity/vendor/jquery.js')}}"></script>
-    <script src="{{asset('public/lity/dist/lity.js')}}"></script>
-
-
+<link href="{{asset('public/lity/dist/lity.css')}}" rel="stylesheet">
+<script src="{{asset('public/lity/vendor/jquery.js')}}"></script>
+<script src="{{asset('public/lity/dist/lity.js')}}"></script>
 <!--[if lt IE 9]>
 <script src="{{asset('public/frontend/js/html5shiv.js')}}"></script>
 <![endif]-->
-
 </head>
 <body>
 
@@ -36,55 +33,14 @@
 	@yield('content')
 	@include('layouts.frontLayout.front_footer')
 
-
 <script src="{{asset('public/frontend/js/jquery-1.12.3.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/fancybox/fancybox.js')}}"></script>
 <script src="{{asset('public/frontend/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
 <script src="{{asset('public/frontend/js/jquery.flexslider-min.js')}}"></script>
 <script src="{{asset('public/frontend/js/masonry.pkgd.min.js')}}"></script>
-
 <script src="{{asset('public/frontend/js/jquery.fractionslider.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/ion.rangeSlider.min.js')}}"></script>
-
 <script src="{{asset('public/frontend/js/main.js')}}"></script>
-
-<script>
-"use strict";
-// Range Slider
-$(document).ready(function () {
-	var $range_cost = $("#range_cost");
-	$range_cost.ionRangeSlider({
-	    type: "double",
-	    grid: true,
-	    min: 0,
-	    max: 20000,
-	    from: 200,
-	    to: 14000,
-	    prefix: "$",
-	});
-	$range_cost.on("change", function () {
-	    var $this = $(this),
-	        value = $this.prop("value").split(";");
-
-	    $('#range_cost_ttl').html("$" + value[0] + " - $" + value[1]);
-	});
-	var $range_year = $("#range_year");
-	$range_year.ionRangeSlider({
-	    type: "double",
-	    grid: true,
-	    min: 1990,
-	    max: 2016,
-	    from: 2013,
-	    to: 2016,
-	});
-	$range_year.on("change", function () {
-	    var $this = $(this),
-	        value = $this.prop("value").split(";");
-
-	    $('#range_year_ttl').html(value[0] + " - " + value[1]);
-	});
-});
-</script>
 
 </body>
 

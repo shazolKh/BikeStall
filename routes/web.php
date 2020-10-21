@@ -73,6 +73,7 @@ Route::get('/filter/price/above-4lacs', 'FilterController@aboveFive');
 
 
 Route::get('/search', 'IndexController@search');
+Route::post('/autocomplete', 'IndexController@auto')->name('autocomplete');
 Route::match(['get', 'post'], '/compare', 'IndexController@compare');
 
 
