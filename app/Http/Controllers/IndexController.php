@@ -77,14 +77,10 @@ class IndexController extends Controller
         $full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
         $brands = Brand::get();
 
-       // $full_spec = json_decode(json_encode($full_spec));
-        //echo "<pre>"; print_r([$full_spec, $bk_name_details]);
 
         $bk_id = Bike::where(['bike_name'=>$bike_name])->first();
         $com = Comment::orderBy('created_at','asc')->where(['bike_id' =>$bk_id->id, 'status'=>'1'])->get();
-        //return response()->json($bk_id);
 
-        //return response()->json([[$full_spec], [$bk_name_details->image1]]);
         return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'full_spec', 'brands', 'com'));
     }
 
@@ -95,7 +91,6 @@ class IndexController extends Controller
         $metareviews = AdminReview::first();
         return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews'));
     }
-
 
     public function reviewsDetails($title=null)
     {
@@ -110,7 +105,6 @@ class IndexController extends Controller
         return view('gallery.gallery')->with(compact('categories', 'photos'));
     }
 
-
     public function about()
     {
         $categories = Category::with('categories')->get();
@@ -118,7 +112,6 @@ class IndexController extends Controller
         //return response()->json($about);
         return view('about')->with(compact('about', 'categories'));
     }
-
 
     //NEWS
     public function news()
@@ -157,13 +150,14 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $brands = Brand::all();
-        //$categories = Category::all();
-
         $text = $_GET['query'];
         $bikes = Bike::where('bike_name', 'LIKE', '%'.$text.'%')->get();
-        //$spec = FullSpac::where(['bike_id'=>$bikes->id])->get();
 
-        //return response()->json($bikes);
         return view('bikes.search')->with(compact('categories', 'bikes', 'brands'));
+    }
+
+    public function compare(Request $request)
+    {
+        return view('compare');
     }
 }

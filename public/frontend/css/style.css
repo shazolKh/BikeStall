@@ -540,9 +540,9 @@ input:focus {
 .header nav ul li a {
 	color: #c0c4d7;
 	display: block;
-	margin: 0 0 -10px;
+	margin: -10px -10px -10px;
 	transition: all 0.2s;
-	z-index: 2;
+	z-index: 1;
 	position: relative;
 }
 .header nav ul li a:hover {
