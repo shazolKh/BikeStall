@@ -1,0 +1,7 @@
+1. First of all, you can not register for new 
+	ADMIN account. So, I am giving you the sql file inside the DATABASE folder.
+
+2. You have to login with email "admin@gmail.com" pass: "password",
+3. After login, you can change your password whatever you want but you have to change 
+	your email manually from the sql file.
+
