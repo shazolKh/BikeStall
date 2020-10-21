@@ -54,23 +54,6 @@
             <li class="has-child">
                 <a href="{{url('news/')}}">News</a>
             </li>
-            <li class="has-child">
-                <a href="#">Pages</a>
-                <i class="fa fa-angle-down"></i>
-                <ul>
-                    <li>
-                        <a href="{{url('photo-gallery/')}}">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="{{url('about/')}}">About Us</a>
-                    </li>
-
-                    <li>
-                        <a href="{{url('contact/')}}">Contacts</a>
-                    </li>
-
-                </ul>
-            </li>
         </ul>
     </nav>
 	<!-- Navmenu - end -->

@@ -531,7 +531,7 @@ input:focus {
 }
 .header nav ul li {
 	padding: 0;
-    margin: 3px 3% 6px;
+    margin: 3px 1% 3px;
     font-size: 15px;
     font-weight: 600;
     display: inline-block;
@@ -540,7 +540,7 @@ input:focus {
 .header nav ul li a {
 	color: #c0c4d7;
 	display: block;
-	margin: 0 0 0;
+	margin: 0 0 -10px;
 	transition: all 0.2s;
 	z-index: 2;
 	position: relative;

@@ -28,7 +28,7 @@
     <div class="maincont">
 
         <!-- Post Image -->
-        <img src="{{asset('image/news/'.$detail_news->nws_image)}}" alt="" class="post-img">
+        <img src="{{asset('public/image/news/'.$detail_news->nws_image)}}" alt="" class="post-img">
 
         <!-- For Left Sidebar: .blog-sb first, .cont.post-sidebar-left second -->
         <!-- <div class="cont post-sidebar-left"> -->
