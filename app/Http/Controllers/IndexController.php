@@ -184,4 +184,27 @@ class IndexController extends Controller
             echo $output;
         }
     }
+
+    public function auto1(Request $request)
+    {
+        /*$data = Bike::select("bike_name")
+                ->where("bike_name", "LIKE", "%{$request->terms}%")->get();
+
+        return response()->json($data);*/
+
+        if($request->get('query1'))
+        {
+            $query = $request->get('query1');
+            $data = DB::table('bikes')
+                ->where('bike_name', 'LIKE', "%{$query}%")
+                ->get();
+            $output = '<ul class="dropdown-list" style="position:relative">';
+            foreach($data as $row)
+            {
+                $output .= '<li><a href="#">'.$row->bike_name.'</a></li>';
+            }
+            $output .= '</ul>';
+            echo $output;
+        }
+    }
 }

@@ -1,9 +1,7 @@
 @extends('layouts.frontLayout.front_design')
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall
-	Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs,
-	Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta name="title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
     <meta name="description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are
     described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
 

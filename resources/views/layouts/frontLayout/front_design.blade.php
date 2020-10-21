@@ -25,6 +25,8 @@
 <script src="{{asset('public/lity/dist/lity.js')}}"></script>
 <!--[if lt IE 9]>
 <script src="{{asset('public/frontend/js/html5shiv.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
 <![endif]-->
 </head>
 <body>
@@ -41,6 +43,12 @@
 <script src="{{asset('public/frontend/js/jquery.fractionslider.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/ion.rangeSlider.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/main.js')}}"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
 
 </body>
 
