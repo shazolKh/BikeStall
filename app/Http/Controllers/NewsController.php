@@ -58,7 +58,7 @@ class NewsController extends Controller
                 $filename = $data['current_image'];
             }
             News::where(['id'=>$id])->update(['headline'=>$data['news_title'], 'article'=>$data['description'],
-                'nws_image'=>$filename]);
+                'image'=>$filename]);
             return redirect('/admin/view-news')->with('flash_message_success', 'News Updated Updated successfully');
 
         }
