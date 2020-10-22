@@ -35,10 +35,10 @@
                                 <div class="control-group">
                                     <label class="control-label">Image</label>
                                     <div class="controls">
-                                        <input type="hidden" name="current_image" value="{{$newsdetails->nws_image}}">
+                                        <input type="hidden" name="current_image" value="{{$newsdetails->image}}">
                                         <input type="file" name="news_image" id="news_image">
-                                        @if(!empty($newsdetails->nws_image))
-                                            <img src="{{asset('public//image/news/'.$newsdetails->nws_image)}}"
+                                        @if(!empty($newsdetails->image))
+                                            <img src="{{asset('public//image/news/'.$newsdetails->image)}}"
                                                  style="width: 50px"> |
                                             <a href="{{url('/admin/delete-news-image/'.$newsdetails->id)}}">Delete</a>
                                         @endif
