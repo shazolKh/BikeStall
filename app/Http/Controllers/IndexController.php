@@ -156,55 +156,29 @@ class IndexController extends Controller
         return view('bikes.search')->with(compact('categories', 'bikes', 'brands'));
     }
 
-    public function compare(Request $request)
+    public function compare()
     {
         $categories = Category::with('categories')->get();
-        return view('compare')->with(compact('categories'));
+        $bikes = Bike::get();
+        return view('compare')->with(compact('categories', 'bikes'));
     }
 
-    public function auto(Request $request)
+    public function comparison()
     {
-        /*$data = Bike::select("bike_name")
-                ->where("bike_name", "LIKE", "%{$request->terms}%")->get();
+        $categories = Category::with('categories')->get();
 
-        return response()->json($data);*/
+        $bikeOne = $_GET['bike1'];
+        $bikeTwo = $_GET['bike2'];
 
-        if($request->get('query'))
-        {
-            $query = $request->get('query');
-            $data = DB::table('bikes')
-                ->where('bike_name', 'LIKE', "%{$query}%")
-                ->get();
-            $output = '<ul class="dropdown-list" style="position:relative">';
-            foreach($data as $row)
-            {
-                $output .= '<li><a href="#">'.$row->bike_name.'</a></li>';
-            }
-            $output .= '</ul>';
-            echo $output;
-        }
-    }
+        $bikeOneDetails = Bike::where(['id'=>$bikeOne])->first();
+        $bikeTwoDetails = Bike::where(['id'=>$bikeTwo])->first();
 
-    public function auto1(Request $request)
-    {
-        /*$data = Bike::select("bike_name")
-                ->where("bike_name", "LIKE", "%{$request->terms}%")->get();
+        $bikeOneSpecs = FullSpac::where(['bike_id'=>$bikeOneDetails->id])->first();
+        $bikeTwoSpecs = FullSpac::where(['bike_id'=>$bikeTwoDetails->id])->first();
 
-        return response()->json($data);*/
 
-        if($request->get('query1'))
-        {
-            $query = $request->get('query1');
-            $data = DB::table('bikes')
-                ->where('bike_name', 'LIKE', "%{$query}%")
-                ->get();
-            $output = '<ul class="dropdown-list" style="position:relative">';
-            foreach($data as $row)
-            {
-                $output .= '<li><a href="#">'.$row->bike_name.'</a></li>';
-            }
-            $output .= '</ul>';
-            echo $output;
-        }
+        //return response()->json([[$bikeOne, $bikeTwo], [$bikeOneSpecs->bike_id, $bikeTwoSpecs->bike_id]]);
+        return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails',
+            'bikeOneSpecs', 'bikeTwoSpecs'));
     }
 }

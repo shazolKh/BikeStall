@@ -5,12 +5,6 @@
 
     <div class="header-info">
 
-
-
-        <!-- Small Cart -->
-
-        <a href="#" class="header-compare"></a>
-
         <!-- Search Form -->
         <a href="#" class="header-searchbtn" id="header-searchbtn"></a>
         <form action="{{url('/search')}}" method="GET" class="header-search" id="header-search">
@@ -53,6 +47,9 @@
             </li>
             <li class="has-child">
                 <a href="{{url('news/')}}">News</a>
+            </li>
+            <li class="has-child">
+                <a href="{{url('/compare')}}">Compare</a>
             </li>
         </ul>
     </nav>
