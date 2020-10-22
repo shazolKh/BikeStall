@@ -9,14 +9,14 @@
     <meta property="og:url" content=https://gsmarenabd.xyz/">
     <meta property="og:title" content="Get The Latest Bike News At BikeStall.">
     <meta property="og:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
-    <meta property="og:image" content="{{asset('public/image/news/'.$detail_news->nws_image)}}">
+    <meta property="og:image" content="{{asset('public/image/news/'.$detail_news->image)}}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="{{asset('public/image/news/'.$detail_news->nws_image)}}">
+    <meta property="twitter:card" content="{{asset('public/image/news/'.$detail_news->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="Get The Latest Bike News At BikeStall.">
     <meta property="twitter:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
-    <meta property="twitter:image" content="{{asset('public/image/news/'.$detail_news->nws_image)}}">
+    <meta property="twitter:image" content="{{asset('public/image/news/'.$detail_news->image)}}">
 @endsection
 
 @section('content')
@@ -28,7 +28,7 @@
     <div class="maincont">
 
         <!-- Post Image -->
-        <img src="{{asset('public/image/news/'.$detail_news->nws_image)}}" alt="" class="post-img">
+        <img src="{{asset('public/image/news/'.$detail_news->image)}}" alt="" class="post-img">
 
         <!-- For Left Sidebar: .blog-sb first, .cont.post-sidebar-left second -->
         <!-- <div class="cont post-sidebar-left"> -->
