@@ -46,7 +46,7 @@ class NewsController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             //Update Image
-            $image_temp = $request->file('news_image');
+            $image_temp = $request->file('image');
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
@@ -72,7 +72,7 @@ class NewsController extends Controller
         $news = News::where(['id'=>$id])->first();
         $image = $news->nws_image;
         unlink(public_path('image/news/'.$image));
-        News::where(['id'=>$id])->update(['nws_image'=>'']);
+        News::where(['id'=>$id])->update(['image'=>'']);
         //return response()->json($image);
         return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
