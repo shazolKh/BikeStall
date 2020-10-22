@@ -9,14 +9,14 @@
     <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="Get The Latest Bike News At BikeStall.">
     <meta property="og:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
-    <meta property="og:image" content="{{asset('public/image/news/'.$metanews->nws_image)}}">
+    <meta property="og:image" content="{{asset('public/image/news/'.$metanews->image)}}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="{{asset('public/image/news/'.$metanews->nws_image)}}">
+    <meta property="twitter:card" content="{{asset('public/image/news/'.$metanews->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="Get The Latest Bike News At BikeStall.">
     <meta property="twitter:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
-    <meta property="twitter:image" content="{{asset('public/image/news/'.$metanews->nws_image)}}">
+    <meta property="twitter:image" content="{{asset('public/image/news/'.$metanews->image)}}">
 @endsection
 
 @section('content')
@@ -43,7 +43,7 @@
                         @foreach($news as $nws)
                             <div class="blog-i">
                                 <a href="{{url('news/details/'.$nws->headline)}}" class="blog-img">
-                                    <img href="{{url('news/details/'.$nws->headline)}}" src="{{asset('public/image/news/'.$nws->nws_image)}}" alt="">
+                                    <img href="{{url('news/details/'.$nws->headline)}}" src="{{asset('public/image/news/'.$nws->image)}}" alt="">
                                 </a>
                                 <h3><a href="{{url('news/details/'.$nws->headline)}}">{{$nws->headline}}</a></h3>
                                 <p>{{ \Illuminate\Support\Str::limit(strip_tags($nws->article, 100)) }}<a href="{{url('news/details/'.$nws->headline)}}">read more</a></p>
