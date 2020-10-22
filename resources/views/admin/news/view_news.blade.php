@@ -42,7 +42,7 @@
                                         <td>{{$nws->id}}</td>
                                         <td>{{$nws->headline}}</td>
                                         <td>
-                                            <img src="{{asset('public/image/news/'.$nws->nws_image)}}" style="width: 50px">
+                                            <img src="{{asset('public/image/news/'.$nws->image)}}" style="width: 50px">
                                         </td>
                                         <td>{{$nws->created_at}}</td>
                                         <td class="align-content-center">
