@@ -20,7 +20,7 @@ class NewsController extends Controller
             $news->article = $data['description'];
 
             //Image
-            $image_temp = $request->file('news_image');
+            $image_temp = $request->file('image');
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
