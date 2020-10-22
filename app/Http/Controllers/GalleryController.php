@@ -37,7 +37,7 @@ class GalleryController extends Controller
     {
         $news = Gallery::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink('image/gallery/'.$image);
+        unlink(public_path('image/gallery/'.$image));
         Gallery::where(['id'=>$id])->delete();
         return back()->with('success','Image removed successfully.');
     }

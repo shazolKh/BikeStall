@@ -24,7 +24,7 @@ class NewsController extends Controller
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
-                $large_image_path = 'image/news/'.$filename;
+                $large_image_path = public_path('image/news/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
                 $news->nws_image = $filename;
             }
@@ -51,7 +51,7 @@ class NewsController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/news/'.$filename;
+                $large_image_path = public_path('image/news/'.$filename);
 
                 Image::make($image_temp)->save($large_image_path);
             }else{
@@ -71,7 +71,7 @@ class NewsController extends Controller
     {
         $news = News::where(['id'=>$id])->first();
         $image = $news->nws_image;
-        unlink('image/news/'.$image);
+        unlink(public_path('image/news/'.$image));
         News::where(['id'=>$id])->update(['nws_image'=>'']);
         //return response()->json($image);
         return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
@@ -81,7 +81,7 @@ class NewsController extends Controller
     {
         $news = News::where(['id'=>$id])->first();
         $image = $news->nws_image;
-        unlink('image/news/'.$image);
+        unlink(public_path('image/news/'.$image));
         News::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'News has been Deleted');
     }
@@ -116,7 +116,7 @@ class NewsController extends Controller
     {
         $pho = PhotoGallery::find($id)->first();
         $image = $pho->image;
-        unlink('image/photo_gallery/'.$image);
+        unlink(public_path('image/photo_gallery/'.$image));
         PhotoGallery::where(['id'=>$id])->delete();
         return back()->with('success','Image removed successfully.');
     }

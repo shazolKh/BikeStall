@@ -23,7 +23,7 @@ class CategoryController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/cat_image/'.$filename;
+                $large_image_path = public_path('image/cat_image/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
 
                 $category->cat_image = $filename;
@@ -52,7 +52,7 @@ class CategoryController extends Controller
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
-                $large_image_path = 'image/cat_image/'.$filename;
+                $large_image_path = public_path('image/cat_image/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
             }else{
                 $filename = $data['current_image'];
@@ -73,7 +73,7 @@ class CategoryController extends Controller
         if (!empty($id)){
             $news = Category::where(['id'=>$id])->first();
             $image = $news->cat_image;
-            unlink('image/cat_image/'.$image);
+            unlink(public_path('image/cat_image/'.$image));
             Category::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Category Deleted Successfully!!');
         }
@@ -83,7 +83,7 @@ class CategoryController extends Controller
     {
         $news = Category::where(['id'=>$id])->first();
         $image = $news->cat_image;
-        unlink('image/cat_image/'.$image);
+        unlink(public_path('image/cat_image/'.$image));
         //unlink('image/images/image1/medium_image/'.$image);
         //unlink('image/images/image1/small_image/'.$image);
         Category::where(['id'=>$id])->update(['cat_image'=>'']);

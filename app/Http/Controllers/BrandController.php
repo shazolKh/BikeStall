@@ -21,7 +21,7 @@ class BrandController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/brand_image/'.$filename;
+                $large_image_path = public_path('image/brand_image/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
 
                 $brand->image = $filename;
@@ -47,7 +47,7 @@ class BrandController extends Controller
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
-                $large_image_path = 'image/brand_image/'.$filename;
+                $large_image_path = public_path('image/brand_image/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
             }else{
                 $filename = $data['current_image'];
@@ -67,7 +67,7 @@ class BrandController extends Controller
         if (!empty($id)){
             $news = Brand::where(['id'=>$id])->first();
             $image = $news->image;
-            unlink('image/brand_image/'.$image);
+            unlink(public_path('image/brand_image/'.$image));
             Brand::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Brand Deleted Successfully!!');
         }
@@ -77,7 +77,7 @@ class BrandController extends Controller
     {
         $news = Brand::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink('image/brand_image/'.$image);
+        unlink(public_path('image/brand_image/'.$image));
         //unlink('image/images/image1/medium_image/'.$image);
         //unlink('image/images/image1/small_image/'.$image);
         Brand::where(['id'=>$id])->update(['image'=>'']);

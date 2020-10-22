@@ -22,7 +22,7 @@ class AboutController extends Controller
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
-                $large_image_path = 'image/about/'.$filename;
+                $large_image_path = public_path('image/about/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
                 $news->image = $filename;
             }
@@ -49,7 +49,7 @@ class AboutController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/about/'.$filename;
+                $large_image_path = public_path('image/about/'.$filename);
 
                 Image::make($image_temp)->save($large_image_path);
             }else{
@@ -69,7 +69,7 @@ class AboutController extends Controller
     {
         $news = About::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink('image/about/'.$image);
+        unlink(public_path('image/about/'.$image));
         About::where(['id'=>$id])->update(['image'=>'']);
         return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }

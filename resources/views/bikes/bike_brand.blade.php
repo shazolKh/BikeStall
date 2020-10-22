@@ -6,7 +6,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews
      & Showrooms - BikeStall">
     <meta property="og:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check Bajaj All
@@ -15,7 +15,7 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
-    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews
      & Showrooms - BikeStall">
     <meta property="twitter:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check Bajaj All

@@ -39,9 +39,9 @@ class BikeController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/images/image/large_image/'.$filename;
-                $medium_image_path = 'image/images/image/medium_image/'.$filename;
-                $small_image_path = 'image/images/image/small_image/'.$filename;
+                $large_image_path = public_path('image/images/image/large_image/'.$filename);
+                $medium_image_path = public_path('image/images/image/medium_image/'.$filename);
+                $small_image_path = public_path('image/images/image/small_image/'.$filename);
 
                 Image::make($image_temp)->save($large_image_path);
                 Image::make($image_temp)->resize(600,600)->save($medium_image_path);
@@ -56,9 +56,9 @@ class BikeController extends Controller
                 $extension1 = $image_temp1->getClientOriginalExtension();
                 $filename1 = rand(111, 999999).'.'.$extension1;
 
-                $large_image_path1 = 'image/images/image1/large_image/'.$filename1;
-                $medium_image_path1 = 'image/images/image1/medium_image/'.$filename1;
-                $small_image_path1 = 'image/images/image1/small_image/'.$filename1;
+                $large_image_path1 = public_path('image/images/image1/large_image/'.$filename1);
+                $medium_image_path1 = public_path('image/images/image1/medium_image/'.$filename1);
+                $small_image_path1 = public_path('image/images/image1/small_image/'.$filename1);
 
                 Image::make($image_temp1)->save($large_image_path1);
                 Image::make($image_temp1)->resize(600,600)->save($medium_image_path1);
@@ -73,9 +73,9 @@ class BikeController extends Controller
                 $extension2 = $image_temp2->getClientOriginalExtension();
                 $filename2 = rand(111, 999999).'.'.$extension2;
 
-                $large_image_path2 = 'image/images/image2/large_image/'.$filename2;
-                $medium_image_path2 = 'image/images/image2/medium_image/'.$filename2;
-                $small_image_path2 = 'image/images/image2/small_image/'.$filename2;
+                $large_image_path2 = public_path('image/images/image2/large_image/'.$filename2);
+                $medium_image_path2 = public_path('image/images/image2/medium_image/'.$filename2);
+                $small_image_path2 = public_path('image/images/image2/small_image/'.$filename2);
 
                 Image::make($image_temp2)->save($large_image_path2);
                 Image::make($image_temp2)->resize(600,600)->save($medium_image_path2);
@@ -90,9 +90,9 @@ class BikeController extends Controller
                 $extension3 = $image_temp3->getClientOriginalExtension();
                 $filename3 = rand(111, 999999).'.'.$extension3;
 
-                $large_image_path3 = 'image/images/image3/large_image/'.$filename3;
-                $medium_image_path3 = 'image/images/image3/medium_image/'.$filename3;
-                $small_image_path3 = 'image/images/image3/small_image/'.$filename3;
+                $large_image_path3 = public_path('image/images/image3/large_image/'.$filename3);
+                $medium_image_path3 = public_path('image/images/image3/medium_image/'.$filename3);
+                $small_image_path3 = public_path('image/images/image3/small_image/'.$filename3);
 
                 Image::make($image_temp3)->save($large_image_path3);
                 Image::make($image_temp3)->resize(600,600)->save($medium_image_path3);
@@ -171,9 +171,9 @@ class BikeController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
 
-                $large_image_path = 'image/images/image/large_image/'.$filename;
-                $medium_image_path = 'image/images/image/medium_image/'.$filename;
-                $small_image_path = 'image/images/image/small_image/'.$filename;
+                $large_image_path = public_path('image/images/image/large_image/'.$filename);
+                $medium_image_path = public_path('image/images/image/medium_image/'.$filename);
+                $small_image_path = public_path('image/images/image/small_image/'.$filename);
 
                 Image::make($image_temp)->save($large_image_path);
                 Image::make($image_temp)->resize(600,600)->save($medium_image_path);
@@ -188,9 +188,9 @@ class BikeController extends Controller
                 $extension1 = $image_temp1->getClientOriginalExtension();
                 $filename1 = rand(111, 999999).'.'.$extension1;
 
-                $large_image_path1 = 'image/images/image1/large_image/'.$filename1;
-                $medium_image_path1 = 'image/images/image1/medium_image/'.$filename1;
-                $small_image_path1 = 'image/images/image1/small_image/'.$filename1;
+                $large_image_path1 = public_path('image/images/image1/large_image/'.$filename1);
+                $medium_image_path1 = public_path('image/images/image1/medium_image/'.$filename1);
+                $small_image_path1 = public_path('image/images/image1/small_image/'.$filename1);
 
                 Image::make($image_temp1)->save($large_image_path1);
                 Image::make($image_temp1)->resize(600,600)->save($medium_image_path1);
@@ -205,9 +205,9 @@ class BikeController extends Controller
                 $extension2 = $image_temp2->getClientOriginalExtension();
                 $filename2 = rand(111, 999999).'.'.$extension2;
 
-                $large_image_path2 = 'image/images/image2/large_image/'.$filename2;
-                $medium_image_path2 = 'image/images/image2/medium_image/'.$filename2;
-                $small_image_path2 = 'image/images/image2/small_image/'.$filename2;
+                $large_image_path2 = public_path('image/images/image2/large_image/'.$filename2);
+                $medium_image_path2 = public_path('image/images/image2/medium_image/'.$filename2);
+                $small_image_path2 = public_path('image/images/image2/small_image/'.$filename2);
 
                 Image::make($image_temp2)->save($large_image_path2);
                 Image::make($image_temp2)->resize(600,600)->save($medium_image_path2);
@@ -222,9 +222,9 @@ class BikeController extends Controller
                 $extension3 = $image_temp3->getClientOriginalExtension();
                 $filename3 = rand(111, 999999).'.'.$extension3;
 
-                $large_image_path3 = 'image/images/image3/large_image/'.$filename3;
-                $medium_image_path3 = 'image/images/image3/medium_image/'.$filename3;
-                $small_image_path3 = 'image/images/image3/small_image/'.$filename3;
+                $large_image_path3 = public_path('image/images/image3/large_image/'.$filename3);
+                $medium_image_path3 = public_path('image/images/image3/medium_image/'.$filename3);
+                $small_image_path3 = public_path('image/images/image3/small_image/'.$filename3);
 
                 Image::make($image_temp3)->save($large_image_path3);
                 Image::make($image_temp3)->resize(600,600)->save($medium_image_path3);
@@ -289,9 +289,9 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink('image/images/image/large_image/'.$image);
-        unlink('image/images/image/medium_image/'.$image);
-        unlink('image/images/image/small_image/'.$image);
+        unlink(public_path('image/images/image/large_image/'.$image));
+        unlink(public_path('image/images/image/medium_image/'.$image));
+        unlink(public_path('image/images/image/small_image/'.$image));
         Bike::where(['id'=>$id])->update(['image'=>'']);
         return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
     }
@@ -300,9 +300,9 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image1 = $news->image1;
-        unlink('image/images/image1/large_image/'.$image1);
-        unlink('image/images/image1/medium_image/'.$image1);
-        unlink('image/images/image1/small_image/'.$image1);
+        unlink(public_path('image/images/image1/large_image/'.$image1));
+        unlink(public_path('image/images/image1/medium_image/'.$image1));
+        unlink(public_path('image/images/image1/small_image/'.$image1));
         Bike::where(['id'=>$id])->update(['image1'=>'']);
         return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
     }
@@ -310,9 +310,9 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image2 = $news->image2;
-        unlink('image/images/image2/large_image/'.$image2);
-        unlink('image/images/image2/medium_image/'.$image2);
-        unlink('image/images/image2/small_image/'.$image2);
+        unlink(public_path('image/images/image2/large_image/'.$image2));
+        unlink(public_path('image/images/image2/medium_image/'.$image2));
+        unlink(public_path('image/images/image2/small_image/'.$image2));
         Bike::where(['id'=>$id])->update(['image2'=>'']);
         return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
     }
@@ -320,9 +320,9 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image3 = $news->image3;
-        unlink('image/images/image3/large_image/'.$image3);
-        unlink('image/images/image3/medium_image/'.$image3);
-        unlink('image/images/image3/small_image/'.$image3);
+        unlink(public_path('image/images/image3/large_image/'.$image3));
+        unlink(public_path('image/images/image3/medium_image/'.$image3));
+        unlink(public_path('image/images/image3/small_image/'.$image3));
         Bike::where(['id'=>$id])->update(['image3'=>'']);
         return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
     }
@@ -331,24 +331,24 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink('image/images/image/large_image/'.$image);
-        unlink('image/images/image/medium_image/'.$image);
-        unlink('image/images/image/small_image/'.$image);
+        unlink(public_path('image/images/image/large_image/'.$image));
+        unlink(public_path('image/images/image/medium_image/'.$image));
+        unlink(public_path('image/images/image/small_image/'.$image));
 
         $image1 = $news->image1;
-        unlink('image/images/image1/large_image/'.$image1);
-        unlink('image/images/image1/medium_image/'.$image1);
-        unlink('image/images/image1/small_image/'.$image1);
+        unlink(public_path('image/images/image1/large_image/'.$image1));
+        unlink(public_path('image/images/image1/medium_image/'.$image1));
+        unlink(public_path('image/images/image1/small_image/'.$image1));
 
         $image2 = $news->image2;
-        unlink('image/images/image2/large_image/'.$image2);
-        unlink('image/images/image2/medium_image/'.$image2);
-        unlink('image/images/image2/small_image/'.$image2);
+        unlink(public_path('image/images/image2/large_image/'.$image2));
+        unlink(public_path('image/images/image2/medium_image/'.$image2));
+        unlink(public_path('image/images/image2/small_image/'.$image2));
 
         $image3 = $news->image3;
-        unlink('image/images/image3/large_image/'.$image3);
-        unlink('image/images/image3/medium_image/'.$image3);
-        unlink('image/images/image3/small_image/'.$image3);
+        unlink(public_path('image/images/image3/large_image/'.$image3));
+        unlink(public_path('image/images/image3/medium_image/'.$image3));
+        unlink(public_path('image/images/image3/small_image/'.$image3));
 
 
         Bike::where(['id'=>$id])->delete();
