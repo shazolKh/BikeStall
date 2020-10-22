@@ -20,13 +20,13 @@ class NewsController extends Controller
             $news->article = $data['description'];
 
             //Image
-            $image_temp = $request->file('image');
+            $image_temp = $request->file('news_image');
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
                 $large_image_path = public_path('image/news/'.$filename);
                 Image::make($image_temp)->save($large_image_path);
-                $news->nws_image = $filename;
+                $news->image = $filename;
             }
             //return response()->json($news);
             $news->save();
@@ -46,7 +46,7 @@ class NewsController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             //Update Image
-            $image_temp = $request->file('image');
+            $image_temp = $request->file('news_image');
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
