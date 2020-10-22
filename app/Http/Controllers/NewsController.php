@@ -70,7 +70,7 @@ class NewsController extends Controller
     public function deleteImage($id=null)
     {
         $news = News::where(['id'=>$id])->first();
-        $image = $news->nws_image;
+        $image = $news->image;
         unlink(public_path('image/news/'.$image));
         News::where(['id'=>$id])->update(['image'=>'']);
         //return response()->json($image);
@@ -80,7 +80,7 @@ class NewsController extends Controller
     public function deleteNews($id=null)
     {
         $news = News::where(['id'=>$id])->first();
-        $image = $news->nws_image;
+        $image = $news->image;
         unlink(public_path('image/news/'.$image));
         News::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'News has been Deleted');
