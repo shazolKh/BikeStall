@@ -48,8 +48,13 @@ class IndexController extends Controller
             $sub_cat[$cat]->name = $cat->sub_cat_name;
         }*/
 
+        //NEWS
+        $news = News::orderBy('created_at', 'asc')->paginate(16);
+
+        $reviews = AdminReview::orderBy('created_at','asc')->paginate(10);
+
         //return view
-        return view('index')->with(compact('brands', 'slider', 'bikes', 'categories'));
+        return view('index')->with(compact('brands', 'slider', 'bikes','news', 'reviews', 'categories'));
     }
 
     public function sub_cat_Bikes($sub_ct_name = null)
@@ -75,22 +80,22 @@ class IndexController extends Controller
         $categories = Category::with('categories')->get();
         $bk_details = Bike::where(['url'=>$url])->first();
         $full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
-        $brands = Brand::get();
+        $brand = Brand::where(['id'=>$bk_details->id])->first();
 
 
         $bk_id = Bike::where(['url'=>$url])->first();
         $com = Comment::orderBy('created_at','asc')->where(['bike_id' =>$bk_id->id, 'status'=>'1'])->get();
 
-        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'full_spec', 'brands', 'com'));
+        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'full_spec', 'brand', 'com'));
     }
 
-    public function reviews()
+    /*public function reviews()
     {
         $categories = Category::with('categories')->get();
         $reviews = AdminReview::orderBy('created_at','asc')->paginate(10);
         $metareviews = AdminReview::first();
         return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews'));
-    }
+    }*/
 
     public function reviewsDetails($title=null)
     {
@@ -114,13 +119,13 @@ class IndexController extends Controller
     }
 
     //NEWS
-    public function news()
+   /* public function news()
     {
         $categories = Category::with('categories')->get();
-        $news = News::orderBy('created_at', 'asc')->paginate(8);
+        $news = News::orderBy('created_at', 'asc')->paginate(16);
         $metanews = News::first();
-        return view('news.short_news')->with(compact('news', 'categories', 'metanews'));
-    }
+        return view('index')->with(compact('news', 'categories', 'metanews'));
+    }*/
 
     public function newsDetails($headline=null)
     {
@@ -136,7 +141,7 @@ class IndexController extends Controller
         return view('contact')->with(compact('categories'));
     }
 
-    public function storeMessage(Request $request)
+    /*public function storeMessage(Request $request)
     {
         $msg = new Contact();
         $msg->name = $request->name;
@@ -144,7 +149,7 @@ class IndexController extends Controller
 
         $msg->save();
         return redirect()->back()->with('flash_message_success', 'Your Message has been Sent!!');
-    }
+    }*/
 
     public function search()
     {

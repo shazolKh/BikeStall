@@ -120,6 +120,11 @@
                             <img src="{{asset('public/frontend/img/yt.png')}}" style="width: 50px">
                         </a>
                     </div>
+                    <div class="prod-rating-wrap">
+                        <a href="{{url('/brands/'.$brand->br_name)}}">
+                            <img src="{{asset('public/image/brand_image/'.$brand->image)}}" style="width: 150px">
+                        </a>
+                    </div>
 
                 </div>
             </div>

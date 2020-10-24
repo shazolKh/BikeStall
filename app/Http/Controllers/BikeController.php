@@ -118,8 +118,6 @@ class BikeController extends Controller
            //}
         }
 
-
-
         $brand = Brand::get();
         $brand_dropdown = "<option selected disabled> </option>";
         foreach ($brand as $br){
@@ -131,8 +129,6 @@ class BikeController extends Controller
         foreach ($sbrand as $br){
             $sbrand_dropdown .= "<option value='".$br->id."'>".$br->sub_ct_name."</option>";
         }
-
-
 
         return view('admin.bikes.add_bike')->with(compact('categories_dropdown', 'brand_dropdown', 'sbrand_dropdown'));
     }

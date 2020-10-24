@@ -198,9 +198,69 @@
 	</div>
 </div>
 
+<!-- News -->
+<div class="populars-wrap">
+    <div class="cont populars">
+        <h2>NEWS</h2>
+        <p class="populars-count">{{$news->count()}} News</p>
+        <div class="populars-list">
+            @foreach ($news as $nws)
+                <div class="popular">
+                    <a href="{{url('news/details/'.$nws->headline)}}" class="popular-link">
+                        <p class="popular-img">
+                            <img src="{{asset('public/image/news/'.$nws->image)}}" alt="">
+                        </p>
+                        <h3><span>{{$nws->headline}}</span></h3>
+                    </a>
+                    <p class="popular-info">
+                        <a href="{{url('news/details/'.$nws->headline)}}" class="popular-categ">{{$nws->created_at}}</a>
+                    </p>
+                </div>
+            @endforeach
+        </div>
+        <ul class="pager">
+            <li>
+                <a>{{ $news->render() }}</a>
+            </li>
+        </ul>
+        <span class="popular-line1"></span>
+        <span class="popular-line2"></span>
+    </div>
+</div>
+
+<!-- Reviews -->
+<div class="populars-wrap">
+    <div class="cont populars">
+        <h2>NEWS</h2>
+        <p class="populars-count">{{$reviews->count()}} Expert Reviwes</p>
+        <div class="populars-list">
+            @foreach ($reviews as $rvw)
+                <div class="popular">
+                    <a href="{{url('review/details/'.$rvw->title)}}" class="popular-link">
+                        <p class="popular-img">
+                            <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
+                        </p>
+                        <h3><span>{{$rvw->title}}</span></h3>
+                    </a>
+                    <p class="popular-info">
+                        <a href="{{url('review/details/'.$rvw->title)}}" class="popular-categ">{{$rvw->created_at}}</a>
+                    </p>
+                </div>
+            @endforeach
+        </div>
+        <ul class="pager">
+            <li>
+                <a>{{ $news->render() }}</a>
+            </li>
+        </ul>
+        <span class="popular-line1"></span>
+        <span class="popular-line2"></span>
+    </div>
+</div>
+
 
 <!-- Frontpage Article -->
-<div class="botarticle-wrap">
+{{--<div class="botarticle-wrap">
 	<div class="cont botarticle">
 		<div class="botarticle-cont">
 			<h3>Kings of the dirt</h3>
@@ -211,7 +271,7 @@
 			<img src="{{asset('public/frontend/img/article1.jpg')}}" alt="">
 		</a>
 	</div>
-</div>
+</div>--}}
 
 
 @endsection

@@ -42,12 +42,12 @@
                     </ul>
                 </li>
             @endforeach
-            <li class="has-child">
+            {{--<li class="has-child">
                 <a href="{{url('reviews/')}}">Reviews</a>
             </li>
             <li class="has-child">
                 <a href="{{url('news/')}}">News</a>
-            </li>
+            </li>--}}
             <li class="has-child">
                 <a href="{{url('/compare')}}">Compare</a>
             </li>

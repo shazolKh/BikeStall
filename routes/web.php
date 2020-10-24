@@ -29,7 +29,7 @@ Route::get('/brands/{br_name}','IndexController@bike_br');
 Route::get('bike/details/{url}', 'IndexController@bikeDetails');
 
 //Reviews
-Route::get('reviews/', 'IndexController@reviews');
+/*Route::get('reviews/', 'IndexController@reviews');*/
 Route::get('review/details/{title}', 'IndexController@reviewsDetails');
 
 //Gallery
@@ -41,12 +41,12 @@ Route::get('photo-gallery/', 'IndexController@photoGallery');
 Route::get('about/', 'IndexController@about');
 
 //News
-Route::get('news/', 'IndexController@news');
+/*Route::get('news/', 'IndexController@news');*/
 Route::get('news/details/{headline}', 'IndexController@newsDetails');
 
 //Contact
 Route::get('contact/','IndexController@contact');
-Route::post('send-message/', 'IndexController@storeMessage');
+//Route::post('send-message/', 'IndexController@storeMessage');
 
 //Filters
     //Mileage
@@ -105,6 +105,16 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin/view-brand', 'BrandController@viewBrand');
     Route::match(['get', 'post'], '/admin/delete-brand/{id}', 'BrandController@deleteBrand');
     Route::get('/admin/delete-brand-image/{id}', 'BrandController@deleteImage');
+
+    //Accessories
+    Route::match(['get', 'post'], '/admin/add-accessories', 'AccessoriesController@addAccessories');
+    Route::match(['get', 'post'], '/admin/edit-accessories/{id}', 'AccessoriesController@editAccessories');
+    Route::match(['get', 'post'], '/admin/delete-accessories/{id}', 'AccessoriesController@deleteAccessories');
+    Route::get('/admin/view-accessories', 'AccessoriesController@viewAccessories');
+
+    Route::get('/admin/accessories/delete-image/{id}', 'AccessoriesController@deleteAImage');
+    Route::get('/admin/accessories/delete-image1/{id}', 'AccessoriesController@deleteAImage1');
+    Route::get('/admin/accessories/delete-image2/{id}', 'AccessoriesController@deleteAImage2');
 
     //Bikes
     Route::match(['get', 'post'], '/admin/add-bike', 'BikeController@addBike');
