@@ -175,7 +175,7 @@
 		<div class="populars-list">
             @foreach ($bikes as $bk)
             <div class="popular">
-				<a href="{{url('bike/details/'.$bk->bike_name)}}" class="popular-link">
+				<a href="{{url('bike/details/'.$bk->url)}}" class="popular-link">
 					<p class="popular-img">
 						<img src="{{asset('public/image/images/image/large_image/'.$bk->image)}}" alt="">
 					</p>

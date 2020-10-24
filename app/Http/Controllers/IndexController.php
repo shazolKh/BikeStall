@@ -70,15 +70,15 @@ class IndexController extends Controller
         return view('bikes.bike_brand')->with(compact('br_name_details', 'bikes','categories','brands'));
     }
 
-    public function bikeDetails($bike_name = null, $id=null)
+    public function bikeDetails($url)
     {
         $categories = Category::with('categories')->get();
-        $bk_details = Bike::where(['bike_name'=>$bike_name])->first();
+        $bk_details = Bike::where(['url'=>$url])->first();
         $full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
         $brands = Brand::get();
 
 
-        $bk_id = Bike::where(['bike_name'=>$bike_name])->first();
+        $bk_id = Bike::where(['url'=>$url])->first();
         $com = Comment::orderBy('created_at','asc')->where(['bike_id' =>$bk_id->id, 'status'=>'1'])->get();
 
         return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'full_spec', 'brands', 'com'));

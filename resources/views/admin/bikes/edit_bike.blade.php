@@ -34,6 +34,12 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
+                                    <label class="control-label">URL</label>
+                                    <div class="controls">
+                                        <input type="text" name="url" id="url" value="{{$bikeDetails->url}}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
                                     <label class="control-label">Category</label>
                                     <div class="controls">
                                         <select name="category_id" id="category_id" style="width: 220px" >

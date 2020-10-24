@@ -47,7 +47,7 @@
         <div class="section-list">
             @foreach($bikes as $bike)
                 <div class="sectls">
-                    <a href="{{url('bike/details/'.$bike->bike_name)}}" class="sectls-img">
+                    <a href="{{url('bike/details/'.$bike->url)}}" class="sectls-img">
                         <img src="{{asset('public/image/images/image/large_image/'.$bike->image)}}" alt="">
                     </a>
                     <div class="sectls-cont">

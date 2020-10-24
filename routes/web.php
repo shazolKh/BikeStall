@@ -26,7 +26,7 @@ Route::get('category/bikes/{ct_name}','BikeController@bikes');
 Route::get('subcategory/bike/{sub_ct_name}','IndexController@sub_cat_Bikes');
 
 Route::get('/brands/{br_name}','IndexController@bike_br');
-Route::get('bike/details/{bike_name}', 'IndexController@bikeDetails');
+Route::get('bike/details/{url}', 'IndexController@bikeDetails');
 
 //Reviews
 Route::get('reviews/', 'IndexController@reviews');

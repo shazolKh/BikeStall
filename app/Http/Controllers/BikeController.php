@@ -25,6 +25,7 @@ class BikeController extends Controller
             $bike->sub_category_id = $data['scategory_id'];
             $bike->brand_id = $data['brand_id'];
             $bike->bike_name = $data['bike_name'];
+            $bike->url = $data['url'];
             $bike->bike_model = $data['bike_model'];
             $bike->bike_color = $data['bike_color'];
             $bike->Engine = $data['bike_engine'];
@@ -235,7 +236,7 @@ class BikeController extends Controller
 
 
             Bike::where(['id'=>$id])->update(['category_id'=>$data['category_id'], 'bike_name'=>$data['bike_name'],
-                'brand_id'=>$data['brand_id'], 'bike_model'=>$data['bike_model'],
+                'url'=>$data['url'], 'brand_id'=>$data['brand_id'], 'bike_model'=>$data['bike_model'],
                 'bike_color'=>$data['bike_color'], 'Engine'=>$data['bike_engine'], 'mileage'=>$data['mile'], 'youtube_link'=>$data['yt_link'], 'description'=>$data['description'],
                 'price'=>$data['bike_price'], 'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 

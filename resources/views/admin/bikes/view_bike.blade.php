@@ -31,8 +31,8 @@
                                 <thead>
                                 <tr>
                                     <th>Category</th>
-                                    <th>Sub Category</th>
                                     <th style="color: red">Bike Name</th>
+                                    <th>URL</th>
                                     <th>Brand</th>
                                     <th>Image</th>
                                     <th>Action</th>
@@ -42,8 +42,8 @@
                                     @foreach($bikes as $item)
                                         <tr class="gradeX">
                                             <td>{{$item->ct_name}}</td>
-                                            <td>{{$item->sub_ct_name}}</td>
                                             <td style="color: red">{{$item->bike_name}}</td>
+                                            <td>{{$item->url}}</td>
                                             <td>{{$item->br_name}}</td>
                                             <td>
                                                 @if(!empty($item->image))
