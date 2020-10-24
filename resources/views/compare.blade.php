@@ -11,7 +11,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="{{asset('public/select2-4.0.13/dist/css/select2.min.css')}}" rel="stylesheet" />
     <script src="{{asset('public/select2-4.0.13/dist/js/select2.min.js')}}"></script>
     <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}">
@@ -84,6 +84,9 @@
             </li>
             <li class="has-child">
                 <a href="{{url('news/')}}">News</a>
+            </li>
+            <li class="has-child">
+                <a href="{{url('/compare')}}">Compare</a>
             </li>
         </ul>
     </nav>
