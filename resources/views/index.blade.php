@@ -232,7 +232,7 @@
 <div class="populars-wrap">
     <div class="cont populars">
         <h2>REVIEWS</h2>
-        <p class="populars-count">{{$reviews->count()}} Expert Reviwes</p>
+        <p class="populars-count">{{$reviews->count()}} Expert Reviews</p>
         <div class="populars-list">
             @foreach ($reviews as $rvw)
                 <div class="popular">
@@ -250,7 +250,7 @@
         </div>
         <ul class="pager">
             <li>
-                <a>{{ $news->render() }}</a>
+                <a>{{ $reviews->render() }}</a>
             </li>
         </ul>
         <span class="popular-line1"></span>
