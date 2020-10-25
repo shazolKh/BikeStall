@@ -36,6 +36,7 @@
                                     <th>Brand</th>
                                     <th>Image</th>
                                     <th>Action</th>
+                                    <th style="color: red; border: red">Spec Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -57,10 +58,12 @@
                                                 <a href="#myModal2{{$item->id}}" data-toggle="modal" class="btn btn-primary btn-mini">Details</a>
                                                 <a href="{{url('admin/edit-bike/'.$item->id)}}" class="btn btn-primary btn-mini">Edit</a>
                                                 <a id="delCat" href="{{url('admin/delete-bike/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete</a>
-                                                <a id="delCat" href="{{url('admin/add-specification/'.$item->id)}}"  class="btn btn-primary btn-mini">Add Specs</a>
-                                                <a id="delCat" href="{{url('admin/view-edit-specification/'.$item->id)}}"  class="btn btn-primary btn-mini">View | Edit Specs</a>
-                                                <a id="delCat" href="{{url('admin/delete-specs/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete Specs</a>
                                                 <a href="{{$item->youtube_link}}" class="btn btn-success btn-mini" data-lity>Video</a>
+                                            </td>
+                                            <td class="text-center">
+                                                <a id="delCat" href="{{url('admin/add-specification/'.$item->id)}}"  class="btn btn-primary btn-mini">Add Specs</a>
+                                                <a id="delCat" href="{{url('admin/view-edit-specification/'.$item->id)}}"  class="btn btn-primary btn-mini">View | Edit</a>
+                                                <a id="delCat" href="{{url('admin/delete-specs/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete</a>
                                             </td>
                                             <div id="myModal2{{$item->id}}" class="modal hide">
                                                 <div class="modal-header">
