@@ -80,7 +80,7 @@ class AccessoriesController extends Controller
             }
 
             //Update Image1
-            $image_temp1 = $request->file('bike_image1');
+            $image_temp1 = $request->file('image1');
             if ($image_temp1){
                 $extension1 = $image_temp1->getClientOriginalExtension();
                 $filename1 = rand(111, 999999).'.'.$extension1;
@@ -93,7 +93,7 @@ class AccessoriesController extends Controller
             }
 
             //Update Image2
-            $image_temp2 = $request->file('bike_image2');
+            $image_temp2 = $request->file('image2');
             if ($image_temp2){
                 $extension2 = $image_temp2->getClientOriginalExtension();
                 $filename2 = rand(111, 999999).'.'.$extension2;

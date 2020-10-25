@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\About;
+use App\Accessories;
 use App\AdminReview;
 use App\Bike;
 use App\Brand;
 use App\Category;
 use App\Comment;
-use App\Contact;
 use App\FullSpac;
 use App\Gallery;
 use App\News;
@@ -80,7 +80,8 @@ class IndexController extends Controller
         $categories = Category::with('categories')->get();
         $bk_details = Bike::where(['url'=>$url])->first();
         $full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
-        $brand = Brand::where(['id'=>$bk_details->id])->first();
+
+        $brand = Brand::where(['id'=>$bk_details->brand_id])->first();
 
 
         $bk_id = Bike::where(['url'=>$url])->first();
@@ -185,5 +186,21 @@ class IndexController extends Controller
         //return response()->json([[$bikeOne, $bikeTwo], [$bikeOneSpecs->bike_id, $bikeTwoSpecs->bike_id]]);
         return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails',
             'bikeOneSpecs', 'bikeTwoSpecs'));
+    }
+
+    public function accList()
+    {
+        $categories = Category::with('categories')->get();
+        $data = Accessories::paginate(16);
+
+        return view('accessories.acc_list')->with(compact('categories', 'data'));
+    }
+
+    public function accDetails($url)
+    {
+        $categories = Category::with('categories')->get();
+        $data = Accessories::where(['url'=>$url])->first();
+
+        return view('accessories.acc_details')->with(compact('categories', 'data'));
     }
 }

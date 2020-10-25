@@ -76,6 +76,10 @@ Route::get('/search', 'IndexController@search');
 Route::match(['get', 'post'], '/compare', 'IndexController@compare');
 Route::get('comparison', 'IndexController@comparison');
 
+// Accessories
+Route::get('/accessories', 'IndexController@accList');
+Route::get('accessories/details/{url}', 'IndexController@accDetails');
+
 
 
 //Admin Panel Start
@@ -149,9 +153,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::match(['get', 'post'],'/admin/edit-review/{id}', 'AdminReviewController@editReview');
     Route::get('/admin/delete-review/{id}','AdminReviewController@deleteReview');
     //---------image delete
-    Route::get('/admin/delete-image1/{id}', 'AdminReviewController@deleteImage1');
-    Route::get('/admin/delete-image2/{id}', 'AdminReviewController@deleteImage2');
-    Route::get('/admin/delete-image3/{id}', 'AdminReviewController@deleteImage3');
+    Route::get('/admin/image1-delete/{id}', 'AdminReviewController@deleteImage1');
+    Route::get('/admin/image2/-delete{id}', 'AdminReviewController@deleteImage2');
+    Route::get('/admin/image3-delete/{id}', 'AdminReviewController@deleteImage3');
 
     //Gallery
     Route::get('/admin/image-gallery', 'GalleryController@index');

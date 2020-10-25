@@ -231,7 +231,7 @@
 <!-- Reviews -->
 <div class="populars-wrap">
     <div class="cont populars">
-        <h2>NEWS</h2>
+        <h2>REVIEWS</h2>
         <p class="populars-count">{{$reviews->count()}} Expert Reviwes</p>
         <div class="populars-list">
             @foreach ($reviews as $rvw)

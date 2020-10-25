@@ -51,6 +51,9 @@
             <li class="has-child">
                 <a href="{{url('/compare')}}">Compare</a>
             </li>
+            <li class="has-child">
+                <a href="{{url('/accessories')}}">Accessories</a>
+            </li>
         </ul>
     </nav>
 	<!-- Navmenu - end -->

@@ -60,7 +60,7 @@
                                         @if(!empty($details->image))
                                             <img src="{{asset('public/image/accessories/image/'.$details->image)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image/'.$details->id)}}">Delete</a>
+                                            <a href="{{url('/admin/accessories/delete-image/'.$details->id)}}">Delete</a>
                                         @endif
                                         <br>
                                         <input type="hidden" name="current_image1" value="{{$details->image1}}">
@@ -68,7 +68,7 @@
                                         @if(!empty($details->image1))
                                             <img src="{{asset('public/image/accessories/image1/'.$details->image1)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image1/'.$details->id)}}">Delete</a>
+                                            <a href="{{url('/admin/accessories/delete-image1/'.$details->id)}}">Delete</a>
                                         @endif
                                         <br>
                                         <input type="hidden" name="current_image2" value="{{$details->image2}}">
@@ -76,7 +76,7 @@
                                         @if(!empty($details->image2))
                                             <img src="{{asset('public/image/accessories/image2/'.$details->image2)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image2/'.$details->id)}}">Delete</a>
+                                            <a href="{{url('/admin/accessories/delete-image2/'.$details->id)}}">Delete</a>
                                         @endif
                                     </div>
                                 </div>

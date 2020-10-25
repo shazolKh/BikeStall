@@ -328,24 +328,24 @@ class BikeController extends Controller
     {
         $news = Bike::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink(public_path('image/images/image/large_image/'.$image));
-        unlink(public_path('image/images/image/medium_image/'.$image));
-        unlink(public_path('image/images/image/small_image/'.$image));
+        unlink('public/image/images/image/large_image/'.$image);
+        unlink('public/image/images/image/medium_image/'.$image);
+        unlink('public/image/images/image/small_image/'.$image);
 
         $image1 = $news->image1;
-        unlink(public_path('image/images/image1/large_image/'.$image1));
-        unlink(public_path('image/images/image1/medium_image/'.$image1));
-        unlink(public_path('image/images/image1/small_image/'.$image1));
+        unlink('public/image/images/image1/large_image/'.$image1);
+        unlink('public/image/images/image1/medium_image/'.$image1);
+        unlink('public/image/images/image1/small_image/'.$image1);
 
         $image2 = $news->image2;
-        unlink(public_path('image/images/image2/large_image/'.$image2));
-        unlink(public_path('image/images/image2/medium_image/'.$image2));
-        unlink(public_path('image/images/image2/small_image/'.$image2));
+        unlink('public/image/images/image2/large_image/'.$image2);
+        unlink('public/image/images/image2/medium_image/'.$image2);
+        unlink('public/image/images/image2/small_image/'.$image2);
 
         $image3 = $news->image3;
-        unlink(public_path('image/images/image3/large_image/'.$image3));
-        unlink(public_path('image/images/image3/medium_image/'.$image3));
-        unlink(public_path('image/images/image3/small_image/'.$image3));
+        unlink('public/image/images/image3/large_image/'.$image3);
+        unlink('public/image/images/image3/medium_image/'.$image3);
+        unlink('public/image/images/image3/small_image/'.$image3);
 
 
         Bike::where(['id'=>$id])->delete();

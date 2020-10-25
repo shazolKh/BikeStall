@@ -110,7 +110,7 @@
                                         <br>
                                         <input type="hidden" name="current_image1" value="{{$bikeDetails->image1}}">
                                         <input type="file" name="bike_image1" id="bike_image1">
-                                        @if(!empty($bikeDetails->image))
+                                        @if(!empty($bikeDetails->image1))
                                             <img src="{{asset('public/image/images/image1/small_image/'.$bikeDetails->image1)}}"
                                                  style="width: 50px"> |
                                             <a href="{{url('/admin/delete-image1/'.$bikeDetails->id)}}">Delete</a>
@@ -118,7 +118,7 @@
                                         <br>
                                         <input type="hidden" name="current_image2" value="{{$bikeDetails->image2}}">
                                         <input type="file" name="bike_image2" id="bike_image2">
-                                        @if(!empty($bikeDetails->image))
+                                        @if(!empty($bikeDetails->image2))
                                             <img src="{{asset('public/image/images/image2/small_image/'.$bikeDetails->image2)}}"
                                                  style="width: 50px"> |
                                             <a href="{{url('/admin/delete-image2/'.$bikeDetails->id)}}">Delete</a>
@@ -126,7 +126,7 @@
                                         <br>
                                         <input type="hidden" name="current_image3" value="{{$bikeDetails->image3}}">
                                         <input type="file" name="bike_image3" id="bike_image3">
-                                        @if(!empty($bikeDetails->image))
+                                        @if(!empty($bikeDetails->image3))
                                             <img src="{{asset('public/image/images/image3/small_image/'.$bikeDetails->image3)}}"
                                                  style="width: 50px"> |
                                             <a href="{{url('/admin/delete-image3/'.$bikeDetails->id)}}">Delete</a>

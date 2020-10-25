@@ -53,7 +53,7 @@
                                         <td class="center">
                                             <a href="#myModal2{{$item->id}}" data-toggle="modal" class="btn btn-primary btn-mini">Details</a>
                                             <a href="{{url('/admin/edit-accessories/'.$item->id)}}" class="btn btn-primary btn-mini">Edit</a>
-                                            <a id="delCat" href="{{url('admin/delete-bike/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete</a>
+                                            <a id="delCat" href="{{url('/admin/delete-accessories/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete</a>
                                         </td>
                                         <div id="myModal2{{$item->id}}" class="modal hide">
                                             <div class="modal-header">

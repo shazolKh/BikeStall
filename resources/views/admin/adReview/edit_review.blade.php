@@ -47,7 +47,7 @@
                                         @if(!empty($reviewdetails->image1))
                                             <img src="{{asset('public/image/admin_review/image1/'.$reviewdetails->image1)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image1/'.$reviewdetails->id)}}">Delete</a>
+                                            <a href="{{url('/admin/image1-delete/'.$reviewdetails->id)}}">Delete</a>
                                         @endif
                                         <br><br>
                                         <input type="hidden" name="current_image2" value="{{$reviewdetails->image2}}">
@@ -55,7 +55,7 @@
                                         @if(!empty($reviewdetails->image2))
                                             <img src="{{asset('public/image/admin_review/image2/'.$reviewdetails->image2)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image2/'.$reviewdetails->id)}}">Delete</a>
+                                            <a href="{{url('/admin/image2-delete/'.$reviewdetails->id)}}">Delete</a>
                                         @endif
                                         <br><br>
                                         <input type="hidden" name="current_image3" value="{{$reviewdetails->image3}}">
@@ -63,7 +63,7 @@
                                         @if(!empty($reviewdetails->image3))
                                             <img src="{{asset('public/image/admin_review/image3/'.$reviewdetails->image3)}}"
                                                  style="width: 50px"> |
-                                            <a href="{{url('/admin/delete-image3/'.$reviewdetails->id)}}">Delete</a>
+                                            <a href="{{url('/admin/image3-delete/'.$reviewdetails->id)}}">Delete</a>
                                         @endif
                                     </div>
                                 </div>
