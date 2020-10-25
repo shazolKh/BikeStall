@@ -62,7 +62,7 @@ class FullSpacController extends Controller
             $specs->disclaimer = $data['disclaimer'];
 
             $specs->save();
-            return redirect()->back()->with('flash_message_success', 'Specs added successfully');
+            return redirect('/admin/view-bike')->with('flash_message_success', 'Specs added successfully');
 
         }
 
