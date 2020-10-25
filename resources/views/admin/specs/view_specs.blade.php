@@ -119,7 +119,7 @@
                                 <div class="control-group">
                                     <label class="control-label">Clutch</label>
                                     <div class="controls">
-                                        <input type="text" name="start_method" id="start_method" value="{{$fullSpecs->start_method}}">
+                                        <input type="text" name="clutch" id="clutch" value="{{$fullSpecs->clutch}}">
                                     </div>
                                 </div>
                                 <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
