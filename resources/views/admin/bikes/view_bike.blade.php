@@ -36,7 +36,7 @@
                                     <th>Brand</th>
                                     <th>Image</th>
                                     <th>Action</th>
-                                    <th style="color: red; border: red">Spec Actions</th>
+                                    <th style="color: red">Spec Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
