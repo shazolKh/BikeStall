@@ -48,7 +48,7 @@
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="cat_image" id="cat_image" size="19" style="opacity: 0;">
+                                            <input type="file" name="cat_image" id="cat_image" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>

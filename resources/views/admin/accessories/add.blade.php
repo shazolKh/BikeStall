@@ -49,19 +49,19 @@
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="image" id="image" size="19" style="opacity: 0;">
+                                            <input type="file" name="image" id="image" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="image1" id="image1" size="19" style="opacity: 0;">
+                                            <input type="file" name="image1" id="image1" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="image2" id="image2" size="19" style="opacity: 0;">
+                                            <input type="file" name="image2" id="image2" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>

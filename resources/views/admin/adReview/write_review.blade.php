@@ -43,7 +43,7 @@
                                     <label class="control-label">1st Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="rvw_image1" id="rvw_image1">
+                                            <input type="file" name="rvw_image1" id="rvw_image1" required>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                     <label class="control-label">2nd Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="rvw_image2" id="rvw_image2">
+                                            <input type="file" name="rvw_image2" id="rvw_image2" required>
                                         </div>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
                                     <label class="control-label">3rd Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="rvw_image3" id="rvw_image3">
+                                            <input type="file" name="rvw_image3" id="rvw_image3" required>
                                         </div>
                                     </div>
                                 </div>

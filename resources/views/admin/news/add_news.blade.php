@@ -36,7 +36,7 @@
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="news_image" id="news_image">
+                                            <input type="file" name="news_image" id="news_image" required>
                                         </div>
                                     </div>
                                 </div>

@@ -118,25 +118,25 @@
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="bike_image" id="bike_image" size="19" style="opacity: 0;">
+                                            <input type="file" name="bike_image" id="bike_image" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="bike_image1" id="bike_image1" size="19" style="opacity: 0;">
+                                            <input type="file" name="bike_image1" id="bike_image1" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="bike_image2" id="bike_image2" size="19" style="opacity: 0;">
+                                            <input type="file" name="bike_image2" id="bike_image2" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" name="bike_image3" id="bike_image3" size="19" style="opacity: 0;">
+                                            <input type="file" name="bike_image3" id="bike_image3" size="19" style="opacity: 0;" required>
                                             <span class="filename">No file selected</span><span class="action">Choose File</span>
                                         </div>
                                     </div>
