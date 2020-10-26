@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Bike;
 use App\Brand;
 use App\Category;
+use App\FullSpac;
 use Illuminate\Support\Facades\DB;
 use Intervention\Image\Facades\Image;
 
@@ -32,7 +33,53 @@ class BikeController extends Controller
             $bike->mileage = $data['mile'];
             $bike->description = $data['description'];
             $bike->price = $data['bike_price'];
+            $bike->price_comma =$data['price_comma'];
             $bike->youtube_link = $data['yt_video'];
+
+            //Full Specs
+            $bike->engine_type = $data['engine_type'];
+            //$bike->displacement = $data['displacement'];
+            $bike->max_power = $data['max_power'];
+            $bike->max_torque = $data['max_torque'];
+            $bike->top_speed = $data['top_speed'];
+            $bike->bore = $data['bore'];
+            $bike->stroke = $data['stroke'];
+            $bike->carburetor = $data['carburetor'];
+            $bike->compression_ratio = $data['compression_ratio'];
+            $bike->cooling = $data['cooling'];
+            $bike->start_method = $data['start_method'];
+            $bike->ignition = $data['ignition'];
+            $bike->start_method = $data['start_method'];
+            $bike->ignition = $data['ignition'];
+            $bike->gears = $data['gears'];
+            $bike->clutch = $data['clutch'];
+            $bike->overall_length = $data['overall_length'];
+            $bike->overall_width = $data['overall_width'];
+            $bike->overall_height = $data['overall_height'];
+            $bike->saddle_height = $data['saddle_height'];
+            $bike->wheel_base = $data['wheel_base'];
+            $bike->ground_clearance = $data['ground_clearance'];
+            $bike->fuel_tank_cap = $data['fuel_tank_cap'];
+            $bike->kerb_weight = $data['kerb_weight'];
+            $bike->front_suspension = $data['front_suspension'];
+            $bike->back_suspension = $data['back_suspension'];
+            $bike->front_break = $data['front_break'];
+            $bike->rear_break = $data['rear_break'];
+            $bike->abs = $data['abs'];
+            $bike->front_tyre = $data['front_tyre'];
+            $bike->back_tyre = $data['back_tyre'];
+            $bike->front_wheel = $data['front_wheel'];
+            $bike->rear_wheel = $data['rear_wheel'];
+            $bike->battery = $data['battery'];
+            $bike->head_lamp = $data['head_lamp'];
+            $bike->tail_lamp = $data['tail_lamp'];
+            $bike->turn_signal_lamp = $data['turn_signal_lamp'];
+            $bike->pilot_lamp = $data['pilot_lamp'];
+            $bike->pass_light = $data['pass_light'];
+            $bike->odometer = $data['odometer'];
+            $bike->speedometer = $data['speedometer'];
+            $bike->signal_light = $data['signal_light'];
+            $bike->status = $data['status'];
 
             //Upload Image
             $image_temp = $request->file('bike_image');
@@ -135,7 +182,7 @@ class BikeController extends Controller
 
     public function viewBike()
     {
-        $bikes = Bike::get();
+        $bikes = Bike::orderBy('id', 'asc')->get();
 
         foreach ($bikes as $bike=>$val){
             $category_name = Category::where(['id'=>$val->category_id])->first();
@@ -233,8 +280,23 @@ class BikeController extends Controller
 
             Bike::where(['id'=>$id])->update(['category_id'=>$data['category_id'], 'bike_name'=>$data['bike_name'],
                 'url'=>$data['url'], 'brand_id'=>$data['brand_id'], 'bike_model'=>$data['bike_model'],
-                'bike_color'=>$data['bike_color'], 'Engine'=>$data['bike_engine'], 'mileage'=>$data['mile'], 'youtube_link'=>$data['yt_link'], 'description'=>$data['description'],
-                'price'=>$data['bike_price'], 'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
+                'bike_color'=>$data['bike_color'], 'Engine'=>$data['bike_engine'], 'mileage'=>$data['mile'],
+                'youtube_link'=>$data['yt_link'], 'description'=>$data['description'], 'price'=>$data['bike_price'],
+                'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3,
+                'engine_type'=>$data['engine_type'], 'max_power' => $data['max_power'], 'max_torque' => $data['max_torque'],
+                'top_speed' => $data['top_speed'], 'bore' => $data['bore'], 'stroke' => $data['stroke'],
+                'carburetor' => $data['carburetor'], 'compression_ratio' => $data['compression_ratio'], 'cooling' => $data['cooling'],
+                'start_method' => $data['start_method'], 'ignition' => $data['ignition'], 'gears' => $data['gears'],
+                'clutch' => $data['clutch'], 'overall_length' => $data['overall_length'], 'overall_width' => $data['overall_width'],
+                'overall_height' => $data['overall_height'], 'saddle_height' => $data['saddle_height'], 'wheel_base' => $data['wheel_base'],
+                'ground_clearance' => $data['ground_clearance'], 'fuel_tank_cap' => $data['fuel_tank_cap'], 'kerb_weight' => $data['kerb_weight'],
+                'front_suspension' => $data['front_suspension'], 'back_suspension' => $data['back_suspension'],
+                'front_break' => $data['front_break'], 'rear_break' => $data['rear_break'], 'abs' => $data['abs'],
+                'front_tyre' => $data['front_tyre'], 'back_tyre' => $data['back_tyre'], 'front_wheel' => $data['front_wheel'],
+                'rear_wheel' => $data['rear_wheel'], 'battery' => $data['battery'], 'head_lamp' => $data['head_lamp'],
+                'tail_lamp' => $data['tail_lamp'], 'turn_signal_lamp' => $data['turn_signal_lamp'], 'pilot_lamp' => $data['pilot_lamp'],
+                'pass_light' => $data['pass_light'], 'odometer' => $data['odometer'], 'speedometer' => $data['speedometer'],
+                'signal_light' => $data['signal_light'], 'status' => $data['status']]);
 
             return redirect()->back()->with('flash_message_success', 'Details Updated successfully');
 
@@ -348,6 +410,7 @@ class BikeController extends Controller
         unlink('public/image/images/image3/small_image/'.$image3);
 
 
+        FullSpac::where(['bike_id'=>$id])->delete();
         Bike::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'Bike item has been Deleted');
     }

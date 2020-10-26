@@ -53,11 +53,11 @@
                     <div class="sectls-cont">
                         <div class="sectls-ttl-wrap">
                             <p>{{$bike->bike_model}}</p>
-                            <h3><a href="{{url('bike/details/'.$bike->bike_name)}}">{{$bike->bike_name}}</a></h3>
+                            <h3><a href="{{url('bike/details/'.$bike->url)}}">{{$bike->bike_name}}</a></h3>
                         </div>
                         <div class="sectls-price-wrap">
                             <p>Price</p>
-                            <p class="sectls-price">{{$bike->price}} BDT</p>
+                            <p class="sectls-price">{{$bike->price_comma}} BDT</p>
                         </div>
 
                     </div>

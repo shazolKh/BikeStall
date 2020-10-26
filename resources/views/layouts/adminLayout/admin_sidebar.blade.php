@@ -33,13 +33,6 @@
                 <li><a href="{{url('/admin/view-accessories')}}">View</a></li>
             </ul>
         </li>
-        <li><a href="{{url('/admin/delete-specs/')}}"><i class="icon icon-tint"></i> <span>Delete Specs</span></a></li>
-        <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>News</span> <span class="label label-important">2</span></a>
-            <ul>
-                <li><a href="{{url('/admin/add-news/')}}">Add News</a></li>
-                <li><a href="{{url('/admin/view-news/')}}">View News</a></li>
-            </ul>
-        </li>
         <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Reviews</span> <span class="label label-important">2</span></a>
             <ul>
                 <li><a href="{{url('/admin/write-review/')}}">Write Review</a></li>

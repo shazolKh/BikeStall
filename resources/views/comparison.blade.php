@@ -41,8 +41,8 @@
                                 </tr>
                                 <tr>
                                     <td class="first-column">Price</td>
-                                    <td class="pro-price">{{$bikeOneDetails->price}} TK</td>
-                                    <td class="pro-price">{{$bikeTwoDetails->price}} TK</td>
+                                    <td class="pro-price">{{$bikeOneDetails->price_comma}} TK</td>
+                                    <td class="pro-price">{{$bikeTwoDetails->price_comma}} TK</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Color</td>
@@ -56,103 +56,103 @@
                                 </tr>
                                 <tr>
                                     <td class="first-column">Engine Type</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->engine_type}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->engine_type}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->engine_type}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->engine_type}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Displacement</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->displacement}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->displacement}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->engine}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->engine}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Max Power</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->max_power}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->max_power}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->max_power}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->max_power}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Max Torque</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->max_torque}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->max_torque}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->max_torque}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->max_torque}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Top Speed</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->top_speed}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->top_speed}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->top_speed}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->top_speed}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Engine(Strokes)</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->stroke}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->stroke}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->stroke}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->stroke}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Start Method</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->start_method}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->start_method}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->start_method}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->start_method}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Ignition</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->ignition}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->ignition}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->ignition}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->ignition}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Total Gears</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->gears}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->gears}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->gears}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->gears}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Clutch</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->clutch}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->clutch}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->clutch}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->clutch}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Fuel Tank Capacity</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->fuel_tank_cap}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->fuel_tank_cap}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->fuel_tank_cap}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->fuel_tank_cap}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Front Suspension</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->front_suspension}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->front_suspension}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->front_suspension}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->front_suspension}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Rear Suspension</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->back_suspension}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->back_suspension}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->back_suspension}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->back_suspension}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Anti-Lock Breaking System(ABS)</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->abs}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->abs}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->abs}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->abs}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Battery</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->battery}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->battery}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->battery}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->battery}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Head Lamp</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->head_lamp}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->head_lamp}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->head_lamp}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->head_lamp}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Turn Signal Lamp</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->turn_signal_lamp}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->turn_signal_lamp}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->turn_signal_lamp}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->turn_signal_lamp}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Pass Light</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->pass_light}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->pass_light}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->pass_light}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->pass_light}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Odometer</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->odometer}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->odometer}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->odometer}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->odometer}}</td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Speedometer</td>
-                                    <td class="pro-stock">{{$bikeOneSpecs->speedometer}}</td>
-                                    <td class="pro-stock">{{$bikeTwoSpecs->speedometer}}</td>
+                                    <td class="pro-stock">{{$bikeOneDetails->speedometer}}</td>
+                                    <td class="pro-stock">{{$bikeTwoDetails->speedometer}}</td>
                                 </tr>
 
 

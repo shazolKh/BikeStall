@@ -119,7 +119,7 @@ class FilterController extends Controller
     {
         $categories = Category::with('categories')->get();
         //$br_name_details = Brand::where(['br_name'=>$br_name])->first();
-        $bikes = Bike::orderBy('price','asc')->where([['price','<=', 100000]])->paginate(16);
+        $bikes = Bike::orderBy('price','asc')->where([['price','<', 100000]])->paginate(16);
         $brands = Brand::get();
         return view('filters.mile_filter')->with(compact( 'bikes','categories','brands'));
     }

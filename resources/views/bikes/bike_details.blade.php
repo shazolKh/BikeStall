@@ -94,9 +94,9 @@
                         <dt>Mileage</dt>
                         <dd>{{$bk_details->mileage}}</dd>
                         <dt>Max. Power</dt>
-                        <dd>{{$full_spec->max_power}}</dd>
+                        <dd>{{$bk_details->max_power}}</dd>
                         <dt>Displacement (ml)</dt>
-                        <dd>{{$full_spec->displacement}}</dd>
+                        <dd>{{$bk_details->engine}}</dd>
                         <dt><a id="prod-showprops" href="#">view all details</a></dt>
                         <dd></dd>
                     </dl>
@@ -104,11 +104,11 @@
                 <div class="prod-info">
                     <div class="prod-price-wrap">
                         <p>Price (BDT)</p>
-                        <p class="prod-price">{{$bk_details->price}}</p>
+                        <p class="prod-price">{{$bk_details->price_comma}}</p>
                     </div>
                     <div class="prod-price-wrap">
                         <p>Status</p>
-                        <p class="prod-price">{{$full_spec->status}}</p>
+                        <p class="prod-price">{{$bk_details->status}}</p>
                     </div>
 
 
@@ -142,10 +142,6 @@
                 <li data-prodtab-num="3" id="prod-reviews">
                     <a data-prodtab="#prod-tab-3" href="#">Reviews <span>{{$bk_details->Comments()->where(['status'=>'1'])->count()}}</span></a>
                 </li>
-
-                <li data-prodtab-num="2" id="prod-props">
-                    <a data-prodtab="#prod-tab-4" href="#">Disclaimer</a>
-                </li>
                 <li class="prod-tabs-addreview">Add a review</li>
 
             </ul>
@@ -154,124 +150,120 @@
                 <div class="prod-tab" id="prod-tab-2">
                     <dl class="prod-tab-props">
                         <dt>Engine Type</dt>
-                        <dd>{{$full_spec->engine_type}}</dd>
+                        <dd>{{$bk_details->engine_type}}</dd>
                         <dt>Max Torque</dt>
-                        <dd>{{$full_spec->max_torque}}</dd>
+                        <dd>{{$bk_details->max_torque}}</dd>
                         <dt>Top Speed</dt>
-                        <dd>{{$full_spec->top_speed}}</dd>
+                        <dd>{{$bk_details->top_speed}}</dd>
 
                         <dt>Bore</dt>
-                        <dd>{{$full_spec->bore}}</dd>
+                        <dd>{{$bk_details->bore}}</dd>
 
                         <dt>Strokes</dt>
-                        <dd>{{$full_spec->stroke}}</dd>
+                        <dd>{{$bk_details->stroke}}</dd>
 
                         <dt>Carburetor</dt>
-                        <dd>{{$full_spec->carburetor}}</dd>
+                        <dd>{{$bk_details->carburetor}}</dd>
 
                         <dt>Compression Ratio</dt>
-                        <dd>{{$full_spec->compression_ratio}}</dd>
+                        <dd>{{$bk_details->compression_ratio}}</dd>
 
                         <dt>Cooling System</dt>
-                        <dd>{{$full_spec->cooling}}</dd>
+                        <dd>{{$bk_details->cooling}}</dd>
 
                         <dt>Start Method</dt>
-                        <dd>{{$full_spec->start_method}}</dd>
+                        <dd>{{$bk_details->start_method}}</dd>
 
                         <dt>Ignition</dt>
-                        <dd>{{$full_spec->ignition}}</dd>
+                        <dd>{{$bk_details->ignition}}</dd>
 
                         <dt>Total Gears</dt>
-                        <dd>{{$full_spec->gears}}</dd>
+                        <dd>{{$bk_details->gears}}</dd>
 
                         <dt>Clutch</dt>
-                        <dd>{{$full_spec->clutch}}</dd>
+                        <dd>{{$bk_details->clutch}}</dd>
 
                         <dt>Overall Length</dt>
-                        <dd>{{$full_spec->overall_length}}</dd>
+                        <dd>{{$bk_details->overall_length}}</dd>
 
                         <dt>Overall Width</dt>
-                        <dd>{{$full_spec->overall_width}}</dd>
+                        <dd>{{$bk_details->overall_width}}</dd>
 
                         <dt>Overall Height</dt>
-                        <dd>{{$full_spec->overall_height}}</dd>
+                        <dd>{{$bk_details->overall_height}}</dd>
 
                         <dt>Saddle Height</dt>
-                        <dd>{{$full_spec->saddle_height}}</dd>
+                        <dd>{{$bk_details->saddle_height}}</dd>
 
                         <dt>Wheelbase</dt>
-                        <dd>{{$full_spec->wheel_base}}</dd>
+                        <dd>{{$bk_details->wheel_base}}</dd>
 
                         <dt>Ground Clearance</dt>
-                        <dd>{{$full_spec->ground_clearance}}</dd>
+                        <dd>{{$bk_details->ground_clearance}}</dd>
 
                         <dt>Fuel Tank Capacity</dt>
-                        <dd>{{$full_spec->fuel_tank_cap}}</dd>
+                        <dd>{{$bk_details->fuel_tank_cap}}</dd>
 
                         <dt>Kerb Weight</dt>
-                        <dd>{{$full_spec->kerb_weight}}</dd>
+                        <dd>{{$bk_details->kerb_weight}}</dd>
 
                         <dt>Front Suspension</dt>
-                        <dd>{{$full_spec->front_suspension}}</dd>
+                        <dd>{{$bk_details->front_suspension}}</dd>
 
                         <dt>Rear Suspension</dt>
-                        <dd>{{$full_spec->back_suspension}}</dd>
+                        <dd>{{$bk_details->back_suspension}}</dd>
 
                         <dt>Front Break</dt>
-                        <dd>{{$full_spec->front_break}}</dd>
+                        <dd>{{$bk_details->front_break}}</dd>
 
                         <dt>Rear Break</dt>
-                        <dd>{{$full_spec->rear_break}}</dd>
+                        <dd>{{$bk_details->rear_break}}</dd>
 
                         <dt>Anti-lock Braking System (ABS)</dt>
-                        <dd>{{$full_spec->abs}}</dd>
+                        <dd>{{$bk_details->abs}}</dd>
 
                         <dt>Front Tyre</dt>
-                        <dd>{{$full_spec->front_tyre}}</dd>
+                        <dd>{{$bk_details->front_tyre}}</dd>
 
                         <dt>Rear Tyre</dt>
-                        <dd>{{$full_spec->back_tyre}}</dd>
+                        <dd>{{$bk_details->back_tyre}}</dd>
 
                         <dt>Front Wheel</dt>
-                        <dd>{{$full_spec->front_wheel}}</dd>
+                        <dd>{{$bk_details->front_wheel}}</dd>
 
                         <dt>Rear Wheel</dt>
-                        <dd>{{$full_spec->rear_wheel}}</dd>
+                        <dd>{{$bk_details->rear_wheel}}</dd>
 
                         <dt>Battery</dt>
-                        <dd>{{$full_spec->battery}}</dd>
+                        <dd>{{$bk_details->battery}}</dd>
 
                         <dt>Head Lamp</dt>
-                        <dd>{{$full_spec->head_lamp}}</dd>
+                        <dd>{{$bk_details->head_lamp}}</dd>
 
                         <dt>Tail Lamp</dt>
-                        <dd>{{$full_spec->tail_lamp}}</dd>
+                        <dd>{{$bk_details->tail_lamp}}</dd>
 
                         <dt>Turn Signal Lamp</dt>
-                        <dd>{{$full_spec->turn_signal_lamp}}</dd>
+                        <dd>{{$bk_details->turn_signal_lamp}}</dd>
 
                         <dt>Pilot Lamp</dt>
-                        <dd>{{$full_spec->pilot_lamp}}</dd>
+                        <dd>{{$bk_details->pilot_lamp}}</dd>
 
                         <dt>Pass Light</dt>
-                        <dd>{{$full_spec->pass_light}}</dd>
+                        <dd>{{$bk_details->pass_light}}</dd>
 
                         <dt>Odometer</dt>
-                        <dd>{{$full_spec->odometer}}</dd>
+                        <dd>{{$bk_details->odometer}}</dd>
 
                         <dt>Speedometer</dt>
-                        <dd>{{$full_spec->speedometer}}</dd>
+                        <dd>{{$bk_details->speedometer}}</dd>
 
                         <dt>Signal Light</dt>
-                        <dd>{{$full_spec->signal_light}}</dd>
+                        <dd>{{$bk_details->signal_light}}</dd>
 
                     </dl>
                 </div>
                 <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>
-                <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-4">Disclaimer</p>
-                <div class="prod-tab prod-tab-desc" id="prod-tab-4">
-                    <p>{!! $full_spec->disclaimer !!}</p>
-                </div>
                 <div class="prod-tab prod-reviews" id="prod-tab-3">
                     <form action="{{url('user-review/'.$bk_details->id)}}" method="post" class="prod-addreview-form" id="prod-addreview-form">
                         @csrf

@@ -9,13 +9,10 @@ use App\Bike;
 use App\Brand;
 use App\Category;
 use App\Comment;
-use App\FullSpac;
 use App\Gallery;
 use App\News;
 use App\PhotoGallery;
 use App\SubCategory;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -79,7 +76,7 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $bk_details = Bike::where(['url'=>$url])->first();
-        $full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
+       //$full_spec = FullSpac::where(['bike_id'=>$bk_details->id])->first();
 
         $brand = Brand::where(['id'=>$bk_details->brand_id])->first();
 
@@ -87,7 +84,7 @@ class IndexController extends Controller
         $bk_id = Bike::where(['url'=>$url])->first();
         $com = Comment::orderBy('created_at','asc')->where(['bike_id' =>$bk_id->id, 'status'=>'1'])->get();
 
-        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'full_spec', 'brand', 'com'));
+        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'brand', 'com'));
     }
 
     /*public function reviews()
@@ -179,13 +176,12 @@ class IndexController extends Controller
         $bikeOneDetails = Bike::where(['id'=>$bikeOne])->first();
         $bikeTwoDetails = Bike::where(['id'=>$bikeTwo])->first();
 
-        $bikeOneSpecs = FullSpac::where(['bike_id'=>$bikeOneDetails->id])->first();
-        $bikeTwoSpecs = FullSpac::where(['bike_id'=>$bikeTwoDetails->id])->first();
+        //$bikeOneSpecs = FullSpac::where(['bike_id'=>$bikeOneDetails->id])->first();
+        //$bikeTwoSpecs = FullSpac::where(['bike_id'=>$bikeTwoDetails->id])->first();
 
 
         //return response()->json([[$bikeOne, $bikeTwo], [$bikeOneSpecs->bike_id, $bikeTwoSpecs->bike_id]]);
-        return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails',
-            'bikeOneSpecs', 'bikeTwoSpecs'));
+        return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails'));
     }
 
     public function accList()
