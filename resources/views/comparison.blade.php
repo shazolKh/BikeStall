@@ -13,21 +13,21 @@
                                 <tr>
                                     <td class="first-column">Images</td>
                                     <td class="product-image-title">
-                                        <a href="{{url('bike/details/'.$bikeOneDetails->bike_name)}}" class="image">
+                                        <a href="{{url('bike/details/'.$bikeOneDetails->url)}}" class="image">
                                             <img src="{{asset('public/image/images/image/medium_image/'.$bikeOneDetails->image)}}" alt=""></a>
                                     </td>
                                     <td class="product-image-title">
-                                        <a href="{{url('bike/details/'.$bikeTwoDetails->bike_name)}}" class="image">
+                                        <a href="{{url('bike/details/'.$bikeTwoDetails->url)}}" class="image">
                                             <img src="{{asset('public/image/images/image/medium_image/'.$bikeTwoDetails->image)}}" alt=""></a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="first-column">Name</td>
                                     <td class="pro-desc">
-                                        <a href="{{url('bike/details/'.$bikeOneDetails->bike_name)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
+                                        <a href="{{url('bike/details/'.$bikeOneDetails->url)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                     </td>
                                     <td class="pro-desc">
-                                        <a href="{{url('bike/details/'.$bikeTwoDetails->bike_name)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
+                                        <a href="{{url('bike/details/'.$bikeTwoDetails->url)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                     </td>
                                 </tr>
                                 <tr>

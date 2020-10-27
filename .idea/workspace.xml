@@ -147,7 +147,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Pro/Laravel/DevOps" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="xpath.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -208,7 +208,7 @@
       <workItem from="1603624379962" duration="434000" />
       <workItem from="1603637062770" duration="4059000" />
       <workItem from="1603651899432" duration="4625000" />
-      <workItem from="1603693952640" duration="12020000" />
+      <workItem from="1603693952640" duration="12733000" />
     </task>
     <task id="LOCAL-00001" summary="Edited">
       <created>1602839590748</created>
@@ -469,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603707593321</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Maybe Final 3.1.2.4">
+      <created>1603708176264</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1603708176264</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +515,8 @@
     <MESSAGE value="Maybe Final 3.1.2.1" />
     <MESSAGE value="Maybe Final 3.1.2.2" />
     <MESSAGE value="Maybe Final 3.1.2.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final 3.1.2.3" />
+    <MESSAGE value="Maybe Final 3.1.2.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final 3.1.2.4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -523,26 +531,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603569769346" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1603707591029">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1603708175235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603707591029" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603708175235" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009170413" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603705684726">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603709502316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603705684726" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603709502316" />
     <state x="152" y="18" key="SettingsEditor" timestamp="1602823715109">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603707609062">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603708181855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603707609062" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603708181855" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
