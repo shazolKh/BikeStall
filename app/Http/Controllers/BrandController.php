@@ -13,6 +13,14 @@ class BrandController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             $brand = new Brand();
+
+            $request->validate([
+                'brand_name' => 'required',
+                'description' => 'required',
+
+                'br_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
             $brand->br_name = $data['brand_name'];
             $brand->description = $data['description'];
 

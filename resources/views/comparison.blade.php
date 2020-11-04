@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Comparison</title>
+@endsection
 @section('content')
     <div class="main-content-wrap compaer-page">
         <div class="container">

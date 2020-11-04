@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Motor</title>
+    <title>Compare</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -79,14 +79,17 @@
                     </ul>
                 </li>
             @endforeach
-            <li class="has-child">
+            {{--<li class="has-child">
                 <a href="{{url('reviews/')}}">Reviews</a>
             </li>
             <li class="has-child">
                 <a href="{{url('news/')}}">News</a>
-            </li>
+            </li>--}}
             <li class="has-child">
                 <a href="{{url('/compare')}}">Compare</a>
+            </li>
+            <li class="has-child">
+                <a href="{{url('/accessories')}}">Accessories</a>
             </li>
         </ul>
     </nav>
@@ -138,7 +141,7 @@
                             <option value="{{$bike->id}}">{{$bike->bike_name}}</option>
                         @endforeach
                     </select>
-                    <select class="js-example-basic-single"name="bike2" style="width: 100%;">
+                    <select class="js-example-basic-single" name="bike2" style="width: 100%;">
                         @foreach($bikes as $bke)
                             <option value="{{$bke->id}}">{{$bke->bike_name}}</option>
                         @endforeach

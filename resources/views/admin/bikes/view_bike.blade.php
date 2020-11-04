@@ -1,69 +1,95 @@
 @extends('layouts.adminLayout.admin_design')
 
 @section('content')
-    <div id="content">
-        <div id="content-header">
-        </div>
-        <div class="container-fluid">
-            <hr>
-            <div class="row-fluid">
-                <div class="span12">
-                    @if($message = Session::get('flash_message_error'))
-                        <div class="alert alert-danger alert-block">
-                            <button type="button" class="close" data-dismiss="alert">x</button>
-                            <strong>{{$message}}</strong>
-                        </div>
-                    @endif
+    <div class="container-fluid">
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            @if($message = Session::get('flash_message_error'))
+                <div class="alert alert-danger alert-block">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong>{{$message}}</strong>
+                </div>
+            @endif
 
-                    @if($message = Session::get('flash_message_success'))
-                        <div class="alert alert-success alert-block">
-                            <button type="button" class="close" data-dismiss="alert">x</button>
-                            <strong>{{$message}}</strong>
-                        </div>
-                    @endif
-                    <div class="widget-box">
-                        <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                            <h5>ALL BIKES</h5>
-                        </div>
-
-                        <div class="widget-content nopadding">
-                            <table class="table table-bordered data-table">
-                                <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th style="color: red">Bike Name</th>
-                                    <th>URL</th>
-                                    <th>Brand</th>
-                                    <th>Price</th>
-                                    <th>Image</th>
-                                    <th>Action</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($bikes as $item)
-                                        <tr class="gradeX">
-                                            <td>{{$item->ct_name}}</td>
-                                            <td style="color: red">{{$item->bike_name}}</td>
-                                            <td>{{$item->url}}</td>
-                                            <td>{{$item->br_name}}</td>
-                                            <td>{{$item->price_comma}}</td>
-                                            <td>
-                                                @if(!empty($item->image))
-                                                    <img src="{{asset('public/image/images/image/small_image/'.$item->image)}}" style="width: 50px">|
-                                                    <img src="{{asset('public/image/images/image1/small_image/'.$item->image1)}}" style="width: 50px">|
-                                                    <img src="{{asset('public/image/images/image2/small_image/'.$item->image2)}}" style="width: 50px">|
-                                                    <img src="{{asset('public/image/images/image3/small_image/'.$item->image3)}}" style="width: 50px">
-                                                @endif
-                                            </td>
-                                            <td class="center">
-                                                <a href="#myModal2{{$item->id}}" data-toggle="modal" class="btn btn-primary btn-mini">Details</a>
-                                                <a href="{{url('admin/edit-bike/'.$item->id)}}" class="btn btn-primary btn-mini">Edit</a>
-                                                <a id="delCat" href="{{url('admin/delete-bike/'.$item->id)}}"  class="btn btn-danger btn-mini">Delete</a>
-                                                <a href="{{$item->youtube_link}}" class="btn btn-success btn-mini" data-lity>Video</a>
-                                            </td>
-                                            <div id="myModal2{{$item->id}}" class="modal hide">
+            @if($message = Session::get('flash_message_success'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <strong>{{$message}}</strong>
+                </div>
+            @endif
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">ALL BIKES</h6>
+            </div>
+            <div class="card-body">
+                <a href="{{url('admin/add-bike')}}" class="btn btn-success btn-icon-split btn-sm">
+                     <span class="icon text-white-50">
+                         <i class="fas fa-plus-circle"></i>
+                     </span>
+                    <span class="text">ADD</span>
+                </a><br><br>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th style="color: red">Bike Name</th>
+                            <th>URL</th>
+                            <th>Brand</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($bikes as $item)
+                                <tr class="gradeX">
+                                    <td>{{$item->ct_name}}</td>
+                                    <td style="color: red">{{$item->bike_name}}</td>
+                                    <td>{{$item->url}}</td>
+                                    <td>{{$item->br_name}}</td>
+                                    <td>{{$item->price_comma}}</td>
+                                    <td>
+                                        @if(!empty($item->image))
+                                            <img src="{{asset('public/image/images/image/small_image/'.$item->image)}}" style="width: 50px" data-lity>|
+                                            <img src="{{asset('public/image/images/image1/small_image/'.$item->image1)}}" style="width: 50px" data-lity>|
+                                            <img src="{{asset('public/image/images/image2/small_image/'.$item->image2)}}" style="width: 50px" data-lity>|
+                                            <img src="{{asset('public/image/images/image3/small_image/'.$item->image3)}}" style="width: 50px" data-lity>
+                                        @endif
+                                    </td>
+                                    <td class="center">
+                                        <a href="#" class="btn btn-info btn-icon-split btn-sm" data-toggle="modal" data-target="#exampleModal{{$item->id}}">
+                                            <span class="icon text-white-50">
+                                                 <i class="fas fa-info-circle"></i>
+                                            </span>
+                                            <span class="text">Details</span>
+                                        </a>
+                                        <a href="{{url('admin/edit-bike/'.$item->id)}}" class="btn btn-warning btn-icon-split btn-sm">
+                                            <span class="icon text-white-50">
+                                              <i class="fas fa-exclamation-triangle"></i>
+                                            </span>
+                                            <span class="text">Edit</span>
+                                        </a>
+                                        <a id="delCat" href="{{url('admin/delete-bike/'.$item->id)}}"  class="btn btn-danger btn-icon-split btn-sm">
+                                            <span class="icon text-white-50">
+                                              <i class="fas fa-trash"></i>
+                                            </span>
+                                            <span class="text">Delete</span>
+                                        </a>
+                                        <a href="{{$item->youtube_link}}" class="btn btn-primary btn-icon-split btn-sm">
+                                            <span class="icon text-white-50">
+                                              <i class="fas fa-play"></i>
+                                            </span>
+                                            <span class="text">Video</span>
+                                        </a>
+                                    </td>
+                                    <div class="modal fade" id="exampleModal{{$item->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h3>{{$item->bike_name}} Details</h3>
+                                                    <h5 class="modal-title" id="exampleModalLabel">{{$item->bike_name}} Details</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <p style="color: red">Bike Name: {{$item->bike_name}}</p>
@@ -107,33 +133,18 @@
                                                     <p>Front Suspension: {{$item->front_suspension}}</p>
                                                     <p>Rear Suspension: {{$item->back_suspension}}</p>
                                                     <p>Front Break: {{$item->front_break}}</p>
-                                                    <p>Rear Break: {{$item->rear_break}}</p>
-                                                    <p>ABS: {{$item->abs}}</p>
-                                                    <p>Front Tyre: {{$item->front_tyre}}</p>
-                                                    <p>Rear Tyre: {{$item->back_tyre}}</p>
-                                                    <p>Front Wheel: {{$item->front_wheel}}</p>
-                                                    <p>Rear Wheel: {{$item->rear_wheel}}</p>
-                                                    <h6 style="color: orangered">Electronics</h6>
-                                                    <p>Battery: {{$item->battery}}</p>
-                                                    <p>Head Lamp: {{$item->head_lamp}}</p>
-                                                    <p>Tail Lamp: {{$item->tail_lamp}}</p>
-                                                    <p>Turn Signal Lamp: {{$item->turn_signal_lamp}}</p>
-                                                    <p>Pilot Lamp: {{$item->pilot_lamp}}</p>
-                                                    <h6 style="color: orangered">Others</h6>
-                                                    <p>Pass Light: {{$item->pass_light}}</p>
-                                                    <p>Odometer: {{$item->odometer}}</p>
-                                                    <p>Speedometer: {{$item->speedometer}}</p>
-                                                    <p>Signal Light: {{$item->signal_light}}</p>
-                                                    <p>Status: {{$item->status}}</p>
+                                                    <p>Rear Break: {{$item->rear_break}}</p><p>ABS: {{$item->abs}}</p><p>Front Tyre: {{$item->front_tyre}}</p><p>Rear Tyre: {{$item->back_tyre}}</p><p>Front Wheel: {{$item->front_wheel}}</p><p>Rear Wheel: {{$item->rear_wheel}}</p><h6 style="color: orangered">Electronics</h6><p>Battery: {{$item->battery}}</p><p>Head Lamp: {{$item->head_lamp}}</p><p>Tail Lamp: {{$item->tail_lamp}}</p><p>Turn Signal Lamp: {{$item->turn_signal_lamp}}</p><p>Pilot Lamp: {{$item->pilot_lamp}}</p><h6 style="color: orangered">Others</h6><p>Pass Light: {{$item->pass_light}}</p><p>Odometer: {{$item->odometer}}</p><p>Speedometer: {{$item->speedometer}}</p><p>Signal Light: {{$item->signal_light}}</p><p>Status: {{$item->status}}</p>
                                                 </div>
-                                                <div class="modal-footer"><a data-dismiss="modal" class="btn btn-inverse" href="#">Close</a> </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                                                </div>
                                             </div>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

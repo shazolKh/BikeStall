@@ -13,6 +13,15 @@ class CategoryController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             $category = new Category();
+
+            $request->validate([
+                'category_name' => 'required',
+                'description' => 'required',
+
+                'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
+
             $category->ct_name = $data['category_name'];
             //$category->parent_id = $data['parent_id'];
             $category->description = $data['description'];
@@ -46,6 +55,13 @@ class CategoryController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
+
+            $request->validate([
+                'category_name' => 'required',
+                'description' => 'required',
+
+                //'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
 
             //Update Image
             $image_temp = $request->file('cat_image');

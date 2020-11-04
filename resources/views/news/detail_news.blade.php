@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>News</title>
+@endsection
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="Get The Latest Bike News At BikeStall.">

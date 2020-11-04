@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>About us</title>
+@endsection
 
 @section('content')
     <div class="b-crumbs-wrap">

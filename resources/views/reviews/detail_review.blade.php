@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Reviews</title>
+@endsection
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">

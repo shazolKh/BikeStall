@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\About;
+use App\Logo;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -13,6 +14,12 @@ class AboutController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             $news = new About();
+
+            $request->validate([
+                'news_title' => 'required',
+                'description' => 'required',
+                'news_image' => 'required | mimes:jpeg,jpg,png, PNG'
+            ]);
 
             $news->title = $data['news_title'];
             $news->details = $data['description'];
@@ -28,7 +35,7 @@ class AboutController extends Controller
             }
             //return response()->json($news);
             $news->save();
-            return redirect()->back()->with('flash_message_success', 'News added successfully');
+            return redirect()->back()->with('flash_message_success', 'About added successfully');
         }
         return view('admin.about.add_about');
     }
@@ -43,6 +50,13 @@ class AboutController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
+
+            $request->validate([
+                'news_title' => 'required',
+                'description' => 'required',
+                //'news_image' => 'mimes:jpeg,jpg,png, PNG'
+            ]);
+
             //Update Image
             $image_temp = $request->file('news_image');
             if ($image_temp){
@@ -57,7 +71,7 @@ class AboutController extends Controller
             }
             About::where(['id'=>$id])->update(['title'=>$data['news_title'], 'details'=>$data['description'],
                 'image'=>$filename]);
-            return redirect('/admin/view-about')->with('flash_message_success', 'News Updated Updated successfully');
+            return redirect('/admin/view-about')->with('flash_message_success', 'Information Updated successfully');
 
         }
         //get news details

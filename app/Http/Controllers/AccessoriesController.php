@@ -14,6 +14,16 @@ class AccessoriesController extends Controller
             $data = $request->all();
             $acc = new Accessories();
 
+            $request->validate([
+                'name' => 'required',
+                'url' => 'required',
+                'price' => 'required',
+                'description' => 'required',
+                'image' => 'required | mimes:jpeg,jpg,png, PNG',
+                'image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                'image2' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
             $acc->name = $data['name'];
             $acc->url = $data['url'];
             $acc->price = $data['price'];
@@ -65,6 +75,16 @@ class AccessoriesController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
+
+            $request->validate([
+                'name' => 'required',
+                'url' => 'required',
+                'price' => 'required',
+                'description' => 'required',
+                /*'image' => 'mimes:jpeg,jpg,png, PNG',
+                'image1' => 'mimes:jpeg,jpg,png, PNG',
+                'image2' => 'mimes:jpeg,jpg,png, PNG',*/
+            ]);
 
             //Update Image
             $image_temp = $request->file('image');

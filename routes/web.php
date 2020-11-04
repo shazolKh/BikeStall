@@ -26,7 +26,7 @@ Route::get('category/bikes/{ct_name}','BikeController@bikes');
 Route::get('subcategory/bike/{sub_ct_name}','IndexController@sub_cat_Bikes');
 
 Route::get('/brands/{br_name}','IndexController@bike_br');
-Route::get('bike/details/{url}', 'IndexController@bikeDetails');
+Route::get('/_{url}', 'IndexController@bikeDetails')->name('bike.details');
 
 //Reviews
 /*Route::get('reviews/', 'IndexController@reviews');*/
@@ -72,13 +72,17 @@ Route::get('/filter/price/3lacs-to-4lacs', 'FilterController@belowFour');
 Route::get('/filter/price/above-4lacs', 'FilterController@aboveFive');
 
 
-Route::get('/search', 'IndexController@search');
+Route::get('/search', 'FilterController@search')->name('search');
 Route::match(['get', 'post'], '/compare', 'IndexController@compare');
 Route::get('comparison', 'IndexController@comparison');
 
 // Accessories
 Route::get('/accessories', 'IndexController@accList');
 Route::get('accessories/details/{url}', 'IndexController@accDetails');
+
+//ShowRoom
+Route::get('showroom', 'IndexController@showroom')->name('all.showroom');
+Route::get('showroom/{id}', 'IndexController@showroomDetails')->name('show.details');
 
 
 
@@ -160,12 +164,12 @@ Route::group(['middleware' => ['auth']], function () {
     //Gallery
     Route::get('/admin/image-gallery', 'GalleryController@index');
     Route::post('/admin/image-gallery', 'GalleryController@upload');
-    Route::delete('/admin/image-gallery/{id}', 'GalleryController@destroy');
+    Route::get('/admin/image-gallery/{id}', 'GalleryController@destroy');
 
     //Photo gallery
     Route::get('/admin/photo-gallery', 'NewsController@photoIndex');
     Route::post('/admin/photo-gallery', 'NewsController@photoUpload');
-    Route::delete('/admin/photo-gallery/{id}', 'NewsController@photoDestroy');
+    Route::get('/admin/photo-gallery/{id}', 'NewsController@photoDestroy');
 
     //Comment
     Route::get('/admin/viewers-reviews', 'CommentController@showComments');
@@ -180,6 +184,23 @@ Route::group(['middleware' => ['auth']], function () {
 
     //Comments/User Review
     Route::post('user-review/{id}', 'CommentController@storeComment');
+
+    Route::match(['get', 'post'], 'add-logo', 'LogoController@addLogo')->name('add.logo');
+    Route::get('manage-logo', 'LogoController@manageLogo')->name('manage.logo');
+    Route::match(['get', 'post'],'edit-logo/{id}', 'LogoController@editLogo')->name('edit.logo');
+    Route::get('delete-logo/{id}', 'LogoController@deleteLogo')->name('delete.logo');
+
+    //Showroom
+    Route::match(['get', 'post'], 'add-showroom', 'ShowroomController@addShowroom')
+        ->name('add.showroom');
+    Route::get('manage-showroom', 'ShowroomController@manageShowroom')
+        ->name('manage.showroom');
+    Route::match(['get', 'post'], 'edit-showroom/{id}', 'ShowroomController@editShowroom')
+        ->name('edit.showroom');
+    Route::get('delete-showroom-image', 'ShowroomController@deleteShowroomImage')
+        ->name('delete.showroom.image');
+    Route::get('delete-showroom', 'ShowroomController@deleteShowroom')
+        ->name('delete.showroom');
 
 
 });

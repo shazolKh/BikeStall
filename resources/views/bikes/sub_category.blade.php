@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>BikeStall</title>
+@endsection
 
 @section('content')
     <div class="cont maincont">
@@ -47,13 +50,13 @@
         <div class="section-list">
             @foreach($allBikes as $bike)
                 <div class="sectls">
-                    <a href="{{url('bike/details/'.$bike->url)}}" class="sectls-img">
+                    <a href="{{route('bike.details', [$bike->url])}}" class="sectls-img">
                         <img src="{{asset('public/image/images/image/large_image/'.$bike->image)}}" alt="">
                     </a>
                     <div class="sectls-cont">
                         <div class="sectls-ttl-wrap">
                             <p>{{$bike->bike_model}}</a></p>
-                            <h3><a href="{{url('bike/details/'.$bike->url)}}">{{$bike->bike_name}}</a></h3>
+                            <h3><a href="{{route('bike.details', [$bike->url])}}">{{$bike->bike_name}}</a></h3>
                         </div>
                         <div class="sectls-price-wrap">
                             <p>Price</p>
@@ -73,34 +76,10 @@
     </div>
     <!-- Category Items - end -->
 
-    <!-- Pagination -->
+    {{--<!-- Pagination -->
     <ul class="pager">
         <li>
-            <a href="#">1</a>
+
         </li>
-        <li class="dots">
-            <a href="#">...</a>
-        </li>
-        <li>
-            <a href="#">1</a>
-        </li>
-        <li class="active">
-            <a href="#">2</a>
-        </li>
-        <li>
-            <a href="#">3</a>
-        </li>
-        <li>
-            <a href="#">4</a>
-        </li>
-        <li>
-            <a href="#">5</a>
-        </li>
-        <li class="dots">
-            <a href="#">...</a>
-        </li>
-        <li>
-            <a href="#">12</a>
-        </li>
-    </ul>
+    </ul>--}}
 @endsection

@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>BikeStall</title>
+@endsection
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
@@ -175,7 +178,7 @@
 		<div class="populars-list">
             @foreach ($bikes as $bk)
             <div class="popular">
-				<a href="{{url('bike/details/'.$bk->url)}}" class="popular-link">
+				<a href="{{route('bike.details', [$bk->url])}}" class="popular-link">
 					<p class="popular-img">
 						<img src="{{asset('public/image/images/image/large_image/'.$bk->image)}}" alt="">
 					</p>
@@ -257,21 +260,4 @@
         <span class="popular-line2"></span>
     </div>
 </div>
-
-
-<!-- Frontpage Article -->
-{{--<div class="botarticle-wrap">
-	<div class="cont botarticle">
-		<div class="botarticle-cont">
-			<h3>Kings of the dirt</h3>
-			<p>Best motocross gear</p>
-			<a href="{{url('news/')}}" class="botarticle-more">More News</a>
-		</div>
-		<a href="{{url('news/')}}" class="botarticle-img">
-			<img src="{{asset('public/frontend/img/article1.jpg')}}" alt="">
-		</a>
-	</div>
-</div>--}}
-
-
 @endsection

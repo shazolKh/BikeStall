@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>BikeStall Gallery</title>
+@endsection
 
 @section('content')
     <div class="b-crumbs-wrap">

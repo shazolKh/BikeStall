@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Accessories</title>
+@endsection
 
 @section('content')
     <div class="populars-wrap">

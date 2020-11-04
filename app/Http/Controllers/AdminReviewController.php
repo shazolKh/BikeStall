@@ -14,6 +14,16 @@ class AdminReviewController extends Controller
             $data = $request->all();
             $review = new AdminReview();
 
+            $request->validate([
+                'rvw_title' => 'required',
+                'description' => 'required',
+                'writer' => 'required',
+                //'description' => 'required',
+                'rvw_image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                'rvw_image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                'rvw_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
             $review->title = $data['rvw_title'];
             $review->details = $data['description'];
             $review->written_by = $data['writer'];
@@ -63,6 +73,16 @@ class AdminReviewController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
 
+            $request->validate([
+                'rvw_title' => 'required',
+                'description' => 'required',
+                'writer' => 'required',
+                //'description' => 'required',
+                /*'rvw_image1' => 'mimes:jpeg,jpg,png, PNG',
+                'rvw_image2' => 'mimes:jpeg,jpg,png, PNG',
+                'rvw_image3' => 'mimes:jpeg,jpg,png, PNG',*/
+            ]);
+
             //Update Image
             $image_temp1 = $request->file('review_image1');
             if ($image_temp1){
@@ -104,7 +124,7 @@ class AdminReviewController extends Controller
             AdminReview::where(['id'=>$id])->update(['title'=>$data['title'], 'written_by'=>$data['writer'],
                 'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 
-            return redirect('/admin/all-reviews/')->with('flash_message_success', 'News Updated Updated successfully');
+            return redirect('/admin/all-reviews/')->with('flash_message_success', 'Info Updated successfully');
 
         }
         //get Review details

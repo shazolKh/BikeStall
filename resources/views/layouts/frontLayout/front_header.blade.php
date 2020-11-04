@@ -7,7 +7,7 @@
 
         <!-- Search Form -->
         <a href="#" class="header-searchbtn" id="header-searchbtn"></a>
-        <form action="{{url('/search')}}" method="GET" class="header-search" id="header-search">
+        <form action="{{route('search')}}" method="GET" class="header-search" id="header-search">
             <input type="text" placeholder="Search..." name="query" id="query">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
@@ -18,7 +18,7 @@
 
 	<!-- Logotype -->
 	<p class="header-logo">
-		<a href="{{url('/')}}"><img src="{{('public/frontend/img/logo.png')}}" alt=""></a>
+		<a href="{{url('/')}}"><img src="{{asset('public/image/logo/'.$logo->image)}}" alt=""></a>
 	</p>
 
 	<!-- Navmenu - start -->

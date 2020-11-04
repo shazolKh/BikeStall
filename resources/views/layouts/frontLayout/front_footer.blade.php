@@ -12,8 +12,8 @@
 		<div class="footer-menu">
 			<p>News And Reviews</p>
 			<ul>
-				<li><a href="{{url('news/')}}">News</a></li>
-				<li><a href="{{url('reviews/')}}">Review</a></li>
+				<li><a href="{{route('all.showroom')}}">Showroom</a></li>
+				{{--<li><a href="{{url('reviews/')}}">Review</a></li>--}}
 				<li>
 					<a href="{{url('photo-gallery/')}}">Gallery</a>
 				</li>

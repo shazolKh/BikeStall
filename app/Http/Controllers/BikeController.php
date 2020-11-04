@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Logo;
 use App\SubCategory;
 use Illuminate\Http\Request;
 use App\Bike;
@@ -18,6 +19,18 @@ class BikeController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             $bike = new Bike;
+
+            $request->validate([
+                'scategory_id' => 'required',
+                'brand_id' => 'required',
+                'bike_name' => 'required',
+                'url' => 'required',
+
+                'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
+                'bike_image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                'bike_image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                'bike_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
 
             if (empty($data['category_id'])){
                 return redirect()->back()->with('flash_message_error', 'Category not found!!');
@@ -352,7 +365,7 @@ class BikeController extends Controller
         unlink(public_path('image/images/image/medium_image/'.$image));
         unlink(public_path('image/images/image/small_image/'.$image));
         Bike::where(['id'=>$id])->update(['image'=>'']);
-        return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
+        return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
 
     public function deleteImage1($id=null)
@@ -363,7 +376,7 @@ class BikeController extends Controller
         unlink(public_path('image/images/image1/medium_image/'.$image1));
         unlink(public_path('image/images/image1/small_image/'.$image1));
         Bike::where(['id'=>$id])->update(['image1'=>'']);
-        return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
+        return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
     public function deleteImage2($id=null)
     {
@@ -373,7 +386,7 @@ class BikeController extends Controller
         unlink(public_path('image/images/image2/medium_image/'.$image2));
         unlink(public_path('image/images/image2/small_image/'.$image2));
         Bike::where(['id'=>$id])->update(['image2'=>'']);
-        return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
+        return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
     public function deleteImage3($id=null)
     {
@@ -383,7 +396,7 @@ class BikeController extends Controller
         unlink(public_path('image/images/image3/medium_image/'.$image3));
         unlink(public_path('image/images/image3/small_image/'.$image3));
         Bike::where(['id'=>$id])->update(['image3'=>'']);
-        return redirect()->back()->with('flash_message_success', 'Bike Image 1 has been Deleted');
+        return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
 
     public function deleteBike($id=null)
@@ -412,7 +425,7 @@ class BikeController extends Controller
 
         FullSpac::where(['bike_id'=>$id])->delete();
         Bike::where(['id'=>$id])->delete();
-        return redirect()->back()->with('flash_message_error', 'Bike item has been Deleted');
+        return redirect()->back()->with('flash_message_error', 'Bike has been Deleted');
     }
 
     //Frontend-------
@@ -423,7 +436,8 @@ class BikeController extends Controller
         $categoryDetails = Category::where(['ct_name'=>$ct_name])->first();
         $allBikes = Bike::where(['category_id'=>$categoryDetails->id])->paginate(16);
         $brands = Brand::get();
-        return view('bikes.category')->with(compact('categoryDetails', 'allBikes','categories','brands'));
+        $logo = Logo::first();
+        return view('bikes.category')->with(compact('categoryDetails', 'allBikes','categories','brands', 'logo'));
     }
 
 }

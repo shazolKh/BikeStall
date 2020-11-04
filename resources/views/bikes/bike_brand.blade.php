@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Brand</title>
+@endsection
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews  & Showrooms - BikeStall">
@@ -69,13 +72,13 @@
         <div class="section-list">
             @foreach($bikes as $bike)
                 <div class="sectls">
-                    <a href="{{url('bike/details/'.$bike->url)}}" class="sectls-img">
+                    <a href="{{route('bike.details', [$bike->url])}}" class="sectls-img">
                         <img src="{{asset('public/image/images/image/large_image/'.$bike->image)}}" alt="">
                     </a>
                     <div class="sectls-cont">
                         <div class="sectls-ttl-wrap">
                             <p>{{$bike->bike_model}}</p>
-                            <h3><a href="{{url('bike/details/'.$bike->url)}}">{{$bike->bike_name}}</a></h3>
+                            <h3><a href="{{route('bike.details', [$bike->url])}}">{{$bike->bike_name}}</a></h3>
                         </div>
                         <div class="sectls-price-wrap">
                             <p>Price</p>

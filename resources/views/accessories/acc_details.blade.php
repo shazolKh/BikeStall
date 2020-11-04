@@ -1,5 +1,9 @@
 @extends('layouts.frontLayout.front_design')
 
+@section('title')
+    <title>Accessories {{$data->name}}</title>
+@endsection
+
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="{{$data->name}} Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
@@ -85,169 +89,7 @@
                 </div>
             </div>
             <!-- Product Content - end -->
-
         </div>
-        <!-- Product - end -->
-
-        <!-- Product Tabs - start -->
-        {{--<div class="prod-tabs-wrap">
-            <ul class="prod-tabs">
-                <li data-prodtab-num="2" id="prod-props">
-                    <a data-prodtab="#prod-tab-2" href="#">Features</a>
-                </li>
-                <li data-prodtab-num="3" id="prod-reviews">
-                    <a data-prodtab="#prod-tab-3" href="#">Reviews <span>{{$bk_details->Comments()->where(['status'=>'1'])->count()}}</span></a>
-                </li>
-
-                <li data-prodtab-num="2" id="prod-props">
-                    <a data-prodtab="#prod-tab-4" href="#">Disclaimer</a>
-                </li>
-                <li class="prod-tabs-addreview">Add a review</li>
-
-            </ul>
-            <div class="prod-tab-cont">
-                <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
-                <div class="prod-tab" id="prod-tab-2">
-                    <dl class="prod-tab-props">
-                        <dt>Engine Type</dt>
-                        <dd>{{$full_spec->engine_type}}</dd>
-                        <dt>Max Torque</dt>
-                        <dd>{{$full_spec->max_torque}}</dd>
-                        <dt>Top Speed</dt>
-                        <dd>{{$full_spec->top_speed}}</dd>
-
-                        <dt>Bore</dt>
-                        <dd>{{$full_spec->bore}}</dd>
-
-                        <dt>Strokes</dt>
-                        <dd>{{$full_spec->stroke}}</dd>
-
-                        <dt>Carburetor</dt>
-                        <dd>{{$full_spec->carburetor}}</dd>
-
-                        <dt>Compression Ratio</dt>
-                        <dd>{{$full_spec->compression_ratio}}</dd>
-
-                        <dt>Cooling System</dt>
-                        <dd>{{$full_spec->cooling}}</dd>
-
-                        <dt>Start Method</dt>
-                        <dd>{{$full_spec->start_method}}</dd>
-
-                        <dt>Ignition</dt>
-                        <dd>{{$full_spec->ignition}}</dd>
-
-                        <dt>Total Gears</dt>
-                        <dd>{{$full_spec->gears}}</dd>
-
-                        <dt>Clutch</dt>
-                        <dd>{{$full_spec->clutch}}</dd>
-
-                        <dt>Overall Length</dt>
-                        <dd>{{$full_spec->overall_length}}</dd>
-
-                        <dt>Overall Width</dt>
-                        <dd>{{$full_spec->overall_width}}</dd>
-
-                        <dt>Overall Height</dt>
-                        <dd>{{$full_spec->overall_height}}</dd>
-
-                        <dt>Saddle Height</dt>
-                        <dd>{{$full_spec->saddle_height}}</dd>
-
-                        <dt>Wheelbase</dt>
-                        <dd>{{$full_spec->wheel_base}}</dd>
-
-                        <dt>Ground Clearance</dt>
-                        <dd>{{$full_spec->ground_clearance}}</dd>
-
-                        <dt>Fuel Tank Capacity</dt>
-                        <dd>{{$full_spec->fuel_tank_cap}}</dd>
-
-                        <dt>Kerb Weight</dt>
-                        <dd>{{$full_spec->kerb_weight}}</dd>
-
-                        <dt>Front Suspension</dt>
-                        <dd>{{$full_spec->front_suspension}}</dd>
-
-                        <dt>Rear Suspension</dt>
-                        <dd>{{$full_spec->back_suspension}}</dd>
-
-                        <dt>Front Break</dt>
-                        <dd>{{$full_spec->front_break}}</dd>
-
-                        <dt>Rear Break</dt>
-                        <dd>{{$full_spec->rear_break}}</dd>
-
-                        <dt>Anti-lock Braking System (ABS)</dt>
-                        <dd>{{$full_spec->abs}}</dd>
-
-                        <dt>Front Tyre</dt>
-                        <dd>{{$full_spec->front_tyre}}</dd>
-
-                        <dt>Rear Tyre</dt>
-                        <dd>{{$full_spec->back_tyre}}</dd>
-
-                        <dt>Front Wheel</dt>
-                        <dd>{{$full_spec->front_wheel}}</dd>
-
-                        <dt>Rear Wheel</dt>
-                        <dd>{{$full_spec->rear_wheel}}</dd>
-
-                        <dt>Battery</dt>
-                        <dd>{{$full_spec->battery}}</dd>
-
-                        <dt>Head Lamp</dt>
-                        <dd>{{$full_spec->head_lamp}}</dd>
-
-                        <dt>Tail Lamp</dt>
-                        <dd>{{$full_spec->tail_lamp}}</dd>
-
-                        <dt>Turn Signal Lamp</dt>
-                        <dd>{{$full_spec->turn_signal_lamp}}</dd>
-
-                        <dt>Pilot Lamp</dt>
-                        <dd>{{$full_spec->pilot_lamp}}</dd>
-
-                        <dt>Pass Light</dt>
-                        <dd>{{$full_spec->pass_light}}</dd>
-
-                        <dt>Odometer</dt>
-                        <dd>{{$full_spec->odometer}}</dd>
-
-                        <dt>Speedometer</dt>
-                        <dd>{{$full_spec->speedometer}}</dd>
-
-                        <dt>Signal Light</dt>
-                        <dd>{{$full_spec->signal_light}}</dd>
-
-                    </dl>
-                </div>
-                <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>
-                <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-4">Disclaimer</p>
-                <div class="prod-tab prod-tab-desc" id="prod-tab-4">
-                    <p>{!! $full_spec->disclaimer !!}</p>
-                </div>
-                <div class="prod-tab prod-reviews" id="prod-tab-3">
-                    <form action="{{url('user-review/'.$bk_details->id)}}" method="post" class="prod-addreview-form" id="prod-addreview-form">
-                        @csrf
-                        <p class="prod-tab-addreview">Add Your Review</p>
-                        <input data-required="text" type="text" name="name" placeholder="Name">
-                        <textarea name="comment" placeholder="Comment/Review"></textarea>
-                        <input type="submit" value="Add Review">
-                    </form>
-
-                    @foreach($com as $comment)
-                        <div class="prod-review">
-                            <h3>{{$comment->writer}}</h3>
-                            <p>{{$comment->comment}}</p>
-                        </div>
-                    @endforeach
-                </div>
-                <p class="prod-tabs-addreview prod-tabs-addreview-mob">Add a review</p>
-            </div>
-        </div>--}}
-        <!-- Product Tabs - end -->
 
     </div>
 @endsection

@@ -14,6 +14,16 @@ class SubCategoryController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
             $subcategory = new SubCategory();
+
+            $request->validate([
+                'category_name' => 'required',
+                'parent_id' => 'required',
+                'description' => 'required',
+
+                'scat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
+
             $subcategory->sub_ct_name = $data['category_name'];
             $subcategory->category_id = $data['parent_id'];
             $subcategory->description = $data['description'];
@@ -30,7 +40,7 @@ class SubCategoryController extends Controller
                 $subcategory->image = $filename;
             }
             $subcategory->save();
-            return redirect()->back()->with('flash_message_success', 'Category Added Successfully!!');
+            return redirect()->back()->with('flash_message_success', 'Sub-Category Added Successfully!!');
         }
 
         $levels = Category::get();
@@ -53,6 +63,14 @@ class SubCategoryController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
+
+            $request->validate([
+                'category_name' => 'required',
+                'parent_id' => 'required',
+                'description' => 'required',
+
+                //'scat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
 
             //Update Image
             $image_temp = $request->file('scat_image');
@@ -84,7 +102,7 @@ class SubCategoryController extends Controller
             $image = $news->image;
             unlink(public_path('image/scat_image/'.$image));
             SubCategory::where(['id'=>$id])->delete();
-            return redirect()->back()->with('flash_message_error', 'Category Deleted Successfully!!');
+            return redirect()->back()->with('flash_message_error', 'Information Deleted Successfully!!');
         }
     }
 

@@ -16,6 +16,13 @@ class NewsController extends Controller
             $data = $request->all();
             $news = new News();
 
+            $request->validate([
+                'news_title' => 'required',
+                'description' => 'required',
+
+                'news_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
             $news->headline = $data['news_title'];
             $news->article = $data['description'];
 
@@ -45,6 +52,13 @@ class NewsController extends Controller
     {
         if ($request->isMethod('post')){
             $data = $request->all();
+
+            $request->validate([
+                'news_title' => 'required',
+                'description' => 'required',
+
+                //'news_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
             //Update Image
             $image_temp = $request->file('news_image');
             if ($image_temp){
@@ -59,7 +73,7 @@ class NewsController extends Controller
             }
             News::where(['id'=>$id])->update(['headline'=>$data['news_title'], 'article'=>$data['description'],
                 'image'=>$filename]);
-            return redirect('/admin/view-news')->with('flash_message_success', 'News Updated Updated successfully');
+            return redirect('/admin/view-news')->with('flash_message_success', 'News Updated successfully');
 
         }
         //get news details

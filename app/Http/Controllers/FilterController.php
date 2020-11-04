@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Bike;
 use App\Brand;
 use App\Category;
+use App\Logo;
 use Illuminate\Http\Request;
 
 class FilterController extends Controller
@@ -160,4 +161,14 @@ class FilterController extends Controller
         return view('filters.mile_filter')->with(compact( 'bikes','categories','brands'));
     }
 
+    public function search()
+    {
+        $categories = Category::with('categories')->get();
+        $brands = Brand::all();
+        $text = $_GET['query'];
+        $bikes = Bike::where('bike_name', 'LIKE', '%'.$text.'%')->get();
+        $logo = Logo::first();
+
+        return view('bikes.search')->with(compact('categories', 'bikes', 'brands', 'logo'));
+    }
 }

@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Bike Details</title>
+@endsection
 
 @section('meta')
     <!-- Primary Meta Tags -->
