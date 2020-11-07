@@ -125,7 +125,7 @@
             <form method="get" action="{{url('comparison/')}}">
                 @csrf
                 <div class="botarticle-cont">
-                    <select class="js-example-basic-single text-justify"name="bike1" style="width: 100%;">
+                    <select class="js-example-basic-single text-justify" name="bike1" style="width: 100%;">
                         @foreach($bikes as $bike)
                             <option value="{{$bike->id}}">{{$bike->bike_name}}</option>
                         @endforeach
