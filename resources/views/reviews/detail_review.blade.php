@@ -29,41 +29,36 @@
 @endsection
 
 @section('content')
-    <div class="b-crumbs-wrap b-crumbs-wrap2">
-        <div class="cont b-crumbs">
-        </div>
-    </div>
 
     <div class="maincont">
 
-        <!-- Post Slider -->
-        <div class="post-slider">
-            <ul class="slides">
-                <li>
-                    <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="">
-                </li>
-                <li>
-                    <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="">
-                </li>
-                <li>
-                    <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="">
-                </li>
-            </ul>
-        </div>
-
         <div class="cont">
-
             <!-- Post Content - start -->
             <div class="post">
                 <div class="post-info">
-                    <p>{{$detail_review->written_by}}</p>
+                    <a href="#">Reviews</a>
                     <h1>{{$detail_review->title}}</h1>
+                    <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_review->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_review->created_at)->format('M')}}</time>
                 </div>
+
+                <div class="post-video">
+                    <div class="post-slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="">
+                            </li>
+                            <li>
+                                <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="">
+                            </li>
+                            <li>
+                                <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
                 <p>{!! $detail_review->details !!}</p>
-
             </div>
-            <!-- Post Content - end -->
-
         </div>
     </div>
 @endsection

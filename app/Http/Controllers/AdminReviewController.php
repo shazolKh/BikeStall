@@ -121,7 +121,7 @@ class AdminReviewController extends Controller
             }else{
                 $filename3 = $data['current_image3'];
             }
-            AdminReview::where(['id'=>$id])->update(['title'=>$data['title'], 'written_by'=>$data['writer'],
+            AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'], 'written_by'=>$data['writer'],
                 'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 
             return redirect('/admin/all-reviews/')->with('flash_message_success', 'Info Updated successfully');

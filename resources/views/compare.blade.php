@@ -14,14 +14,15 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="{{asset('public/select2-4.0.13/dist/css/select2.min.css')}}" rel="stylesheet" />
     <script src="{{asset('public/select2-4.0.13/dist/js/select2.min.js')}}"></script>
-    <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/zabuto_calendar.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/flexslider.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.skinFlat.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/media.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/zabuto_calendar.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/flexslider.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/jquery.fancybox.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/ion.rangeSlider.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/ion.rangeSlider.skinFlat.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('public/frontend2/css/media.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
 
 </head>
 <body>
@@ -35,12 +36,6 @@
     <a href="#" class="header-menutoggle" id="header-menutoggle">Menu</a>
 
     <div class="header-info">
-
-
-
-        <!-- Small Cart -->
-
-        <a href="#" class="header-compare"></a>
 
         <!-- Search Form -->
         <a href="#" class="header-searchbtn" id="header-searchbtn"></a>
@@ -79,12 +74,6 @@
                     </ul>
                 </li>
             @endforeach
-            {{--<li class="has-child">
-                <a href="{{url('reviews/')}}">Reviews</a>
-            </li>
-            <li class="has-child">
-                <a href="{{url('news/')}}">News</a>
-            </li>--}}
             <li class="has-child">
                 <a href="{{url('/compare')}}">Compare</a>
             </li>
@@ -156,12 +145,7 @@
     </div>
 </main>
 
-@extends('layouts.frontLayout.front_footer')
-<!-- Footer - end -->
-
-
-<!-- Modal Form -->
-
+@include('layouts.frontLayout.front_footer')
 
 <!-- <script src="js/jquery-1.12.3.min.js">
 </script> -->

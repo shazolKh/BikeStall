@@ -91,7 +91,13 @@ class IndexController extends Controller
         $com = Comment::orderBy('created_at','asc')->where(['bike_id' =>$bk_id->id, 'status'=>'1'])->get();
         $logo = Logo::first();
 
-        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'brand', 'com', 'logo'));
+        $related = Bike::where(['category_id'=>$bk_id->category_id])
+            ->where('url', '!=', $url)->get();
+
+        //return response()->json($related);
+
+        return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'brand', 'com', 'logo',
+        'related'));
     }
 
     /*public function reviews()

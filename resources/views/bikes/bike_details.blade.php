@@ -113,9 +113,6 @@
                         <p>Status</p>
                         <p class="prod-price">{{$bk_details->status}}</p>
                     </div>
-
-
-
                 </div>
                 <div class="prod-actions">
                     <div class="prod-rating-wrap">
@@ -287,6 +284,35 @@
             </div>
         </div>
         <!-- Product Tabs - end -->
+        <!---Related Items-->
+        <div class="populars-wrap">
+            <div class="cont populars">
+                <h2>Related Bike(s)</h2>
+                <p class="populars-count">{{$related->count()}} BIKE(S)</p>
+                <div class="populars-list">
+                    @foreach($related as $relate)
+                        <div class="popular">
+                            <a href="{{route('bike.details', [$relate->url])}}" class="popular-link">
+                                <p class="popular-img">
+                                    <img src="{{asset('public/image/images/image/large_image/'.$relate->image)}}" alt="">
+                                </p>
+                                <h3><span>{{$relate->bike_name}}</span></h3>
+                            </a>
+                            <p class="popular-info">
+                                <span class="popular-price">{{$relate->price_comma}} TK</span>
+                            </p>
+                        </div>
+                    @endforeach
+                </div>
+                <ul class="pager">
+                    <li>
+                        <a></a>
+                    </li>
+                </ul>
+                <span class="popular-line1"></span>
+                <span class="popular-line2"></span>
+            </div>
+        </div>
 
     </div>
 @endsection

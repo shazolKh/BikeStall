@@ -51,8 +51,8 @@
 		<a href="{{url('brands/'.$brand->br_name)}}">
 
 			<span class="frontcategs-img">
-				<img src="{{asset('public/frontend/img/front-categories/frcateg2.png')}}" alt="">
-				<img src="{{asset('public/frontend/img/front-categories/frcateg2h.png')}}" alt="">
+				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
+				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
 			</span>
             <p>{{$brand->br_name}}</p>
 		</a>
