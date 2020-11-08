@@ -11,10 +11,6 @@
 
     <title>BikeStall Admin</title>
 
-    <!-- Custom fonts for this template-->
-    <link href="cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js">
-    <link href="cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/css/bootstrapvalidator.min.css">
-
     <link href="{{asset('public/backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -63,56 +59,6 @@
 <script src="{{asset('public/backend/js/demo/datatables-demo.js')}}"></script>
 <script>
     CKEDITOR.replace('description');
-</script>
-
-<script>
-    $(document).ready(function() {
-        $('#tryitForm').bootstrapValidator({
-            feedbackIcons: {
-                valid: 'glyphicon glyphicon-ok',
-                invalid: 'glyphicon glyphicon-remove',
-                validating: 'glyphicon glyphicon-refresh'
-            },
-            fields: {
-                firstName: {
-                    validators: {
-                        notEmpty: {
-                            message: 'The first name is required and cannot be empty'
-                        }
-                    }
-                },
-                lastName: {
-                    validators: {
-                        notEmpty: {
-                            message: 'The last name is required and cannot be empty'
-                        }
-                    }
-                },
-                email: {
-                    validators: {
-                        notEmpty: {
-                            message: 'The email address is required'
-                        },
-                        emailAddress: {
-                            message: 'The input is not a valid email address'
-                        }
-                    }
-                },
-                gender: {
-                    validators: {
-                        notEmpty: {
-                            message: 'The gender is required'
-                        }
-                    }
-                }
-            },
-            submitHandler: function(validator, form, submitButton) {
-                var fullName = [validator.getFieldElements('firstName').val(),
-                    validator.getFieldElements('lastName').val()].join(' ');
-                alert('Hello ' + fullName);
-            }
-        });
-    });
 </script>
 
 </body>

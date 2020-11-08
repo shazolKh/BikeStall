@@ -32,7 +32,7 @@
 
     <div class="maincont">
 
-        <div class="cont">
+        <div class="cont post-sidebar">
             <!-- Post Content - start -->
             <div class="post">
                 <div class="post-info">
@@ -41,7 +41,7 @@
                     <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_review->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_review->created_at)->format('M')}}</time>
                 </div>
 
-                <div class="post-video">
+
                     <div class="post-slider">
                         <ul class="slides">
                             <li>
@@ -55,8 +55,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <br>
                 <p>{!! $detail_review->details !!}</p>
             </div>
         </div>

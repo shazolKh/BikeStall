@@ -27,9 +27,22 @@
     <!-- Breadcrumbs -->
     <div class="b-crumbs-wrap">
         <div class="cont b-crumbs">
+            @if($message = Session::get('flash_message_error'))
+                <div class="alert alert-danger alert-block">
+                    <button type="button" class="close" data-dismiss="alert"></button>
+                    <strong>{{$message}}</strong>
+                </div>
+            @endif
 
+            @if($message = Session::get('flash_message_success'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert"></button>
+                    <strong>{{$message}}</strong>
+                </div>
+            @endif
         </div>
     </div>
+
 
     <div class="cont maincont">
         <h1><span>{{$bk_details->bike_name}}</span></h1>
@@ -313,6 +326,5 @@
                 <span class="popular-line2"></span>
             </div>
         </div>
-
     </div>
 @endsection

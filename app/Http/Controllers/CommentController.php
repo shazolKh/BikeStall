@@ -22,7 +22,7 @@ class CommentController extends Controller
         $comment->save();
 
         //return response()->json($comment);
-        return redirect()->back()->with('flash_message_success', 'Your Comment/ Message is sent for Admin Review!');
+        return redirect()->back()->with('flash_message_success', 'Your Comment is sent for Admin Review!');
     }
 
     public function showComments()

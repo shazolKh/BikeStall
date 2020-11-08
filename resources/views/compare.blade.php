@@ -13,7 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="{{asset('public/select2-4.0.13/dist/css/select2.min.css')}}" rel="stylesheet" />
-    <script src="{{asset('public/select2-4.0.13/dist/js/select2.min.js')}}"></script>
+
     <link rel="stylesheet" href="{{asset('public/frontend2/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend2/css/zabuto_calendar.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend2/css/flexslider.css')}}">
@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="{{asset('public/frontend2/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend2/css/media.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
+
+    <style>
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #444;
+            line-height: 28px;
+            font-size: large;
+        }
+    </style>
 
 </head>
 <body>
@@ -125,9 +133,9 @@
             <form method="get" action="{{url('comparison/')}}">
                 @csrf
                 <div class="botarticle-cont">
-                    <select class="js-example-basic-single text-justify" name="bike1" style="width: 100%;">
+                    <select class="js-example-basic-single" name="bike1" style="width: 100%; font-size: 4px;">
                         @foreach($bikes as $bike)
-                            <option value="{{$bike->id}}">{{$bike->bike_name}}</option>
+                            <option value="{{$bike->id}}" style="font-size: 10px;">{{$bike->bike_name}}</option>
                         @endforeach
                     </select>
                     <select class="js-example-basic-single" name="bike2" style="width: 100%;">
@@ -153,6 +161,7 @@
 <script src="{{asset('public/frontend/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
 <script src="{{asset('public/frontend/js/jquery.flexslider-min.js')}}"></script>
 <script src="{{asset('public/frontend/js/masonry.pkgd.min.js')}}"></script>
+<script src="{{asset('public/select2-4.0.13/dist/js/select2.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/jquery.fractionslider.min.js')}}"></script>
 <script src="{{asset('public/frontend/js/main.js')}}"></script>
 

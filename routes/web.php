@@ -182,8 +182,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::match(['get', 'post'],'/admin/edit-about/{id}', 'AboutController@editAbout');
     Route::get('/admin/delete-about-image/{id}','AboutController@deleteImage');
 
-    //Comments/User Review
-    Route::post('user-review/{id}', 'CommentController@storeComment');
+
 
     Route::match(['get', 'post'], 'add-logo', 'LogoController@addLogo')->name('add.logo');
     Route::get('manage-logo', 'LogoController@manageLogo')->name('manage.logo');
@@ -206,5 +205,8 @@ Route::group(['middleware' => ['auth']], function () {
 });
 //Route::get('comments/{id}', 'IndexController@showedComment');
 //Admin Panel End
+
+//Comments/User Review
+Route::post('user-review/{id}', 'CommentController@storeComment');
 
 Route::get('/logout', 'AdminController@logout');

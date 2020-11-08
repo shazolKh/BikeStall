@@ -552,7 +552,7 @@ input:focus {
     display: block;
     z-index: 3;
     position: absolute;
-    right: 0;
+    right: -8px;
     top: 1px;
     margin: 0;
     width: 20px;
@@ -586,7 +586,7 @@ input:focus {
     color: #fff;
 }
 .header nav > ul > li.has-child > a {
-	padding-right: 22px;
+	padding-right: 13px;
 }
 .header nav > ul > li ul {
     display: none;
@@ -3808,7 +3808,7 @@ ul.pager li.dots a {
 	margin: 0 0 16px;
 }
 .prod-tab .prod-tab-props dt {
-	width: 50%;
+	width: 40%;
 	float: left;
 	font-size: 15px;
 	color: #868ca7;
@@ -3819,13 +3819,12 @@ ul.pager li.dots a {
 	clear: left;
 }
 .prod-tab .prod-tab-props dd {
-	width: 50%;
+	width: 60%;
 	float: left;
 	color: #283346;
 	font-size: 15px;
 	margin: 0 0 8px;
 	padding: 0 5px 0 0;
-	margin-left: -20%
 }
 .prod-tab-desc {
 	padding: 11px 0 0;
