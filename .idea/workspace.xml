@@ -22,20 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="Maybe Final f12">
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/608730.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image2/228774.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image3/982022.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/news/557815.jpg" afterDir="false" />
+    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend2/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend2/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/frontend2/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend2/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/compare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/compare.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_design.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +222,8 @@
       <workItem from="1604675837109" duration="778000" />
       <workItem from="1604747351698" duration="19006000" />
       <workItem from="1604778306515" duration="2482000" />
-      <workItem from="1604809926173" duration="5965000" />
+      <workItem from="1604809926173" duration="6651000" />
+      <workItem from="1604856489191" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Edited">
       <created>1602839590748</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604776059027</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Maybe Final f12">
+      <created>1604819830713</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1604819830713</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +561,8 @@
     <MESSAGE value="Maybe Final" />
     <MESSAGE value="Maybe Final f" />
     <MESSAGE value="Maybe Final f1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final f1" />
+    <MESSAGE value="Maybe Final f12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maybe Final f12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -577,10 +577,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604467760020" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604776057322">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604819827422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604776057322" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604819827422" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -593,10 +593,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604776066617">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604819840001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604776066617" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604819840001" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

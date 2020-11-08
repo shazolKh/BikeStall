@@ -1175,6 +1175,9 @@
         display: block;
     }
     .prod-tabs-addreview-mob {
+        display: none;
+    }
+    .prod-addreview-form{
         display: block;
     }
     .prod-tab-mob.active + .prod-tab {
