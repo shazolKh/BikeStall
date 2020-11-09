@@ -45,7 +45,7 @@
 
 <!-- Brands List -->
 <div class="cont">
-<ul class="frontcategs">
+    <ul class="frontcategs">
     @foreach ($brands as $brand)
     <li>
 		<a href="{{url('brands/'.$brand->br_name)}}">
@@ -59,6 +59,9 @@
 	</li>
     @endforeach
 </ul>
+    <p class="popular-more text-center" style="font-weight: bold; color: #283346">
+        <a href="{{route('brand.list')}}">Show All</a>
+    </p>
 </div>
 
 
@@ -221,11 +224,14 @@
                 </div>
             @endforeach
         </div>
-        <ul class="pager">
+        {{--<ul class="pager">
             <li>
                 <a>{{ $news->render() }}</a>
             </li>
-        </ul>
+        </ul>--}}
+        <p class="popular-more">
+            <a href="{{route('news.list')}}">show more</a>
+        </p>
         <span class="popular-line1"></span>
         <span class="popular-line2"></span>
     </div>
@@ -251,11 +257,14 @@
                 </div>
             @endforeach
         </div>
-        <ul class="pager">
+        {{--<ul class="pager">
             <li>
                 <a>{{ $reviews->render() }}</a>
             </li>
-        </ul>
+        </ul>--}}
+        <p class="popular-more">
+            <a href="{{route('review.list')}}">show more</a>
+        </p>
         <span class="popular-line1"></span>
         <span class="popular-line2"></span>
     </div>

@@ -52,7 +52,6 @@
                             </a>
                             <p class="blog-info">
                                 <a>{{$rvw->written_by}}</a>
-                                <time >{{$rvw->created_at}}</time>
                             </p>
                             <h3><a href="{{url('review/details/'.$rvw->title)}}">{{$rvw->title}}</a></h3>
                             <p>{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->title)}}">read more</a></p>

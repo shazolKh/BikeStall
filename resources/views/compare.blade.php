@@ -38,7 +38,7 @@
 
 
 <!-- Header - start -->
-<div class="header">
+{{--<div class="header">
 
     <!-- Navmenu Mobile Toggle Button -->
     <a href="#" class="header-menutoggle" id="header-menutoggle">Menu</a>
@@ -92,7 +92,9 @@
     </nav>
     <!-- Navmenu - end -->
 
-</div>
+</div>--}}
+
+@include('layouts.frontLayout.front_header')
 
 <div class="frontslider-wrap">
     <div class="responisve-container">

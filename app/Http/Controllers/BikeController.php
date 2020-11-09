@@ -437,7 +437,9 @@ class BikeController extends Controller
         $allBikes = Bike::where(['category_id'=>$categoryDetails->id])->paginate(16);
         $brands = Brand::get();
         $logo = Logo::first();
-        return view('bikes.category')->with(compact('categoryDetails', 'allBikes','categories','brands', 'logo'));
+        $all_brands = Brand::get();
+        return view('bikes.category')->with(compact('categoryDetails', 'allBikes','categories','brands',
+            'logo', 'all_brands'));
     }
 
 }

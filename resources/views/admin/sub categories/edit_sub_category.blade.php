@@ -43,10 +43,9 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="form-label">Main Category</label>
+                                    <label class="form-label">Select Category</label>
                                     <div class="controls">
                                         <select class="form-control" name="parent_id" style="width: 220px">
-                                            <option value="0">Main Category</option>
                                             @foreach($levels as $lvl)
                                                 <option value="{{$lvl->id}}" @if($lvl->id == $details->category_id)
                                                     selected @endif>{{$lvl->ct_name}}</option>

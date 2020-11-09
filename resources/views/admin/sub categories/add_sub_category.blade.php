@@ -38,10 +38,9 @@
                                 @csrf
 
                                 <div class="form-group">
-                                    <label class="control-label">Category Name</label>
+                                    <label class="control-label">Select Category</label>
                                     <div class="controls">
                                         <select class="form-control" name="parent_id" style="width: 220px">
-                                            <option value="0">Main Category</option>
                                             @foreach($levels as $lvl)
                                                 <option value="{{$lvl->id}}">{{$lvl->ct_name}}</option>
                                             @endforeach

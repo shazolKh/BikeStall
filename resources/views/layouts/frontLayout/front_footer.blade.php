@@ -7,17 +7,20 @@
 			<ul>
 				<li><a href="{{url('contact/')}}">Contact</a></li>
 				<li><a href="{{url('about/')}}">About us</a></li>
+                <li>
+                    <a href="{{route('ph.gallery')}}">Gallery</a>
+                </li>
 			</ul>
 		</div>
 		<div class="footer-menu">
-			<p>News And Reviews</p>
+			{{--<p>News And Reviews</p>
 			<ul>
 				<li><a href="{{route('all.showroom')}}">Showroom</a></li>
-				{{--<li><a href="{{url('reviews/')}}">Review</a></li>--}}
+				--}}{{--<li><a href="{{url('reviews/')}}">Review</a></li>--}}{{--
 				<li>
 					<a href="{{url('photo-gallery/')}}">Gallery</a>
 				</li>
-			</ul>
+			</ul>--}}
 		</div>
 
 		<div class="footer-info">

@@ -26,14 +26,17 @@ Route::get('category/bikes/{ct_name}','BikeController@bikes');
 Route::get('subcategory/bike/{sub_ct_name}','IndexController@sub_cat_Bikes');
 
 Route::get('/brands/{br_name}','IndexController@bike_br');
-Route::get('/_{url}', 'IndexController@bikeDetails')->name('bike.details');
+Route::match(['get', 'post'],'/bike/{url}/', 'IndexController@bikeDetails')->name('bike.details');
 
 //Reviews
-/*Route::get('reviews/', 'IndexController@reviews');*/
+Route::get('all/reviews/', 'IndexController@reviews')->name('review.list');
 Route::get('review/details/{title}', 'IndexController@reviewsDetails');
 
 //Gallery
-Route::get('photo-gallery/', 'IndexController@photoGallery');
+Route::get('photo/gallery/', 'IndexController@photoGallery')->name('ph.gallery');
+
+//
+//Route::get('/', 'IndexController@header');
 
 
 
@@ -41,7 +44,7 @@ Route::get('photo-gallery/', 'IndexController@photoGallery');
 Route::get('about/', 'IndexController@about');
 
 //News
-/*Route::get('news/', 'IndexController@news');*/
+Route::get('news/', 'IndexController@news')->name('news.list');
 Route::get('news/details/{headline}', 'IndexController@newsDetails');
 
 //Contact
@@ -72,13 +75,16 @@ Route::get('/filter/price/3lacs-to-4lacs', 'FilterController@belowFour');
 Route::get('/filter/price/above-4lacs', 'FilterController@aboveFive');
 
 
-Route::get('/search', 'FilterController@search')->name('search');
+Route::post('/search', 'FilterController@search')->name('search');
 Route::match(['get', 'post'], '/compare', 'IndexController@compare');
 Route::get('comparison', 'IndexController@comparison');
 
 // Accessories
 Route::get('/accessories', 'IndexController@accList');
 Route::get('accessories/details/{url}', 'IndexController@accDetails');
+
+//Brand List
+Route::get('all-brands', 'IndexController@allBrand')->name('brand.list');
 
 //ShowRoom
 Route::get('showroom', 'IndexController@showroom')->name('all.showroom');

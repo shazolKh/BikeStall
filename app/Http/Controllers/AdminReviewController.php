@@ -138,9 +138,15 @@ class AdminReviewController extends Controller
         $image1 = $news->image1;
         $image2 = $news->image2;
         $image3 = $news->image3;
-        unlink(public_path('image/admin_review/image1/'.$image1));
-        unlink(public_path('image/admin_review/image2/'.$image2));
-        unlink(public_path('image/admin_review/image3/'.$image3));
+        if (!empty($image1)){
+            unlink(public_path('image/admin_review/image1/'.$image1));
+        }
+        if (!empty($image2)){
+            unlink(public_path('image/admin_review/image2/'.$image2));
+        }
+        if (!empty($image3)){
+            unlink(public_path('image/admin_review/image3/'.$image3));
+        }
         AdminReview::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'Review Deleted Successfully!!');
     }
@@ -149,7 +155,9 @@ class AdminReviewController extends Controller
     {
         $news = AdminReview::where(['id'=>$id])->first();
         $image = $news->image1;
-        unlink(public_path('image/admin_review/image1/'.$image));
+        if ($image){
+            unlink(public_path('image/admin_review/image1/'.$image));
+        }
         AdminReview::where(['id'=>$id])->update(['image1'=>'']);
         return redirect()->back()->with('flash_message_success', '1st Image has been Deleted');
     }
@@ -157,7 +165,10 @@ class AdminReviewController extends Controller
     {
         $news = AdminReview::where(['id'=>$id])->first();
         $image = $news->image2;
-        unlink(public_path('image/admin_review/image2/'.$image));
+        if ($image){
+            unlink(public_path('image/admin_review/image2/'.$image));
+        }
+
         AdminReview::where(['id'=>$id])->update(['image2'=>'']);
         return redirect()->back()->with('flash_message_success', '2nd Image has been Deleted');
     }
@@ -165,7 +176,9 @@ class AdminReviewController extends Controller
     {
         $news = AdminReview::where(['id'=>$id])->first();
         $image = $news->image3;
-        unlink(public_path('image/admin_review/image3/'.$image));
+        if ($image){
+            unlink(public_path('image/admin_review/image3/'.$image));
+        }
         AdminReview::where(['id'=>$id])->update(['image3'=>'']);
         return redirect()->back()->with('flash_message_success', '3rd Image has been Deleted');
     }
