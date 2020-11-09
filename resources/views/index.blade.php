@@ -218,9 +218,6 @@
                         </p>
                         <h3><span>{{$nws->headline}}</span></h3>
                     </a>
-                    <p class="popular-info">
-                        <a href="{{url('news/details/'.$nws->headline)}}" class="popular-categ">{{$nws->created_at}}</a>
-                    </p>
                 </div>
             @endforeach
         </div>
@@ -230,7 +227,7 @@
             </li>
         </ul>--}}
         <p class="popular-more">
-            <a href="{{route('news.list')}}">show more</a>
+            <a href="{{route('news.list')}}">More News</a>
         </p>
         <span class="popular-line1"></span>
         <span class="popular-line2"></span>
@@ -251,9 +248,6 @@
                         </p>
                         <h3><span>{{$rvw->title}}</span></h3>
                     </a>
-                    <p class="popular-info">
-                        <a href="{{url('review/details/'.$rvw->title)}}" class="popular-categ">{{$rvw->created_at}}</a>
-                    </p>
                 </div>
             @endforeach
         </div>
@@ -263,7 +257,7 @@
             </li>
         </ul>--}}
         <p class="popular-more">
-            <a href="{{route('review.list')}}">show more</a>
+            <a href="{{route('review.list')}}">More Reviews</a>
         </p>
         <span class="popular-line1"></span>
         <span class="popular-line2"></span>
