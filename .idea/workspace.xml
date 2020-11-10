@@ -23,33 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/image/about/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/accessories/image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/accessories/image1/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/accessories/image2/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image2/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image3/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/brand_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/cat_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/gallery/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image1/medium_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image1/small_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image2/large_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image2/medium_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image2/small_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image3/large_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image3/medium_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/images/image3/small_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/news/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/photo_gallery/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/scat_image/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/show/a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +223,8 @@
       <workItem from="1604809926173" duration="6651000" />
       <workItem from="1604856489191" duration="1828000" />
       <workItem from="1604945168351" duration="10760000" />
-      <workItem from="1604956534520" duration="672000" />
+      <workItem from="1604956534520" duration="1007000" />
+      <workItem from="1605010430822" duration="1561000" />
     </task>
     <task id="LOCAL-00001" summary="Edited">
       <created>1602839590748</created>
@@ -558,7 +534,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604956636277</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Final">
+      <created>1604957219959</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604957219959</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Final">
+      <created>1604957335997</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1604957335997</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,10 +608,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604467760020" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604956631506">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604957335145">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604956631506" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604957335145" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -634,10 +624,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604956643169">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1604957349585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604956643169" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604957349585" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

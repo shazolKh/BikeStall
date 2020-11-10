@@ -26,7 +26,7 @@ class IndexController extends Controller
         $brands = Brand::with('brands')->limit(5)->get();
 
         //bikes
-        $bikes = Bike::orderBy('created_at', 'asc')->paginate(16);
+        $bikes = Bike::orderBy('id', 'DESC')->paginate(16);
         foreach ($bikes as $bike=>$val){
             $category_name = Category::where(['id'=>$val->category_id])->first();
             $bikes[$bike]->ct_name = $category_name->ct_name;
@@ -48,9 +48,9 @@ class IndexController extends Controller
         }*/
 
         //NEWS
-        $news = News::orderBy('created_at', 'asc')->limit(4)->get();
+        $news = News::orderBy('id', 'DESC')->limit(4)->get();
 
-        $reviews = AdminReview::orderBy('created_at','asc')->limit(4)->get();
+        $reviews = AdminReview::orderBy('id','DESC')->limit(4)->get();
 
         $logo = Logo::first();
 
@@ -113,7 +113,7 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
-        $reviews = AdminReview::orderBy('created_at','asc')->paginate(10);
+        $reviews = AdminReview::orderBy('id','DESC')->paginate(10);
         $metareviews = AdminReview::first();
         $all_brands = Brand::get();
         return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews', 'logo',
@@ -152,7 +152,7 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
-        $news = News::orderBy('created_at', 'asc')->paginate(16);
+        $news = News::orderBy('id', 'DESC')->paginate(16);
         $metanews = News::first();
         $all_brands = Brand::get();
         return view('news.short_news')->with(compact('news', 'categories', 'metanews', 'logo', 'all_brands'));
@@ -229,7 +229,7 @@ class IndexController extends Controller
     public function accList()
     {
         $categories = Category::with('categories')->get();
-        $data = Accessories::paginate(16);
+        $data = Accessories::orderBy('id', 'DESC')->paginate(16);
         $logo = Logo::first();
         $all_brands = Brand::get();
 
@@ -250,7 +250,7 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
-        $data = Showroom::paginate(6);
+        $data = Showroom::orderBy('id', 'DESC')->paginate(16);
         $all_brands = Brand::get();
         return view('show.show_list')->with(compact('data', 'logo', 'categories', 'all_brands'));
     }
@@ -269,7 +269,7 @@ class IndexController extends Controller
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
 
-        $brandss = Brand::orderBy('id', 'desc')->paginate(12);
+        $brandss = Brand::orderBy('id', 'DESC')->paginate(12);
         $all_brands = Brand::get();
 
         return view('accessories.brand_list')->with(compact('categories', 'logo', 'brandss', 'all_brands'));
