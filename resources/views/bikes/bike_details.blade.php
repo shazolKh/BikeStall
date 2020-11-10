@@ -162,118 +162,164 @@
                 <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
                 <div class="prod-tab" id="prod-tab-2">
                     <dl class="prod-tab-props">
+                        <h5>Engine</h5>
+                        <hr>
                         <dt>Engine Type</dt>
                         <dd>{{$bk_details->engine_type}}</dd>
+                        <dt>Displacement</dt>
+                        <dd>{{$bk_details->engine}}</dd>
+                    </dl>
+
+                    <dl class="prod-tab-props">
+                        <dt>Max Power</dt>
+                        <dd>{{$bk_details->max_power}}</dd>
                         <dt>Max Torque</dt>
                         <dd>{{$bk_details->max_torque}}</dd>
+                    </dl>
+
+                    <dl class="prod-tab-props">
+                        <dt>Mileage</dt>
+                        <dd>{{$bk_details->mileage}}</dd>
                         <dt>Top Speed</dt>
                         <dd>{{$bk_details->top_speed}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Bore</dt>
                         <dd>{{$bk_details->bore}}</dd>
-
                         <dt>Strokes</dt>
                         <dd>{{$bk_details->stroke}}</dd>
+                    </dl>
 
-                        <dt>Carburetor</dt>
-                        <dd>{{$bk_details->carburetor}}</dd>
-
+                    <dl class="prod-tab-props">
                         <dt>Compression Ratio</dt>
                         <dd>{{$bk_details->compression_ratio}}</dd>
-
-                        <dt>Cooling System</dt>
+                        <dt>Cooling</dt>
                         <dd>{{$bk_details->cooling}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Start Method</dt>
                         <dd>{{$bk_details->start_method}}</dd>
-
                         <dt>Ignition</dt>
                         <dd>{{$bk_details->ignition}}</dd>
+                    </dl>
 
-                        <dt>Total Gears</dt>
+                    <dl class="prod-tab-props">
+                        <dt>Gears</dt>
                         <dd>{{$bk_details->gears}}</dd>
-
                         <dt>Clutch</dt>
                         <dd>{{$bk_details->clutch}}</dd>
+                    </dl>
+                    <dl class="prod-tab-props">
+                        <dt>Carburetor</dt>
+                        <dd>{{$bk_details->carburetor}}</dd>
+                    </dl>
 
+                    <hr>
+                    <dl class="prod-tab-props">
+                        <h5>Dimensions & Weight</h5>
+                        <hr>
                         <dt>Overall Length</dt>
                         <dd>{{$bk_details->overall_length}}</dd>
-
                         <dt>Overall Width</dt>
                         <dd>{{$bk_details->overall_width}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Overall Height</dt>
                         <dd>{{$bk_details->overall_height}}</dd>
-
                         <dt>Saddle Height</dt>
                         <dd>{{$bk_details->saddle_height}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Wheelbase</dt>
                         <dd>{{$bk_details->wheel_base}}</dd>
-
                         <dt>Ground Clearance</dt>
                         <dd>{{$bk_details->ground_clearance}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Fuel Tank Capacity</dt>
                         <dd>{{$bk_details->fuel_tank_cap}}</dd>
-
                         <dt>Kerb Weight</dt>
                         <dd>{{$bk_details->kerb_weight}}</dd>
+                    </dl>
 
+                    <hr>
+                    <dl class="prod-tab-props">
+                        <h5>Suspension & Brake</h5>
+                        <hr>
                         <dt>Front Suspension</dt>
                         <dd>{{$bk_details->front_suspension}}</dd>
-
                         <dt>Rear Suspension</dt>
                         <dd>{{$bk_details->back_suspension}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Front Break</dt>
                         <dd>{{$bk_details->front_break}}</dd>
-
                         <dt>Rear Break</dt>
                         <dd>{{$bk_details->rear_break}}</dd>
+                    </dl>
 
+                    <dl class="prod-tab-props">
                         <dt>Anti-lock Braking System (ABS)</dt>
                         <dd>{{$bk_details->abs}}</dd>
+                    </dl>
 
+                    <hr>
+                    <dl class="prod-tab-props">
+                        <h5>Wheels & Tyres</h5>
+                        <hr>
                         <dt>Front Tyre</dt>
                         <dd>{{$bk_details->front_tyre}}</dd>
-
                         <dt>Rear Tyre</dt>
                         <dd>{{$bk_details->back_tyre}}</dd>
-
+                    </dl>
+                    <dl class="prod-tab-props">
                         <dt>Front Wheel</dt>
                         <dd>{{$bk_details->front_wheel}}</dd>
-
                         <dt>Rear Wheel</dt>
                         <dd>{{$bk_details->rear_wheel}}</dd>
+                    </dl>
 
+                    <hr>
+                    <dl class="prod-tab-props">
+                        <h5>Electrics</h5>
+                        <hr>
                         <dt>Battery</dt>
                         <dd>{{$bk_details->battery}}</dd>
-
                         <dt>Head Lamp</dt>
                         <dd>{{$bk_details->head_lamp}}</dd>
+                    </dl>
 
-                        <dt>Tail Lamp</dt>
+                    <dl class="prod-tab-props">
+                        <dt>Tail/Stop Lamp</dt>
                         <dd>{{$bk_details->tail_lamp}}</dd>
-
                         <dt>Turn Signal Lamp</dt>
                         <dd>{{$bk_details->turn_signal_lamp}}</dd>
-
+                    </dl>
+                    <dl class="prod-tab-props">
                         <dt>Pilot Lamp</dt>
                         <dd>{{$bk_details->pilot_lamp}}</dd>
+                    </dl>
 
-                        <dt>Pass Light</dt>
-                        <dd>{{$bk_details->pass_light}}</dd>
-
+                    <hr>
+                    <dl class="prod-tab-props">
+                        <h5>Other Features</h5>
+                        <hr>
                         <dt>Odometer</dt>
                         <dd>{{$bk_details->odometer}}</dd>
-
                         <dt>Speedometer</dt>
                         <dd>{{$bk_details->speedometer}}</dd>
-
+                    </dl>
+                    <dl class="prod-tab-props">
+                        <dt>Pass Light</dt>
+                        <dd>{{$bk_details->pass_light}}</dd>
                         <dt>Signal Light</dt>
                         <dd>{{$bk_details->signal_light}}</dd>
-
                     </dl>
                 </div>
                 <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>

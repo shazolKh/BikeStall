@@ -13,15 +13,15 @@
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{asset('public/frontend2/css/font-awesome.min.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/zabuto_calendar.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/flexslider.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/jquery.fancybox.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/ion.rangeSlider.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/ion.rangeSlider.skinFlat.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/style.css')}}">
-<link rel="stylesheet" href="{{asset('public/frontend2/css/media.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('public/frontend2/css/bootstrap.css')}}"/>
+<link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/zabuto_calendar.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/flexslider.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.skinFlat.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
+<link rel="stylesheet" href="{{asset('public/frontend/css/media.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
 
     <link href="{{asset('public/lity/dist/lity.css')}}" rel="stylesheet">
 <script src="{{asset('public/lity/vendor/jquery.js')}}"></script>
@@ -40,14 +40,14 @@
 	@yield('content')
 	@include('layouts.frontLayout.front_footer')
 
-<script src="{{asset('public/frontend2/js/jquery-1.12.3.min.js')}}"></script>
-<script src="{{asset('public/frontend2/js/fancybox/fancybox.js')}}"></script>
-<script src="{{asset('public/frontend2/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
-<script src="{{asset('public/frontend2/js/jquery.flexslider-min.js')}}"></script>
-<script src="{{asset('public/frontend2/js/masonry.pkgd.min.js')}}"></script>
-<script src="{{asset('public/frontend2/js/jquery.fractionslider.min.js')}}"></script>
-<script src="{{asset('public/frontend2/js/ion.rangeSlider.min.js')}}"></script>
-<script src="{{asset('public/frontend2/js/main.js')}}"></script>
+<script src="{{asset('public/frontend/js/jquery-1.12.3.min.js')}}"></script>
+<script src="{{asset('public/frontend/js/fancybox/fancybox.js')}}"></script>
+<script src="{{asset('public/frontend/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
+<script src="{{asset('public/frontend/js/jquery.flexslider-min.js')}}"></script>
+<script src="{{asset('public/frontend/js/masonry.pkgd.min.js')}}"></script>
+<script src="{{asset('public/frontend/js/jquery.fractionslider.min.js')}}"></script>
+<script src="{{asset('public/frontend/js/ion.rangeSlider.min.js')}}"></script>
+<script src="{{asset('public/frontend/js/main.js')}}"></script>
 
     <script>
         $(document).ready(function() {

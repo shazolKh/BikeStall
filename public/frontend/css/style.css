@@ -3800,15 +3800,16 @@ ul.pager li.dots a {
 	border-color: rgba(0,0,0,0);
 }
 .prod-tab .prod-tab-props {
-	padding: 11px 0 0px;
+	padding: 1px 0 0px;
 	overflow: hidden;
+	margin-bottom: 0;
 }
 .prod-tab .prod-tab-props dl {
 	overflow: hidden;
 	margin: 0 0 16px;
 }
 .prod-tab .prod-tab-props dt {
-	width: 50%;
+	width: 23%;
 	float: left;
 	font-size: 15px;
 	color: #868ca7;
@@ -3819,13 +3820,12 @@ ul.pager li.dots a {
 	clear: left;
 }
 .prod-tab .prod-tab-props dd {
-	width: 50%;
+	width: 27%;
 	float: left;
 	color: #283346;
 	font-size: 15px;
 	margin: 0 0 8px;
 	padding: 0 5px 0 0;
-	margin-left: -20%
 }
 .prod-tab-desc {
 	padding: 11px 0 0;
