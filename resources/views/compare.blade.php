@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{asset('public/frontend2/css/ion.rangeSlider.skinFlat.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend2/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend2/css/media.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('public/frontend2/css/bootstrap.css')}}"/>
 
     <style>
         .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -159,13 +159,13 @@
 
 <!-- <script src="js/jquery-1.12.3.min.js">
 </script> -->
-<script src="{{asset('public/frontend/js/fancybox/fancybox.js')}}"></script>
-<script src="{{asset('public/frontend/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
-<script src="{{asset('public/frontend/js/jquery.flexslider-min.js')}}"></script>
-<script src="{{asset('public/frontend/js/masonry.pkgd.min.js')}}"></script>
+<script src="{{asset('public/frontend2/js/fancybox/fancybox.js')}}"></script>
+<script src="{{asset('public/frontend2/js/fancybox/helpers/jquery.fancybox-thumbs.js')}}"></script>
+<script src="{{asset('public/frontend2/js/jquery.flexslider-min.js')}}"></script>
+<script src="{{asset('public/frontend2/js/masonry.pkgd.min.js')}}"></script>
 <script src="{{asset('public/select2-4.0.13/dist/js/select2.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/jquery.fractionslider.min.js')}}"></script>
-<script src="{{asset('public/frontend/js/main.js')}}"></script>
+<script src="{{asset('public/frontend2/js/jquery.fractionslider.min.js')}}"></script>
+<script src="{{asset('public/frontend2/js/main.js')}}"></script>
 
 <script>
     $(document).ready(function() {

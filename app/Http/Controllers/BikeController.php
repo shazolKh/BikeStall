@@ -24,7 +24,7 @@ class BikeController extends Controller
                 'scategory_id' => 'required',
                 'brand_id' => 'required',
                 'bike_name' => 'required',
-                'url' => 'required',
+                'url' => 'required | unique:bikes',
 
                 'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
                 'bike_image1' => 'required | mimes:jpeg,jpg,png, PNG',
