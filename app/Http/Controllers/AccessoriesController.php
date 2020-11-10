@@ -124,6 +124,25 @@ class AccessoriesController extends Controller
                 $filename2 = $data['current_image2'];
             }
 
+            if (empty($filename)){
+                $request->validate([
+                    'image' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename1)){
+                $request->validate([
+                    'image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename2)){
+                $request->validate([
+                    'image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+
             Accessories::where(['id'=>$id])->update(['name'=>$data['name'], 'url'=>$data['url'],
                 'description'=>$data['description'], 'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2]);
 

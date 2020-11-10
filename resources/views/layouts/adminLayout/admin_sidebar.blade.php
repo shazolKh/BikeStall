@@ -137,11 +137,11 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages1" aria-expanded="true" aria-controls="collapsePages">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages1222" aria-expanded="true" aria-controls="collapsePages">
                 <i class="fas fa-fw fa-newspaper"></i>
                 <span>News</span>
             </a>
-            <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div id="collapsePages1222" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="{{url('/admin/add-news/')}}">Add</a>
                     <a class="collapse-item" href="{{url('/admin/view-news/')}}">Manage</a>

@@ -121,6 +121,25 @@ class AdminReviewController extends Controller
             }else{
                 $filename3 = $data['current_image3'];
             }
+
+            if (empty($filename1)){
+                $request->validate([
+                    'review_image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename2)){
+                $request->validate([
+                    'review_image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename3)){
+                $request->validate([
+                    'review_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
             AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'], 'written_by'=>$data['writer'],
                 'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 

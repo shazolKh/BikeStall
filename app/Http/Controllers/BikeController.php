@@ -290,6 +290,30 @@ class BikeController extends Controller
                 $filename3 = $data['current_image3'];
             }
 
+            if (empty($filename)){
+                $request->validate([
+                    'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename1)){
+                $request->validate([
+                    'bike_image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename2)){
+                $request->validate([
+                    'bike_image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
+            if (empty($filename2)){
+                $request->validate([
+                    'bike_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+                ]);
+            }
+
 
             Bike::where(['id'=>$id])->update(['category_id'=>$data['category_id'], 'bike_name'=>$data['bike_name'],
                 'url'=>$data['url'], 'brand_id'=>$data['brand_id'], 'bike_model'=>$data['bike_model'],
