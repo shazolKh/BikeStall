@@ -79,7 +79,7 @@ class AdminReviewController extends Controller
                 'rvw_title' => 'required',
                 'description' => 'required',
                 'writer' => 'required',
-                'url' => 'url',
+                'url' => 'required',
                 /*'rvw_image1' => 'mimes:jpeg,jpg,png, PNG',
                 'rvw_image2' => 'mimes:jpeg,jpg,png, PNG',
                 'rvw_image3' => 'mimes:jpeg,jpg,png, PNG',*/

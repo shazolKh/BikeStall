@@ -53,6 +53,12 @@ class BrandController extends Controller
         if ($request->isMethod('post')){
             $data = $request->all();
 
+            $request->validate([
+                'brand_name' => 'required',
+                'url' => 'required',
+                'description' => 'required',
+            ]);
+
             $image_temp = $request->file('br_image');
             if ($image_temp){
                 $extension = $image_temp->getClientOriginalExtension();

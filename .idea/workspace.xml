@@ -46,42 +46,8 @@
       <change afterPath="$PROJECT_DIR$/public/image/images/image3/small_image/822343.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/264968.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/837194.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccessoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccessoriesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/accessories/manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accessories/manage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/all_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/all_reviews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/edit_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/edit_review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/write_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/write_review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/bikes/view_bike.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/bikes/view_bike.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/brands/add_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/brands/add_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/brands/edit_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/brands/edit_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/brands/view_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/brands/view_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/add_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/add_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/edit_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/edit_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/news/view_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/news/view_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/sub_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/sub_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/compare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/compare.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +248,7 @@
       <workItem from="1604945168351" duration="10760000" />
       <workItem from="1604956534520" duration="1007000" />
       <workItem from="1605010430822" duration="11677000" />
-      <workItem from="1605369788480" duration="10501000" />
-    </task>
-    <task id="LOCAL-00002" summary="Edited2">
-      <created>1602861692117</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1602861692117</updated>
+      <workItem from="1605369788480" duration="11223000" />
     </task>
     <task id="LOCAL-00003" summary="Semi Final Edit">
       <created>1602880204236</created>
@@ -627,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605043624492</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Final">
+      <created>1605381586774</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1605381586775</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,10 +653,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604467760020" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605043622524">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605381581843">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605043622524" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605381581843" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -703,10 +669,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605043633402">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605381605164">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605043633402" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605381605164" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
