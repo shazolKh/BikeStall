@@ -32,7 +32,7 @@
                         <tr class="text-center">
                             <th>ID</th>
                             <th style="color: red">Title</th>
-                            <th>Written By</th>
+                            <th>URL</th>
                             <th>Image</th>
                             <th>Action</th>
                         </tr>
@@ -42,7 +42,7 @@
                                 <tr class="text-center">
                                     <td>{{$rvw->id}}</td>
                                     <td>{{$rvw->title}}</td>
-                                    <td>{{$rvw->written_by}}</td>
+                                    <td>{{$rvw->url}}</td>
                                     <td>
                                         <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" style="width: 50px" data-lity>
                                         <img src="{{asset('public/image/admin_review/image2/'.$rvw->image2)}}" style="width: 50px" data-lity>

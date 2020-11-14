@@ -49,12 +49,12 @@
                                     <td>{{$item->br_name}}</td>
                                     <td>{{$item->price_comma}}</td>
                                     <td>
-                                        @if(!empty($item->image))
+
                                             <img src="{{asset('public/image/images/image/small_image/'.$item->image)}}" style="width: 50px" data-lity>|
                                             <img src="{{asset('public/image/images/image1/small_image/'.$item->image1)}}" style="width: 50px" data-lity>|
                                             <img src="{{asset('public/image/images/image2/small_image/'.$item->image2)}}" style="width: 50px" data-lity>|
                                             <img src="{{asset('public/image/images/image3/small_image/'.$item->image3)}}" style="width: 50px" data-lity>
-                                        @endif
+
                                     </td>
                                     <td class="center">
                                         <a href="#" class="btn btn-info btn-icon-split btn-sm" data-toggle="modal" data-target="#exampleModal{{$item->id}}">

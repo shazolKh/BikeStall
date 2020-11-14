@@ -18,12 +18,14 @@ class NewsController extends Controller
 
             $request->validate([
                 'news_title' => 'required',
+                'url' => 'required | unique:news',
                 'description' => 'required',
 
-                'news_image' => 'required | mimes:jpeg,jpg,png, PNG',
+                //'news_image' => 'required | mimes:jpeg,jpg,png, PNG',
             ]);
 
             $news->headline = $data['news_title'];
+            $news->url = $data['url'];
             $news->article = $data['description'];
 
             //Image
@@ -56,6 +58,7 @@ class NewsController extends Controller
             $request->validate([
                 'news_title' => 'required',
                 'description' => 'required',
+                'url' => 'required',
 
                 //'news_image' => 'required | mimes:jpeg,jpg,png, PNG',
             ]);
@@ -71,7 +74,7 @@ class NewsController extends Controller
             }else{
                 $filename = $data['current_image'];
             }
-            News::where(['id'=>$id])->update(['headline'=>$data['news_title'], 'article'=>$data['description'],
+            News::where(['id'=>$id])->update(['headline'=>$data['news_title'], 'url'=>$data['url'], 'article'=>$data['description'],
                 'image'=>$filename]);
             return redirect('/admin/view-news')->with('flash_message_success', 'News Updated successfully');
 
@@ -95,7 +98,9 @@ class NewsController extends Controller
     {
         $news = News::where(['id'=>$id])->first();
         $image = $news->image;
-        unlink(public_path('image/news/'.$image));
+        if (!empty($image)){
+            unlink(public_path('image/news/'.$image));
+        }
         News::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'News has been Deleted');
     }

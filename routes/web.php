@@ -25,12 +25,12 @@ Auth::routes();
 Route::get('category/bikes/{ct_name}','BikeController@bikes');
 Route::get('subcategory/bike/{sub_ct_name}','IndexController@sub_cat_Bikes');
 
-Route::get('/brands/{br_name}','IndexController@bike_br');
+Route::get('/brands/{url}','IndexController@bike_br');
 Route::match(['get', 'post'],'/bike/{url}/', 'IndexController@bikeDetails')->name('bike.details');
 
 //Reviews
 Route::get('all/reviews/', 'IndexController@reviews')->name('review.list');
-Route::get('review/details/{title}', 'IndexController@reviewsDetails');
+Route::get('review/details/{url}', 'IndexController@reviewsDetails');
 
 //Gallery
 Route::get('photo/gallery/', 'IndexController@photoGallery')->name('ph.gallery');
@@ -45,7 +45,7 @@ Route::get('about/', 'IndexController@about');
 
 //News
 Route::get('news/', 'IndexController@news')->name('news.list');
-Route::get('news/details/{headline}', 'IndexController@newsDetails');
+Route::get('news/details/{url}', 'IndexController@newsDetails');
 
 //Contact
 Route::get('contact/','IndexController@contact');

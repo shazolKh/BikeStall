@@ -43,6 +43,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="control-label">URL</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url" value="{{$details->url}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="control-label">Description</label>
                                     <div class="controls">
                                         <textarea class="form-control" name="description" id="description" >{{$details->description}}</textarea>

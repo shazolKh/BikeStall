@@ -17,9 +17,9 @@
                             </p>
                             <h3><span>{{$rvw->name}}</span></h3>
                         </a>
-                        <p class="popular-info">
+                        {{--<p class="popular-info">
                             <a href="{{route('show.details', [$rvw->id])}}" class="popular-categ">{{$rvw->created_at}}</a>
-                        </p>
+                        </p>--}}
                     </div>
                 @endforeach
             </div>

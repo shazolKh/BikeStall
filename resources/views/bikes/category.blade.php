@@ -30,7 +30,7 @@
                     <p class="section-menu-ttl">Bike Brands</p>
                     <ul class="section-menu-list">
                         @foreach($brands as $br_name)
-                            <li><a href="{{url('brands/'.$br_name->br_name)}}">{{$br_name->br_name}}</a></li>
+                            <li><a href="{{url('brands/'.$br_name->url)}}">{{$br_name->br_name}}</a></li>
                         @endforeach
                     </ul>
                 </div>

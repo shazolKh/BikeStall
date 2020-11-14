@@ -43,6 +43,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">URL(Whatever you write, will be displayed on url)</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputEmail1">Written By</label>
                                     <div class="controls">
                                         <input type="text" class="form-control" name="writer" id="writer">

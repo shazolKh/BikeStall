@@ -5,24 +5,21 @@
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta name="description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are
-    described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta name="description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="og:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are
-    described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
-    <meta property="og:image" content="{{('public/frontend/img/logo.png')}}">
+    <meta property="og:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="{{('public/frontend/img/logo.png')}}">
+    <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="twitter:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are
-    described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
-    <meta property="twitter:image" content="{{('public/frontend/img/logo.png')}}">
+    <meta property="twitter:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 @endsection
 
 @section('content')
@@ -48,7 +45,7 @@
     <ul class="frontcategs">
     @foreach ($brands as $brand)
     <li>
-		<a href="{{url('brands/'.$brand->br_name)}}">
+		<a href="{{url('brands/'.$brand->url)}}">
 
 			<span class="frontcategs-img">
 				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
@@ -87,7 +84,7 @@
 					<ul class="dropdown-list">
                         @foreach ($brands as $brnd)
                             <li>
-                                <a href="{{url('brands/'.$brnd->br_name)}}">{{$brnd->br_name}}</a>
+                                <a href="{{url('brands/'.$brnd->url)}}">{{$brnd->br_name}}</a>
                             </li>
                         @endforeach
 
@@ -212,7 +209,7 @@
         <div class="populars-list">
             @foreach ($news as $nws)
                 <div class="popular">
-                    <a href="{{url('news/details/'.$nws->headline)}}" class="popular-link">
+                    <a href="{{url('news/details/'.$nws->url)}}" class="popular-link">
                         <p class="popular-img">
                             <img src="{{asset('public/image/news/'.$nws->image)}}" alt="">
                         </p>
@@ -242,7 +239,7 @@
         <div class="populars-list">
             @foreach ($reviews as $rvw)
                 <div class="popular">
-                    <a href="{{url('review/details/'.$rvw->title)}}" class="popular-link">
+                    <a href="{{url('review/details/'.$rvw->url)}}" class="popular-link">
                         <p class="popular-img">
                             <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
                         </p>

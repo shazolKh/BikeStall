@@ -43,6 +43,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="control-label">URL(Whatever u enter here will be displayed in url)</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">

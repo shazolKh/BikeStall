@@ -18,7 +18,7 @@ class AboutController extends Controller
             $request->validate([
                 'news_title' => 'required',
                 'description' => 'required',
-                'news_image' => 'required | mimes:jpeg,jpg,png, PNG'
+                /*'news_image' => 'required | mimes:jpeg,jpg,png, PNG'*/
             ]);
 
             $news->title = $data['news_title'];

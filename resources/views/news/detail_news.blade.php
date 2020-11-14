@@ -38,7 +38,32 @@
 
             </div>
             <!-- Post Content - end -->
+        </div>
 
+        <div class="populars-wrap">
+            <div class="cont populars">
+                <h2>Related News</h2>
+                <p class="populars-count"></p>
+                <div class="populars-list">
+                    @foreach($related as $relate)
+                        <div class="popular">
+                            <a href="{{url('news/details/'.$relate->url)}}" class="popular-link">
+                                <p class="popular-img">
+                                    <img src="{{asset('public/image/news/'.$relate->image)}}" alt="">
+                                </p>
+                                <h3><span>{{$relate->headline}}</span></h3>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <ul class="pager">
+                    <li>
+                        <a></a>
+                    </li>
+                </ul>
+                <span class="popular-line1"></span>
+                <span class="popular-line2"></span>
+            </div>
         </div>
     </div>
 @endsection

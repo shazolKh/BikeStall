@@ -32,8 +32,8 @@
                         <tr>
                             <th>News ID</th>
                             <th style="color: red">Head-Line</th>
+                            <th>URL</th>
                             <th>Image</th>
-                            <th>Created</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -42,10 +42,11 @@
                                 <tr>
                                     <td>{{$nws->id}}</td>
                                     <td>{{$nws->headline}}</td>
+                                    <td>{{$nws->url}}</td>
                                     <td>
                                         <img src="{{asset('public/image/news/'.$nws->image)}}" style="width: 50px" data-lity>
                                     </td>
-                                    <td>{{$nws->created_at}}</td>
+
                                     <td class="align-content-center">
                                         <a href="#" class="btn btn-info btn-icon-split btn-sm" data-toggle="modal" data-target="#exampleModal{{$nws->id}}">
                                             <span class="icon text-white-50">

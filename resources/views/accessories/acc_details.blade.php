@@ -1,7 +1,7 @@
 @extends('layouts.frontLayout.front_design')
 
 @section('title')
-    <title>Accessories {{$data->name}}</title>
+    <title>Accessories</title>
 @endsection
 
 @section('meta')

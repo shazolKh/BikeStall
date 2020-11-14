@@ -18,13 +18,15 @@ class AdminReviewController extends Controller
                 'rvw_title' => 'required',
                 'description' => 'required',
                 'writer' => 'required',
+                'url' => 'required | unique:admin_reviews',
                 //'description' => 'required',
-                'rvw_image1' => 'required | mimes:jpeg,jpg,png, PNG',
+                /*'rvw_image1' => 'required | mimes:jpeg,jpg,png, PNG',
                 'rvw_image2' => 'required | mimes:jpeg,jpg,png, PNG',
-                'rvw_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+                'rvw_image3' => 'required | mimes:jpeg,jpg,png, PNG',*/
             ]);
 
             $review->title = $data['rvw_title'];
+            $review->url = $data['url'];
             $review->details = $data['description'];
             $review->written_by = $data['writer'];
 
@@ -77,7 +79,7 @@ class AdminReviewController extends Controller
                 'rvw_title' => 'required',
                 'description' => 'required',
                 'writer' => 'required',
-                //'description' => 'required',
+                'url' => 'url',
                 /*'rvw_image1' => 'mimes:jpeg,jpg,png, PNG',
                 'rvw_image2' => 'mimes:jpeg,jpg,png, PNG',
                 'rvw_image3' => 'mimes:jpeg,jpg,png, PNG',*/
@@ -122,7 +124,7 @@ class AdminReviewController extends Controller
                 $filename3 = $data['current_image3'];
             }
 
-            if (empty($filename1)){
+            /*if (empty($filename1)){
                 $request->validate([
                     'review_image1' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
@@ -138,9 +140,9 @@ class AdminReviewController extends Controller
                 $request->validate([
                     'review_image3' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
-            }
+            }*/
 
-            AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'], 'written_by'=>$data['writer'],
+            AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'],'url'=>$data['url'], 'written_by'=>$data['writer'],
                 'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 
             return redirect('/admin/all-reviews/')->with('flash_message_success', 'Info Updated successfully');

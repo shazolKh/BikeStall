@@ -5,24 +5,20 @@
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews  & Showrooms - BikeStall">
-    <meta name="description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check Bajaj All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
+    <meta name="description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check {{$br_name_details->br_name}} All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
-    <meta property="og:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews
-     & Showrooms - BikeStall">
-    <meta property="og:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check Bajaj All
-    Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
+    <meta property="og:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews & Showrooms - BikeStall">
+    <meta property="og:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check {{$br_name_details->br_name}} All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
     <meta property="og:image" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
-    <meta property="twitter:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews
-     & Showrooms - BikeStall">
-    <meta property="twitter:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check Bajaj All
-    Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
+    <meta property="twitter:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews & Showrooms - BikeStall">
+    <meta property="twitter:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check {{$br_name_details->br_name}} All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
     <meta property="twitter:image" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
 
 @endsection
@@ -52,7 +48,7 @@
                     <p class="section-menu-ttl">Bike Brands</p>
                     <ul class="section-menu-list">
                         @foreach($brands as $br_name)
-                            <li><a href="{{url('brands/'.$br_name->br_name)}}">{{$br_name->br_name}}</a></li>
+                            <li><a href="{{url('brands/'.$br_name->url)}}">{{$br_name->br_name}}</a></li>
                         @endforeach
                     </ul>
                 </div>

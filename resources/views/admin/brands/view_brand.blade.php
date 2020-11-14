@@ -32,9 +32,9 @@
                         <thead>
                         <tr class="text-center">
                             <th style="color: red">Brand Name</th>
+                            <th>Brand URL</th>
                             <th>Description</th>
                             <th>Image</th>
-                            <th>Created</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -42,11 +42,11 @@
                             @foreach($brand as $br)
                                 <tr class="text-center">
                                     <td style="color: red">{{$br->br_name}}</td>
+                                    <td>{{$br->url}}</td>
                                     <td>{!!$br->description!!}</td>
                                     <td>
                                         <img src="{{asset('public/image/brand_image/'.$br->image)}}" style="width: 50px">
                                     </td>
-                                    <td>{{$br->created_at}}</td>
                                     <td class="center">
                                         <a href="{{url('admin/edit-brand/'.$br->id)}}" class="btn btn-warning btn-icon-split btn-sm">
                                                 <span class="icon text-white-50">

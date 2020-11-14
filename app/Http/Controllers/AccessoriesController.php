@@ -16,12 +16,12 @@ class AccessoriesController extends Controller
 
             $request->validate([
                 'name' => 'required',
-                'url' => 'required',
+                'url' => 'required | unique:accessories',
                 'price' => 'required',
                 'description' => 'required',
-                'image' => 'required | mimes:jpeg,jpg,png, PNG',
+                /*'image' => 'required | mimes:jpeg,jpg,png, PNG',
                 'image1' => 'required | mimes:jpeg,jpg,png, PNG',
-                'image2' => 'required | mimes:jpeg,jpg,png, PNG',
+                'image2' => 'required | mimes:jpeg,jpg,png, PNG',*/
             ]);
 
             $acc->name = $data['name'];
@@ -124,7 +124,7 @@ class AccessoriesController extends Controller
                 $filename2 = $data['current_image2'];
             }
 
-            if (empty($filename)){
+            /*if (empty($filename)){
                 $request->validate([
                     'image' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
@@ -140,7 +140,7 @@ class AccessoriesController extends Controller
                 $request->validate([
                     'image2' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
-            }
+            }*/
 
 
             Accessories::where(['id'=>$id])->update(['name'=>$data['name'], 'url'=>$data['url'],
@@ -159,13 +159,19 @@ class AccessoriesController extends Controller
         $news = Accessories::where(['id'=>$id])->first();
 
         $image = $news->image;
-        unlink(public_path('image/accessories/image/'.$image));
+        if (!empty($image)){
+            unlink(public_path('image/accessories/image/'.$image));
+        }
 
         $image1 = $news->image1;
-        unlink(public_path('image/accessories/image1/'.$image1));
+        if (!empty($image1)){
+            unlink(public_path('image/accessories/image1/'.$image1));
+        }
 
         $image2 = $news->image2;
-        unlink(public_path('image/accessories/image2/'.$image2));
+        if (!empty($image2)){
+            unlink(public_path('image/accessories/image2/'.$image2));
+        }
 
         Accessories::where(['id'=>$id])->delete();
         return redirect()->back()->with('flash_message_error', 'Item has been Deleted');

@@ -42,6 +42,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="control-label">News URL</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url" value="{{$newsdetails->url}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="control-label">Image</label>
                                     <div class="input-group">
                                         <input type="hidden" class="form-control" name="current_image" value="{{$newsdetails->image}}">

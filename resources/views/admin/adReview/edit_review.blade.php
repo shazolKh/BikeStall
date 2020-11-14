@@ -43,6 +43,12 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">URL</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url" value="{{$reviewdetails->url}}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputEmail1">Written By</label>
                                     <div class="controls">
                                         <input type="text" class="form-control" name="writer" id="writer" value="{{$reviewdetails->written_by}}">

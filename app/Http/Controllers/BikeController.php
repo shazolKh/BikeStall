@@ -9,7 +9,6 @@ use App\Bike;
 use App\Brand;
 use App\Category;
 use App\FullSpac;
-use Illuminate\Support\Facades\DB;
 use Intervention\Image\Facades\Image;
 
 class BikeController extends Controller
@@ -26,10 +25,10 @@ class BikeController extends Controller
                 'bike_name' => 'required',
                 'url' => 'required | unique:bikes',
 
-                'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
+                /*'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
                 'bike_image1' => 'required | mimes:jpeg,jpg,png, PNG',
                 'bike_image2' => 'required | mimes:jpeg,jpg,png, PNG',
-                'bike_image3' => 'required | mimes:jpeg,jpg,png, PNG',
+                'bike_image3' => 'required | mimes:jpeg,jpg,png, PNG',*/
             ]);
 
             if (empty($data['category_id'])){
@@ -290,7 +289,7 @@ class BikeController extends Controller
                 $filename3 = $data['current_image3'];
             }
 
-            if (empty($filename)){
+            /*if (empty($filename)){
                 $request->validate([
                     'bike_image' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
@@ -312,7 +311,7 @@ class BikeController extends Controller
                 $request->validate([
                     'bike_image3' => 'required | mimes:jpeg,jpg,png, PNG',
                 ]);
-            }
+            }*/
 
 
             Bike::where(['id'=>$id])->update(['category_id'=>$data['category_id'], 'bike_name'=>$data['bike_name'],
@@ -426,26 +425,34 @@ class BikeController extends Controller
     public function deleteBike($id=null)
     {
         $news = Bike::where(['id'=>$id])->first();
+
         $image = $news->image;
-        unlink('public/image/images/image/large_image/'.$image);
-        unlink('public/image/images/image/medium_image/'.$image);
-        unlink('public/image/images/image/small_image/'.$image);
+        if (!empty($image)){
+            unlink('public/image/images/image/large_image/'.$image);
+            unlink('public/image/images/image/medium_image/'.$image);
+            unlink('public/image/images/image/small_image/'.$image);
+        }
 
         $image1 = $news->image1;
-        unlink('public/image/images/image1/large_image/'.$image1);
-        unlink('public/image/images/image1/medium_image/'.$image1);
-        unlink('public/image/images/image1/small_image/'.$image1);
+        if (!empty($image1)){
+            unlink('public/image/images/image1/large_image/'.$image1);
+            unlink('public/image/images/image1/medium_image/'.$image1);
+            unlink('public/image/images/image1/small_image/'.$image1);
+        }
 
         $image2 = $news->image2;
-        unlink('public/image/images/image2/large_image/'.$image2);
-        unlink('public/image/images/image2/medium_image/'.$image2);
-        unlink('public/image/images/image2/small_image/'.$image2);
+        if (!empty($image2)){
+            unlink('public/image/images/image2/large_image/'.$image2);
+            unlink('public/image/images/image2/medium_image/'.$image2);
+            unlink('public/image/images/image2/small_image/'.$image2);
+        }
 
         $image3 = $news->image3;
-        unlink('public/image/images/image3/large_image/'.$image3);
-        unlink('public/image/images/image3/medium_image/'.$image3);
-        unlink('public/image/images/image3/small_image/'.$image3);
-
+        if (!empty($image3)){
+            unlink('public/image/images/image3/large_image/'.$image3);
+            unlink('public/image/images/image3/medium_image/'.$image3);
+            unlink('public/image/images/image3/small_image/'.$image3);
+        }
 
         FullSpac::where(['bike_id'=>$id])->delete();
         Bike::where(['id'=>$id])->delete();

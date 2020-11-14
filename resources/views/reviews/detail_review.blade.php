@@ -58,5 +58,24 @@
                 <p>{!! $detail_review->details !!}</p>
             </div>
         </div>
+
+        <div class="populars-wrap">
+            <div class="cont populars">
+                <h2>Related Reviews</h2>
+                <p class="populars-count"></p>
+                <div class="populars-list">
+                    @foreach($related as $relate)
+                        <div class="popular">
+                            <a href="{{url('review/details/'.$relate->url)}}" class="popular-link">
+                                <p class="popular-img">
+                                    <img src="{{asset('public/image/admin_review/image1/'.$relate->image1)}}" alt="">
+                                </p>
+                                <h3><span>{{$relate->title}}</span></h3>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

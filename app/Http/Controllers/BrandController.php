@@ -16,12 +16,14 @@ class BrandController extends Controller
 
             $request->validate([
                 'brand_name' => 'required',
+                'url' => 'required | unique:brands',
                 'description' => 'required',
 
                 'br_image' => 'required | mimes:jpeg,jpg,png, PNG',
             ]);
 
             $brand->br_name = $data['brand_name'];
+            $brand->url = $data['url'];
             $brand->description = $data['description'];
 
             $image_temp = $request->file('br_image');
@@ -61,8 +63,8 @@ class BrandController extends Controller
                 $filename = $data['current_image'];
             }
 
-            Brand::where(['id'=>$id])->update(['br_name'=>$data['brand_name'], 'description'=>$data['description'],
-                'image'=>$filename]);
+            Brand::where(['id'=>$id])->update(['br_name'=>$data['brand_name'],'url'=>$data['url'],
+                'description'=>$data['description'], 'image'=>$filename]);
 
             return redirect('/admin/view-brand')->with('flash_message_success', 'Brand Updated Successfully!!');
         }

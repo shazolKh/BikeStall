@@ -46,9 +46,13 @@
                                 <td>
                                     @if(!empty($item->image))
                                         <img src="{{asset('public/image/accessories/image/'.$item->image)}}" style="width: 50px" data-lity>|
-                                        <img src="{{asset('public/image/accessories/image1/'.$item->image1)}}" style="width: 50px" data-lity>|
-                                        <img src="{{asset('public/image/accessories/image2/'.$item->image2)}}" style="width: 50px" data-lity>
                                     @endif
+                                    @if(!empty($item->image1))
+                                        <img src="{{asset('public/image/accessories/image1/'.$item->image1)}}" style="width: 50px" data-lity>|
+                                    @endif
+                                    @if(!empty($item->image2))
+                                            <img src="{{asset('public/image/accessories/image2/'.$item->image2)}}" style="width: 50px" data-lity>
+                                        @endif
                                 </td>
                                 <td class="center">
                                     <a href="#" class="btn btn-info btn-icon-split btn-sm" data-toggle="modal" data-target="#exampleModal{{$item->id}}">

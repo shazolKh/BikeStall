@@ -38,14 +38,20 @@
                                 <div class="form-group">
                                     <label class="control-label">News Title</label>
                                     <div class="controls">
-                                        <input type="text" class="form-control" class="form-control" name="news_title" id="news_title" required>
+                                        <input type="text" class="form-control" name="news_title" id="news_title" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">News URL(Whatever u write here, will be displayed on URL)</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control" name="url" id="url" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Image</label>
                                     <div class="controls">
                                         <div class="uploader" id="uniform-undefined">
-                                            <input type="file" class="form-control" class="form-control" name="news_image" id="news_image" required>
+                                            <input type="file" class="form-control" name="news_image" id="news_image" required>
                                         </div>
                                     </div>
                                 </div>

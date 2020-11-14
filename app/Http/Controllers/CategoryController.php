@@ -18,7 +18,7 @@ class CategoryController extends Controller
                 'category_name' => 'required',
                 'description' => 'required',
 
-                'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+                //'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
             ]);
 
 
@@ -89,7 +89,10 @@ class CategoryController extends Controller
         if (!empty($id)){
             $news = Category::where(['id'=>$id])->first();
             $image = $news->cat_image;
-            unlink(public_path('image/cat_image/'.$image));
+            if (!empty($image)){
+                unlink(public_path('image/cat_image/'.$image));
+            }
+
             Category::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Category Deleted Successfully!!');
         }

@@ -73,10 +73,10 @@ class IndexController extends Controller
             'brands', 'logo', 'all_brands'));
     }
 
-    public function bike_br($br_name=null)
+    public function bike_br($url=null)
     {
         $categories = Category::with('categories')->get();
-        $br_name_details = Brand::where(['br_name'=>$br_name])->first();
+        $br_name_details = Brand::where(['url'=>$url])->first();
         $bikes = Bike::orderBy('price','asc')->where(['brand_id'=>$br_name_details->id])->paginate(16);
         $brands = Brand::get();
         $logo = Logo::first();
@@ -120,13 +120,16 @@ class IndexController extends Controller
         'all_brands'));
     }
 
-    public function reviewsDetails($title=null)
+    public function reviewsDetails($url)
     {
         $categories = Category::with('categories')->get();
-        $detail_review =AdminReview::where(['title'=>$title])->first();
+        $detail_review =AdminReview::where(['url'=>$url])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('reviews.detail_review')->with(compact('detail_review', 'categories', 'logo' , 'all_brands'));
+        $related = AdminReview::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
+        //return response()->json($detail_review);
+        return view('reviews.detail_review')->with(compact('detail_review', 'categories', 'logo' ,
+            'all_brands', 'related'));
     }
 
     public function photoGallery(){
@@ -158,13 +161,17 @@ class IndexController extends Controller
         return view('news.short_news')->with(compact('news', 'categories', 'metanews', 'logo', 'all_brands'));
     }
 
-    public function newsDetails($headline=null)
+    public function newsDetails($url=null)
     {
         $categories = Category::with('categories')->get();
-        $detail_news =News::where(['headline'=>$headline])->first();
+        $detail_news =News::where(['url'=>$url])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('news.detail_news')->with(compact('detail_news', 'categories', 'logo', 'all_brands'));
+
+        //Related
+        $related = News::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
+
+        return view('news.detail_news')->with(compact('detail_news', 'categories', 'logo', 'all_brands', 'related'));
     }
 
     //Contact

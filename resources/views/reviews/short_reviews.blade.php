@@ -1,4 +1,7 @@
 @extends('layouts.frontLayout.front_design')
+@section('title')
+    <title>Reviews</title>
+@endsection
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
@@ -8,18 +11,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
-    <meta property="og:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.
-    BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information
-    & share a real Review for the reader.">
+    <meta property="og:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader.">
     <meta property="og:image" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
-    <meta property="twitter:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.
-    BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information
-    & share a real Review for the reader.">
+    <meta property="twitter:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader.">
     <meta property="twitter:image" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
 
 @endsection
@@ -47,14 +46,14 @@
                     <div class="blog-grid-i">
                         @foreach($reviews as $rvw)
                         <div class="blog-i">
-                            <a href="{{url('review/details/'.$rvw->title)}}" class="blog-img">
-                                <img href="{{url('review/details/'.$rvw->title)}}" src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
+                            <a href="{{url('review/details/'.$rvw->url)}}" class="blog-img">
+                                <img href="{{url('review/details/'.$rvw->url)}}" src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
                             </a>
                             <p class="blog-info">
                                 <a>{{$rvw->written_by}}</a>
                             </p>
-                            <h3><a href="{{url('review/details/'.$rvw->title)}}">{{$rvw->title}}</a></h3>
-                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->title)}}">read more</a></p>
+                            <h3><a href="{{url('review/details/'.$rvw->url)}}">{{$rvw->title}}</a></h3>
+                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->url)}}">read more</a></p>
                         </div>
                         @endforeach
                     </div>

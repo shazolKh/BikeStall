@@ -49,7 +49,7 @@
                 <ul>
                     @foreach($all_brands as $brand)
                         <li>
-                            <a href="{{url('brands/'.$brand->br_name)}}">{{$brand->br_name}}</a>
+                            <a href="{{url('brands/'.$brand->url)}}">{{$brand->br_name}}</a>
                         </li>
                     @endforeach
                 </ul>
