@@ -317,7 +317,7 @@ class BikeController extends Controller
             Bike::where(['id'=>$id])->update(['category_id'=>$data['category_id'], 'bike_name'=>$data['bike_name'],
                 'url'=>$data['url'], 'brand_id'=>$data['brand_id'], 'bike_model'=>$data['bike_model'],
                 'bike_color'=>$data['bike_color'], 'Engine'=>$data['bike_engine'], 'mileage'=>$data['mile'],
-                'youtube_link'=>$data['yt_link'], 'description'=>$data['description'], 'price'=>$data['bike_price'],
+                'youtube_link'=>$data['yt_link'], 'description'=>$data['description'], 'price'=>$data['bike_price'], 'price_comma' => $data['price_comma'],
                 'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3,
                 'engine_type'=>$data['engine_type'], 'max_power' => $data['max_power'], 'max_torque' => $data['max_torque'],
                 'top_speed' => $data['top_speed'], 'bore' => $data['bore'], 'stroke' => $data['stroke'],

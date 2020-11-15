@@ -46,8 +46,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/images/image3/small_image/822343.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/264968.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/837194.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +247,8 @@
       <workItem from="1604945168351" duration="10760000" />
       <workItem from="1604956534520" duration="1007000" />
       <workItem from="1605010430822" duration="11677000" />
-      <workItem from="1605369788480" duration="11223000" />
-    </task>
-    <task id="LOCAL-00003" summary="Semi Final Edit">
-      <created>1602880204236</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1602880204236</updated>
+      <workItem from="1605369788480" duration="11847000" />
+      <workItem from="1605386025962" duration="101000" />
     </task>
     <task id="LOCAL-00004" summary="Empty Image folders Filled with a.txt file">
       <created>1602880596042</created>
@@ -593,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605381586775</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Final">
+      <created>1605382275667</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1605382275667</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,10 +653,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604467760020" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605381581843">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605382274141">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605381581843" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605382274141" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -669,10 +669,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605381605164">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605382283259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605381605164" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605382283259" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
