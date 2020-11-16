@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\Logo;
 use App\SubCategory;
 use Illuminate\Http\Request;
@@ -469,8 +470,9 @@ class BikeController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
         return view('bikes.category')->with(compact('categoryDetails', 'allBikes','categories','brands',
-            'logo', 'all_brands'));
+            'logo', 'all_brands', 'about'));
     }
 
 }

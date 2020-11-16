@@ -5,21 +5,21 @@
 @section('meta')
     <!-- Primary Meta Tags -->
     <meta name="title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
-    <meta name="description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader. ">
+    <meta name="description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
     <meta property="og:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader.">
-    <meta property="og:image" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
+    <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
+    <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
     <meta property="twitter:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh. BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information & share a real Review for the reader.">
-    <meta property="twitter:image" content="{{asset('public/image/admin_review/image1/'.$metareviews->image1)}}">
+    <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
 @endsection
 

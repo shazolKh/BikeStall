@@ -12,14 +12,14 @@
     <meta property="og:url" content="https://gsmarenabd.xyz/">
     <meta property="og:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews & Showrooms - BikeStall">
     <meta property="og:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check {{$br_name_details->br_name}} All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
-    <meta property="og:image" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
+    <meta property="og:image" content="{{asset('public/image/brand_image/'.$br_name_details->image)}}">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
+    <meta property="twitter:card" content="{{asset('public/image/brand_image/'.$br_name_details->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
     <meta property="twitter:title" content="{{$br_name_details->br_name}} Bikes Price in Bangladesh 2020, Specs, Reviews & Showrooms - BikeStall">
     <meta property="twitter:description" content="{{$br_name_details->br_name}} Bikes Price In Bangladesh. Check {{$br_name_details->br_name}} All Models full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall">
-    <meta property="twitter:image" content="{{asset('public/image/brand_name/'.$br_name_details->image)}}">
+    <meta property="twitter:image" content="{{asset('public/image/brand_image/'.$br_name_details->image)}}">
 
 @endsection
 

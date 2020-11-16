@@ -4,21 +4,21 @@
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Get The Latest Bike News At BikeStall.">
-    <meta name="description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
+    <meta name="title" content="{{$detail_news->headline}} | Bike News  In BD">
+    <meta name="description" content="{{$detail_news->headline}}. Here you can know the exact  bike News First of all. We are collecting this news from the real source.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content=https://gsmarenabd.xyz/">
-    <meta property="og:title" content="Get The Latest Bike News At BikeStall.">
-    <meta property="og:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
+    <meta property="og:title" content="{{$detail_news->headline}} | Bike News  In BD">
+    <meta property="og:description" content="{{$detail_news->headline}}. Here you can know the exact  bike News First of all. We are collecting this news from the real source.">
     <meta property="og:image" content="{{asset('public/image/news/'.$detail_news->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/news/'.$detail_news->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
-    <meta property="twitter:title" content="Get The Latest Bike News At BikeStall.">
-    <meta property="twitter:description" content="To Get the fast & first Bike news You can visit us. Our expert are always concern about all of bike information & News.">
+    <meta property="twitter:title" content="{{$detail_news->headline}} | Bike News  In BD">
+    <meta property="twitter:description" content="{{$detail_news->headline}}. Here you can know the exact  bike News First of all. We are collecting this news from the real source.">
     <meta property="twitter:image" content="{{asset('public/image/news/'.$detail_news->image)}}">
 @endsection
 

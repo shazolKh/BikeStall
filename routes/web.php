@@ -187,6 +187,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin/view-about/', 'AboutController@about');
     Route::match(['get', 'post'],'/admin/edit-about/{id}', 'AboutController@editAbout');
     Route::get('/admin/delete-about-image/{id}','AboutController@deleteImage');
+    Route::get('/admin/delete-search-image/{id}','AboutController@deleteSearchImage');
 
 
 

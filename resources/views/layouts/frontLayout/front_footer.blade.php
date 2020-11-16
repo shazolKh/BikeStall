@@ -27,29 +27,24 @@
 			<p class="footer-msg">Social Media Contact </p>
 			<ul class="footer-social">
 				<li>
-					<a rel="nofollow" target="_blank" href="http://facebook.com/">
+					<a rel="nofollow" target="_blank" href="{{$about->fb}}">
 						<i class="fa fa-facebook"></i>
 					</a>
 				</li>
 
 				<li>
-					<a rel="nofollow" target="_blank" href="http://youtube.com/">
+					<a rel="nofollow" target="_blank" href="{{$about->yt}}">
 						<i class="fa fa-youtube-play"></i>
 					</a>
 				</li>
 				<li>
-					<a rel="nofollow" target="_blank" href="http://twitter.com/">
+					<a rel="nofollow" target="_blank" href="{{$about->twitter}}">
 						<i class="fa fa-twitter"></i>
 					</a>
 				</li>
 				<li>
-					<a rel="nofollow" target="_blank" href="http://google.com/">
-						<i class="fa fa-google-plus"></i>
-					</a>
-				</li>
-				<li>
-					<a rel="nofollow" target="_blank" href="http://twitter.com/">
-						<i class="fa fa-instagram"></i>
+					<a rel="nofollow" target="_blank" href="{{$about->linkedin}}">
+						<i class="fa fa-linkedin"></i>
 					</a>
 				</li>
 			</ul>

@@ -4,7 +4,7 @@
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
+    <meta name="title" content="Bike Price in Bangladesh 2020,( ☑ Updated) Specs & Reviews - BikeStall">
     <meta name="description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
 
     <!-- Open Graph / Facebook -->
@@ -157,9 +157,9 @@
 			</div>
 			<div class="frontsearch-cont" id="frontsearch-cont" data-lines-count="20">
 				<p class="frontsearch-img">
-					<img src="{{asset('public/frontend/img/filter-img.png')}}" alt="">
+					<img src="{{asset('public/image/about/'.$about->search_image)}}" alt="">
 				</p>
-				<p class="frontsearch-model">GT-Z600</p>
+				<p class="frontsearch-model">{{$about->search_title}}</p>
 
 
 			</div>

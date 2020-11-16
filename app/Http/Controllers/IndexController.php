@@ -55,10 +55,11 @@ class IndexController extends Controller
         $logo = Logo::first();
 
         $all_brands = Brand::get();
+        $about = About::first();
 
         //return view
         return view('index')->with(compact('brands', 'slider', 'bikes','news', 'reviews', 'categories',
-            'logo', 'all_brands'));
+            'logo', 'all_brands', 'about'));
     }
 
     public function sub_cat_Bikes($sub_ct_name = null)
@@ -69,8 +70,9 @@ class IndexController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
         return view('bikes.sub_category')->with(compact('subcategoryDetails', 'allBikes','categories',
-            'brands', 'logo', 'all_brands'));
+            'brands', 'logo', 'all_brands', 'about'));
     }
 
     public function bike_br($url=null)
@@ -81,8 +83,9 @@ class IndexController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
         return view('bikes.bike_brand')->with(compact('br_name_details', 'bikes','categories','brands',
-            'logo', 'all_brands'));
+            'logo', 'all_brands', 'about'));
     }
 
     public function bikeDetails($url)
@@ -102,11 +105,12 @@ class IndexController extends Controller
             ->where('url', '!=', $url)->get();
 
         $all_brands = Brand::get();
+        $about = About::first();
 
         //return response()->json($related);
 
         return view('bikes.bike_details')->with(compact('categories', 'bk_details', 'brand', 'com', 'logo',
-        'related', 'all_brands'));
+        'related', 'all_brands', 'about'));
     }
 
     public function reviews()
@@ -116,8 +120,9 @@ class IndexController extends Controller
         $reviews = AdminReview::orderBy('id','DESC')->paginate(10);
         $metareviews = AdminReview::first();
         $all_brands = Brand::get();
+        $about = About::first();
         return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews', 'logo',
-        'all_brands'));
+        'all_brands', 'about'));
     }
 
     public function reviewsDetails($url)
@@ -127,9 +132,10 @@ class IndexController extends Controller
         $logo = Logo::first();
         $all_brands = Brand::get();
         $related = AdminReview::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
+        $about = About::first();
         //return response()->json($detail_review);
         return view('reviews.detail_review')->with(compact('detail_review', 'categories', 'logo' ,
-            'all_brands', 'related'));
+            'all_brands', 'related', 'about'));
     }
 
     public function photoGallery(){
@@ -137,7 +143,8 @@ class IndexController extends Controller
         $photos = PhotoGallery::paginate(10);
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('gallery.gallery')->with(compact('categories', 'photos', 'logo', 'all_brands'));
+        $about = About::first();
+        return view('gallery.gallery')->with(compact('categories', 'photos', 'logo', 'all_brands', 'about'));
     }
 
     public function about()
@@ -158,7 +165,8 @@ class IndexController extends Controller
         $news = News::orderBy('id', 'DESC')->paginate(16);
         $metanews = News::first();
         $all_brands = Brand::get();
-        return view('news.short_news')->with(compact('news', 'categories', 'metanews', 'logo', 'all_brands'));
+        $about = About::first();
+        return view('news.short_news')->with(compact('news', 'categories', 'metanews', 'logo', 'all_brands', 'about'));
     }
 
     public function newsDetails($url=null)
@@ -167,11 +175,12 @@ class IndexController extends Controller
         $detail_news =News::where(['url'=>$url])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
         //Related
         $related = News::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
 
-        return view('news.detail_news')->with(compact('detail_news', 'categories', 'logo', 'all_brands', 'related'));
+        return view('news.detail_news')->with(compact('detail_news', 'categories', 'logo', 'all_brands', 'related', 'about'));
     }
 
     //Contact
@@ -180,7 +189,8 @@ class IndexController extends Controller
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('contact')->with(compact('categories', 'logo','all_brands'));
+        $about = About::first();
+        return view('contact')->with(compact('categories', 'logo','all_brands', 'about'));
     }
 
     /*public function storeMessage(Request $request)
@@ -210,7 +220,8 @@ class IndexController extends Controller
         $bikes = Bike::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('compare')->with(compact('categories', 'bikes', 'logo', 'all_brands'));
+        $about = About::first();
+        return view('compare')->with(compact('categories', 'bikes', 'logo', 'all_brands', 'about'));
     }
 
     public function comparison()
@@ -227,10 +238,11 @@ class IndexController extends Controller
         //$bikeTwoSpecs = FullSpac::where(['bike_id'=>$bikeTwoDetails->id])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
 
         //return response()->json([[$bikeOne, $bikeTwo], [$bikeOneSpecs->bike_id, $bikeTwoSpecs->bike_id]]);
-        return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails', 'logo', 'all_brands'));
+        return view('comparison')->with(compact('categories', 'bikeOneDetails', 'bikeTwoDetails', 'logo', 'all_brands', 'about'));
     }
 
     public function accList()
@@ -239,8 +251,9 @@ class IndexController extends Controller
         $data = Accessories::orderBy('id', 'DESC')->paginate(16);
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('accessories.acc_list')->with(compact('categories', 'data', 'logo', 'all_brands'));
+        return view('accessories.acc_list')->with(compact('categories', 'data', 'logo', 'all_brands', 'about'));
     }
 
     public function accDetails($url)
@@ -249,8 +262,9 @@ class IndexController extends Controller
         $data = Accessories::where(['url'=>$url])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('accessories.acc_details')->with(compact('categories', 'data', 'logo', 'all_brands'));
+        return view('accessories.acc_details')->with(compact('categories', 'data', 'logo', 'all_brands', 'about'));
     }
 
     public function showroom()
@@ -259,7 +273,8 @@ class IndexController extends Controller
         $logo = Logo::first();
         $data = Showroom::orderBy('id', 'DESC')->paginate(16);
         $all_brands = Brand::get();
-        return view('show.show_list')->with(compact('data', 'logo', 'categories', 'all_brands'));
+        $about = About::first();
+        return view('show.show_list')->with(compact('data', 'logo', 'categories', 'all_brands', 'about'));
     }
 
     public function showroomDetails($id)
@@ -268,7 +283,8 @@ class IndexController extends Controller
         $logo = Logo::first();
         $details = Showroom::where(['id'=>$id])->first();
         $all_brands = Brand::get();
-        return view('show.show_details')->with(compact('details', 'logo', 'categories', 'all_brands'));
+        $about = About::first();
+        return view('show.show_details')->with(compact('details', 'logo', 'categories', 'all_brands', 'about'));
     }
 
     public function allBrand()
@@ -278,7 +294,8 @@ class IndexController extends Controller
 
         $brandss = Brand::orderBy('id', 'DESC')->paginate(12);
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('accessories.brand_list')->with(compact('categories', 'logo', 'brandss', 'all_brands'));
+        return view('accessories.brand_list')->with(compact('categories', 'logo', 'brandss', 'all_brands', 'about'));
     }
 }

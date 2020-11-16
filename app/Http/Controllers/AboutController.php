@@ -69,8 +69,22 @@ class AboutController extends Controller
             }else{
                 $filename = $data['current_image'];
             }
+
+            //Update Image
+            $image_temp1 = $request->file('sc_image');
+            if ($image_temp1){
+                $extension1 = $image_temp1->getClientOriginalExtension();
+                $filename1 = rand(111, 999999).'.'.$extension1;
+
+                $large_image_path1 = public_path('image/about/'.$filename1);
+
+                Image::make($image_temp1)->save($large_image_path1);
+            }else{
+                $filename1 = $data['current_image1'];
+            }
             About::where(['id'=>$id])->update(['title'=>$data['news_title'], 'details'=>$data['description'],
-                'image'=>$filename]);
+                 'search_title'=>$data['image_title'], 'search_image'=>$filename1, 'fb'=>$data['fb'],'image'=>$filename,
+                'yt'=>$data['yt'], 'twitter'=>$data['twitter'], 'linkedin'=>$data['linkedin']]);
             return redirect('/admin/view-about')->with('flash_message_success', 'Information Updated successfully');
 
         }
@@ -85,6 +99,15 @@ class AboutController extends Controller
         $image = $news->image;
         unlink(public_path('image/about/'.$image));
         About::where(['id'=>$id])->update(['image'=>'']);
+        return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
+    }
+
+    public function deleteSearchImage($id)
+    {
+        $news = About::where(['id'=>$id])->first();
+        $image = $news->search_image;
+        unlink(public_path('image/about/'.$image));
+        About::where(['id'=>$id])->update(['search_image'=>'']);
         return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
     }
 }

@@ -4,23 +4,23 @@
 @endsection
 
 @section('meta')
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-    <meta name="description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
+<meta name="description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gsmarenabd.xyz/">
-    <meta property="og:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-    <meta property="og:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
-    <meta property="og:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gsmarenabd.xyz/">
+<meta property="og:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
+<meta property="og:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<meta property="og:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
-    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
-    <meta property="twitter:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-    <meta property="twitter:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
-    <meta property="twitter:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
+<!-- Twitter -->
+<meta property="twitter:card" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
+<meta property="twitter:url" content="https://gsmarenabd.xyz/">
+<meta property="twitter:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
+<meta property="twitter:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<meta property="twitter:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
 @endsection
 
 @section('content')

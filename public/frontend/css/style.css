@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -766,7 +766,7 @@ input:focus {
 	margin-bottom: 2px;
 	padding-top: 0;
 	padding-bottom: 0;
-	list-style: none;	
+	list-style: none;
 	text-align: center;
 	font-size: 1px;
 	display: block;
@@ -1657,7 +1657,7 @@ input:focus {
 	margin: 0 0 3px;
 }
 .populars .popular .popular-info .popular-add {
-	transition: all 0.3s; 
+	transition: all 0.3s;
 	text-transform: uppercase;
 	position: absolute;
 	color: #ff3100;
@@ -1860,7 +1860,7 @@ input:focus {
 	margin: 0 0 0 6%;
 }
 .getspec .getspec-img:hover {
-	
+
 }
 .getspec .getspec-img img {
 	display: block;
@@ -1947,7 +1947,7 @@ input:focus {
 	margin: 0 4.5% 0 0px;
 }
 .botarticle .botarticle-img:hover {
-	
+
 }
 .botarticle .botarticle-img img {
 	display: block;
@@ -2667,7 +2667,7 @@ ul.pager li.dots a {
     min-height: initial;
 }
 .section-list .sectls-qnt-wrap .sectls-qnt:hover {
-	
+
 }
 .section-list .sectls-qnt-wrap .sectls-minus {
 	float: left;
@@ -3187,7 +3187,7 @@ ul.pager li.dots a {
 	padding: 5px 6px 7px 5px;
 }
 .prod .prod-thumbs .slides li.flex-active-slide {
-	
+
 }
 .prod .prod-thumbs .slides li.flex-active-slide:after {
 	position: absolute;
@@ -3337,7 +3337,7 @@ ul.pager li.dots a {
 	overflow: hidden;
 }
 .prod .prod-qnt-wrap .prod-qnt:hover {
-	
+
 }
 .prod .prod-qnt-wrap .prod-minus {
 	float: left;
@@ -3445,7 +3445,7 @@ ul.pager li.dots a {
 	position: relative;
 	font-size: 15px;
 	color: #868ca7;
-	/*padding: 15px 0 0;*/	
+	/*padding: 15px 0 0;*/
 	text-align: left;
 	padding: 15px 0 0 3.6%;
 }
@@ -4116,7 +4116,7 @@ ul.pager li.dots a {
     bottom: 170px;
 }
 .blog h1 {
-	
+
 }
 .cont-sections {
 	position: absolute;
@@ -4477,7 +4477,7 @@ ul.pager li.dots a {
 	border-top: none;
 }
 .blog-featured-info {
-	
+
 }
 .blog-featured-info {
 	padding: 0 65px 0 0;
@@ -5015,7 +5015,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 	font-weight: 700;
 }
 .contacts-form form {
-	
+
 }
 .contacts-form form input[type=text] {
 	border: 1px solid #e0e4f6;
@@ -5784,6 +5784,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 .footer-info .footer-social li a {
 	color: #fff;
 	transition: all 0.2s;
+    margin-right: 100px;
 }
 .footer-info .footer-social li a:hover {
 	color: #ff3100;
@@ -6097,7 +6098,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 
 .slider{
 	position:relative;
-	width:100%; 
+	width:100%;
 	margin:0 auto;
 }
 @media only screen and (min-width: 1000px){
@@ -6177,10 +6178,10 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 }
 .compare-info .image img{
 	max-width:180px;
-	border:0px; 
+	border:0px;
 }
 .compare-info .image{
-	position:relative; 
+	position:relative;
 }
 .compare-info .image a{
 	position:absolute;
@@ -6300,7 +6301,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-  
+
   form.compare-searchbtn button {
 	float: left;
 	width: 20%;
@@ -6313,11 +6314,11 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 	border-left: none;
 	cursor: pointer;
   }
-  
+
   form.compare-searchbtn button:hover {
 	background: #0b7dda;
   }
-  
+
   form.compare-searchbtn::after {
 	content: "";
 	clear: both;
@@ -6332,7 +6333,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 	width: 70%;
 	background: #f1f1f1;
   }
-  
+
   .compare-searchbox button {
 	float: left;
 	width: 20%;
@@ -6345,11 +6346,11 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 	border-left: none;
 	cursor: pointer;
   }
-  
+
   .compare-searchbox button:hover {
 	background: #0b7dda;
   }
-  
+
   .compare-searchbox::after {
 	content: "";
 	clear: both;

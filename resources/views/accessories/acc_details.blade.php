@@ -6,21 +6,21 @@
 
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="{{$data->name}} Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta name="description" content="{{$data->name}} Price in Bangladesh 2020 ( ☑️ Updated). Check {{$data->name}} Full specs, reviews, colours, image & Updated price in Bangladesh.">
+    <meta name="title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
+    <meta name="description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
-    <meta property="og:title" content="{{$data->name}} Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="og:description" content="{{$data->name}} Price in Bangladesh 2020 ( ☑️ Updated). Check {{$data->name}} Full specs, reviews, colours, image & Updated price in Bangladesh.">
+    <meta property="og:title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
+    <meta property="og:description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
     <meta property="og:image" content="{{asset('public/image/accessories/image/'.$data->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/accessories/image/'.$data->image)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
-    <meta property="twitter:title" content="{{$data->name}} Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="twitter:description" content="{{$data->name}} Price in Bangladesh 2020 ( ☑️ Updated). Check {{$data->name}} Full specs, reviews, colours, image & Updated price in Bangladesh.">
+    <meta property="twitter:title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
+    <meta property="twitter:description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
     <meta property="twitter:image" content="{{asset('public/image/accessories/image/'.$data->image)}}">
 @endsection
 

@@ -8,6 +8,24 @@
     <title>Compare</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Boom Here You Can Compare Your Favorite Bike | BikeStall">
+    <meta name="description" content="Here we Give you a opportunity To compare between two bikes. We believe that it can help you choose a bike for you.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gsmarenabd.xyz/">
+    <meta property="og:title" content="Boom Here You Can Compare Your Favorite Bike | BikeStall">
+    <meta property="og:description" content="Here we Give you a opportunity To compare between two bikes. We believe that it can help you choose a bike for you.">
+    <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
+    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
+    <meta property="twitter:title" content="Boom Here You Can Compare Your Favorite Bike | BikeStall">
+    <meta property="twitter:description" content="Here we Give you a opportunity To compare between two bikes. We believe that it can help you choose a bike for you.">
+    <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
+
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>

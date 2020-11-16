@@ -4,26 +4,21 @@
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
-    <meta name="description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.
-    BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information
-    & share a real Review for the reader.">
+    <meta name="title" content="{{$detail_review->title}} | Bike Reviews In BD">
+    <meta name="description" content="{{$detail_review->title}}. Here you can know the exact  bike reviews from BikeStall's Expert.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gsmarenabd.xyz/">
-    <meta property="og:title" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.">
-    <meta property="og:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.
-    BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information
-    & share a real Review for the reader.">
+    <meta property="og:title" content="{{$detail_review->title}} | Bike Reviews In BD">
+    <meta property="og:description" content="{{$detail_review->title}}. Here you can know the exact  bike reviews from BikeStall's Expert.">
     <meta property="og:image" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">
     <meta property="twitter:url" content="https://gsmarenabd.xyz/">
-    <meta property="twitter:description" content="All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh.
-    BikeStall team Collect information from real biker, Showroom & company information Then they Observe all of this information
-    & share a real Review for the reader.">
+    <meta property="twitter:title" content="{{$detail_review->title}} | Bike Reviews In BD">
+    <meta property="twitter:description" content="{{$detail_review->title}}. Here you can know the exact  bike reviews from BikeStall's Expert.">
     <meta property="twitter:image" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">
 
 @endsection

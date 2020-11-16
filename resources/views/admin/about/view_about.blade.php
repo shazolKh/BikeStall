@@ -20,34 +20,36 @@
                 <h6 class="m-0 font-weight-bold text-primary">ABOUT US</h6>
             </div>
             <div class="card-body">
-                <a href="{{url('/admin/add-about/')}}" class="btn btn-success btn-icon-split btn-sm">
+                {{--<a href="{{url('/admin/add-about/')}}" class="btn btn-success btn-icon-split btn-sm">
                      <span class="icon text-white-50">
                          <i class="fas fa-plus-circle"></i>
                      </span>
                     <span class="text">ADD</span>
                 </a>
                 <br>
-                <br>
+                <br>--}}
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                     <tr class="text-center">
-                        <th>ID</th>
                         <th style="color: red">Title</th>
                         <th>Image</th>
-                        <th>Created</th>
+                        <th>Search Area image title</th>
+                        <th>Image</th>
                         <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($vnews as $nws)
                         <tr class="text-center">
-                            <td>{{$nws->id}}</td>
                             <td>{{$nws->title}}</td>
                             <td>
-                                <img src="{{asset('public/image/about/'.$nws->image)}}" style="width: 50px">
+                                <img src="{{asset('public/image/about/'.$nws->image)}}" style="width: 50px" data-lity>
                             </td>
-                            <td>{{$nws->created_at}}</td>
+                            <td>{{$nws->search_title}}</td>
+                            <td>
+                                <img src="{{asset('public/image/about/'.$nws->search_image)}}" style="width: 50px" data-lity>
+                            </td>
                             <td class="text-center">
                                 <a href="#" class="btn btn-info btn-icon-split btn-sm" data-toggle="modal" data-target="#exampleModal{{$nws->id}}">
                                     <span class="icon text-white-50">
@@ -74,6 +76,11 @@
                                         <div class="modal-body">
                                             <p>Title: {{$nws->title}}</p>
                                             <p>Details: {!! $nws->details !!}</p>
+                                            <h5 class="text-center">Social Links</h5>
+                                            <p>Facebook: {{$nws->fb}}</p>
+                                            <p>Youtube: {{$nws->yt}}</p>
+                                            <p>Twitter: {{$nws->twitter}}</p>
+                                            <p>Linkedin: {{$nws->linkedin}}</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
