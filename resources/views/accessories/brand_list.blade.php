@@ -30,7 +30,7 @@
             <div class="populars-list">
                 @foreach ($brandss as $brand)
                     <div class="popular">
-                        <a href="{{url('brands/'.$brand->br_name)}}" class="popular-link">
+                        <a href="{{url('brands/'.$brand->url)}}" class="popular-link">
                             <p class="popular-img">
                                 <img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
                             </p>
