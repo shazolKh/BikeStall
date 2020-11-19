@@ -10,14 +10,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gsmarenabd.xyz/">
+    <meta property="og:url" content="{{url('/accessories')}}">
     <meta property="og:title" content="Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall">
     <meta property="og:description" content="Bike Accessories Price in Bangladesh 2020 ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
     <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
-    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
+    <meta property="twitter:url" content="{{url('/accessories')}}">
     <meta property="twitter:title" content="Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall">
     <meta property="twitter:description" content="Bike Accessories Price in Bangladesh 2020 ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
     <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">

@@ -9,14 +9,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gsmarenabd.xyz/">
+    <meta property="og:url" content="{{url('review/details/'.$detail_review->url)}}">
     <meta property="og:title" content="{{$detail_review->title}} | Bike Reviews In BD">
     <meta property="og:description" content="{{$detail_review->title}}. Here you can know the exact  bike reviews from BikeStall's Expert.">
     <meta property="og:image" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">
-    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
+    <meta property="twitter:url" content="{{url('review/details/'.$detail_review->url)}}">
     <meta property="twitter:title" content="{{$detail_review->title}} | Bike Reviews In BD">
     <meta property="twitter:description" content="{{$detail_review->title}}. Here you can know the exact  bike reviews from BikeStall's Expert.">
     <meta property="twitter:image" content="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}">

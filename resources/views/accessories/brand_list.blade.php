@@ -9,14 +9,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gsmarenabd.xyz/">
+    <meta property="og:url" content="{{route('brand.list')}}">
     <meta property="og:title" content="All Branded  Bike Price in Bangladesh 2020, Specs, Reviews  & Showrooms - BikeStall">
     <meta property="og:description" content="All Branded  Bikes Price In Bangladesh 2020. Check All Branded Bikes full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall.">
     <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
-    <meta property="twitter:url" content="https://gsmarenabd.xyz/">
+    <meta property="twitter:url" content="{{route('brand.list')}}">
     <meta property="twitter:title" content="All Branded  Bike Price in Bangladesh 2020, Specs, Reviews  & Showrooms - BikeStall">
     <meta property="twitter:description" content="All Branded  Bikes Price In Bangladesh 2020. Check All Branded Bikes full Specifications, Feature Review, User Review, Comparisons, Mileage, Top Speed, Images, videos at BikeStall.">
     <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">

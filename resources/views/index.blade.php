@@ -174,7 +174,7 @@
 <div class="populars-wrap">
 	<div class="cont populars">
 		<h2>ALL BIKES</h2>
-		<p class="populars-count">{{$bikes->count()}} BIKES</p>
+		<p class="populars-count">{{\App\Bike::count()}} BIKES</p>
 		<div class="populars-list">
             @foreach ($bikes as $bk)
             <div class="popular">
