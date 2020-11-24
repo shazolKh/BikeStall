@@ -52,6 +52,6 @@
 
 	</div>
 	<div class="copyright">
-		<p class="cont">© Technology Partner SKODER LTD 2020</p>
+		<p class="cont" style="color: #868ca7">© Technology Partner SKODER LTD 2020</p>
 	</div>
 </footer>
