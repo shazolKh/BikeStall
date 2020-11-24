@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
+    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="Final ff">
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/647624.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
@@ -49,15 +49,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/images/image3/small_image/822343.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/264968.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/news/837194.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +253,7 @@
       <workItem from="1605386025962" duration="101000" />
       <workItem from="1605437401175" duration="841000" />
       <workItem from="1605527002334" duration="13677000" />
-      <workItem from="1605770392270" duration="2683000" />
-    </task>
-    <task id="LOCAL-00007" summary="Maybe Final Edit">
-      <created>1602957077385</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1602957077385</updated>
+      <workItem from="1605770392270" duration="3565000" />
     </task>
     <task id="LOCAL-00008" summary="Maybe Final Edit2">
       <created>1602968874229</created>
@@ -607,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605541682372</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Final ff">
+      <created>1605775097920</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1605775097921</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,10 +658,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604467760020" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605541680869">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605775093545">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605541680869" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605775093545" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -683,10 +674,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605541688133">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605775105166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605541688133" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605775105166" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

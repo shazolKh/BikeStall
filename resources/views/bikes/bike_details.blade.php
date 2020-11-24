@@ -134,7 +134,7 @@
                         </a>
                     </div>
                     <div class="prod-rating-wrap">
-                        <a href="{{url('/brands/'.$brand->br_name)}}">
+                        <a href="{{url('/brands/'.$brand->url)}}">
                             <img src="{{asset('public/image/brand_image/'.$brand->image)}}" style="width: 150px">
                         </a>
                     </div>
