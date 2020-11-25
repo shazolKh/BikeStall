@@ -150,7 +150,7 @@ class IndexController extends Controller
     public function about()
     {
         $categories = Category::with('categories')->get();
-        $about = About::get();
+        $about = About::first();
         $logo = Logo::first();
         $all_brands = Brand::get();
         //return response()->json($about);
