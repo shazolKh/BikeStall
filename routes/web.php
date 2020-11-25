@@ -217,3 +217,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::post('user-review/{id}', 'CommentController@storeComment');
 
 Route::get('/logout', 'AdminController@logout');
+
+Route::fallback(function (){
+    return redirect('/');
+});
