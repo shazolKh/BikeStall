@@ -21,28 +21,28 @@
             <ul class="contacts-col1">
                 <li>
                     <p><b>Information</b></p>
-                    <p>Quisque leo velit, laoreet vel turpis id</p>
+                    <p>BikeStall - BikeStall.com is a Motorcycle/ Bike based website in Bangladesh. Here you can know about all available branded bike's Information like Specs, Price, Reviews, Video Reviews, Showrooms, Accessories and Updated  News. Contact Us for any kinds of Information about Bike/ Motorcycle.</p>
                 </li>
                 <li>
                     <p><b>Address</b></p>
-                    <p>Forbes Ave, Pittsburgh, PA, USA</p>
+                    <p>Mohanpur, Medical Gate, Mohanpur, Rajshahi - 6220</p>
                 </li>
                 <li>
                     <p><b>Email</b></p>
-                    <p><a href="mailto:motor@stockware.ru">motor@stockware.ru</a></p>
+                    <p><a href="mailto:bikestall.com@gmail.com">bikestall.com@gmail.com</a></p>
                 </li>
             </ul>
             <ul class="contacts-col2">
                 <li>
                     <p><b>Phone</b></p>
-                    <p>(765)-130-7804</p>
+                    <p>01775621083</p>
                 </li>
                 <li>
                     <p><b>Business Hours</b></p>
-                    <p>Monday-Friday: 8am to 6pm</p>
-                    <p>Saturday: 10am to 2pm</p>
+                    <p>9:00 AM  - 5:00 PM</p>
+                    {{--<p>Saturday: 10am to 2pm</p>
                     <p>Sunday: Closed</p>
-                    <p>Support 24/7</p>
+                    <p>Support 24/7</p>--}}
                 </li>
             </ul>
         </div>
