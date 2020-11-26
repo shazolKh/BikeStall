@@ -100,7 +100,9 @@ class SubCategoryController extends Controller
         if (!empty($id)){
             $news = SubCategory::where(['id'=>$id])->first();
             $image = $news->image;
-            unlink(public_path('image/scat_image/'.$image));
+            if (!empty($image)){
+                unlink(public_path('image/scat_image/'.$image));
+            }
             SubCategory::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Information Deleted Successfully!!');
         }

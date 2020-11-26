@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\SubCategory;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -93,6 +94,7 @@ class CategoryController extends Controller
                 unlink(public_path('image/cat_image/'.$image));
             }
 
+            SubCategory::where(['category_id'=>$id])->delete();
             Category::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Category Deleted Successfully!!');
         }

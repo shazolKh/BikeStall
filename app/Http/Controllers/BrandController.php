@@ -83,7 +83,9 @@ class BrandController extends Controller
         if (!empty($id)){
             $news = Brand::where(['id'=>$id])->first();
             $image = $news->image;
-            unlink(public_path('image/brand_image/'.$image));
+            if (!empty($image)){
+                unlink(public_path('image/brand_image/'.$image));
+            }
             Brand::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Brand Deleted Successfully!!');
         }
