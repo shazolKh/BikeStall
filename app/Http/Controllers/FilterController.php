@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
 use App\Bike;
 use App\Brand;
 use App\Category;
@@ -221,9 +222,10 @@ class FilterController extends Controller
         $text = $_POST['query'];
         $bikes = Bike::where('bike_name', 'LIKE', '%'.$text.'%')->get();
         $logo = Logo::first();
+        $about = About::first();
 
         $all_brands = Brand::get();
 
-        return view('bikes.search')->with(compact('categories', 'bikes', 'brands', 'logo', 'all_brands'));
+        return view('bikes.search')->with(compact('categories', 'bikes', 'brands', 'logo', 'all_brands', 'about'));
     }
 }
