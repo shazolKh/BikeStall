@@ -186,7 +186,7 @@
 				</a>
 				<p class="popular-info">
                     <a href="{{url('category/bikes/'.$bk->ct_name)}}" class="popular-categ">{{$bk->ct_name}}</a>
-                    <span class="popular-price">{{$bk->price_comma}} TK</span>
+                    <span class="popular-price">{{$bk->price_comma}}</span>
 				</p>
 			</div>
             @endforeach

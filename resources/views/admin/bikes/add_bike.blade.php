@@ -111,7 +111,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label" style="color: #0000ee">Price (With comma)</label>
+                                    <label class="control-label" style="color: #0000ee">Price (With comma. Also add "TK" where needed)</label>
                                     <div class="controls">
                                         <input type="text" class="form-control" name="price_comma" id="price_comma"
                                         placeholder="This will be displayed on WebPage">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bike;
 use Illuminate\Http\Request;
 use App\Brand;
 use Intervention\Image\Facades\Image;
@@ -87,6 +88,7 @@ class BrandController extends Controller
                 unlink(public_path('image/brand_image/'.$image));
             }
             Brand::where(['id'=>$id])->delete();
+            Bike::where(['brand_id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Brand Deleted Successfully!!');
         }
     }

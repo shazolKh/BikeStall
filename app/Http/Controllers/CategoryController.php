@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bike;
 use App\Category;
 use App\SubCategory;
 use Illuminate\Http\Request;
@@ -95,6 +96,7 @@ class CategoryController extends Controller
             }
 
             SubCategory::where(['category_id'=>$id])->delete();
+            Bike::where(['category_id'=>$id])->delete();
             Category::where(['id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Category Deleted Successfully!!');
         }
