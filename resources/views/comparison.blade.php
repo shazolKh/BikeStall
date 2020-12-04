@@ -46,10 +46,10 @@
                                         <tr>
                                             <td>Name</td>
                                             <td>
-                                                <a href="{{url('bike/details/'.$bikeOneDetails->url)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
+                                                <a href="{{route('bike.details', [$bikeOneDetails->url])}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                             </td>
                                             <td>
-                                                <a href="{{url('bike/details/'.$bikeTwoDetails->url)}}" class="title">{{$bikeOneDetails->bike_name}}</a>
+                                                <a href="{{route('bike.details', [$bikeTwoDetails->url])}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -63,8 +63,8 @@
                                         </tr>
                                         <tr>
                                             <td>Price</td>
-                                            <td class="name">{{$bikeOneDetails->price_comma}} TK</td>
-                                            <td class="name">{{$bikeTwoDetails->price_comma}} TK</td>
+                                            <td class="name">{{$bikeOneDetails->price_comma}} </td>
+                                            <td class="name">{{$bikeTwoDetails->price_comma}} </td>
                                         </tr>
                                         <tr>
                                             <td>Color</td>
