@@ -170,12 +170,12 @@ Route::group(['middleware' => ['auth']], function () {
     //Gallery
     Route::get('/admin/image-gallery', 'GalleryController@index');
     Route::post('/admin/image-gallery', 'GalleryController@upload');
-    Route::get('/admin/image-gallery/{id}', 'GalleryController@destroy');
+    Route::delete(/*['get', 'post'],*/'/admin/image-gallery/{id}', 'GalleryController@destroy');
 
     //Photo gallery
     Route::get('/admin/photo-gallery', 'NewsController@photoIndex');
     Route::post('/admin/photo-gallery', 'NewsController@photoUpload');
-    Route::get('/admin/photo-gallery/{id}', 'NewsController@photoDestroy');
+    Route::delete('/admin/photo-gallery/{id}', 'NewsController@photoDestroy');
 
     //Comment
     Route::get('/admin/viewers-reviews', 'CommentController@showComments');

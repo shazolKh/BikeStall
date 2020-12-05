@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bike;
 use App\SubCategory;
 use App\Category;
 use Illuminate\Http\Request;
@@ -104,6 +105,7 @@ class SubCategoryController extends Controller
                 unlink(public_path('image/scat_image/'.$image));
             }
             SubCategory::where(['id'=>$id])->delete();
+            Bike::where(['sub_category_id'=>$id])->delete();
             return redirect()->back()->with('flash_message_error', 'Information Deleted Successfully!!');
         }
     }

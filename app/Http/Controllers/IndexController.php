@@ -102,7 +102,7 @@ class IndexController extends Controller
         $logo = Logo::first();
 
         $related = Bike::where(['category_id'=>$bk_id->category_id])
-            ->where('url', '!=', $url)->get();
+            ->where('url', '!=', $url)->limit(4)->get();
 
         $all_brands = Brand::get();
         $about = About::first();
@@ -131,7 +131,7 @@ class IndexController extends Controller
         $detail_review =AdminReview::where(['url'=>$url])->first();
         $logo = Logo::first();
         $all_brands = Brand::get();
-        $related = AdminReview::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
+        $related = AdminReview::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(4)->get();
         $about = About::first();
         //return response()->json($detail_review);
         return view('reviews.detail_review')->with(compact('detail_review', 'categories', 'logo' ,
@@ -178,7 +178,7 @@ class IndexController extends Controller
         $about = About::first();
 
         //Related
-        $related = News::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(8)->get();
+        $related = News::orderBy('id', 'DESC')->where('url', '!=', $url)->limit(4)->get();
 
         return view('news.detail_news')->with(compact('detail_news', 'categories', 'logo', 'all_brands', 'related', 'about'));
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gallery</title>
+    <title>Index Slider</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- References: https://github.com/fancyapps/fancyBox -->
@@ -31,7 +31,7 @@
 
 
 <div class="container">
-    <h3>GALLERY</h3>
+    <h3>INDEX SLIDER</h3>
     <form action="{{ url('/admin/image-gallery') }}" class="form-image-upload" method="POST" enctype="multipart/form-data">
         @csrf
         @if (count($errors) > 0)
@@ -78,8 +78,8 @@
                             </div> <!-- text-center / end -->
                         </a>
                         <form action="{{ url('/admin/image-gallery/'.$image->id) }}" method="POST">
-                            <input type="hidden" name="_method" value="delete">
                             @csrf
+                            <input type="hidden" name="_method" value="delete">
                             <button type="submit" class="close-icon btn btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
                         </form>
                     </div>
