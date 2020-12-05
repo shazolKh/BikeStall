@@ -66,7 +66,7 @@
 <div class="frontsearch-wrap">
 	<div class="cont frontsearch text-center">
 		<h2>Search</h2>
-		<p class="frontsearch-count">{{$bikes->count()}} BIKES</p>
+		<p class="frontsearch-count">{{\App\Bike::count()}} BIKES</p>
 		<div class="frontsearch-wrap">
 			<div class="frontsearch-selects">
                 <div class="dropdown-wrap frontsearch-select">
