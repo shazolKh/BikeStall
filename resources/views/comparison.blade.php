@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Comparison</title>
+    <title>Boom Here You Can Compare Your Favorite Bike | BikeStall</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -36,11 +36,11 @@
                                             <td></td>
                                             <td class="image">
                                                 <a href="{{url('bike/details/'.$bikeOneDetails->url)}}"></a>
-                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeOneDetails->image)}}" alt="Stylexpo" title="" class="img-thumbnail" />
+                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeOneDetails->image)}}" alt="{{$bikeOneDetails->bike_name}}" title="" class="img-thumbnail" />
                                             </td>
                                             <td class="image">
                                                 <a href="{{url('bike/details/'.$bikeTwoDetails->url)}}"></a>
-                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeTwoDetails->image)}}" alt="Stylexpo" title="" class="img-thumbnail" />
+                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeTwoDetails->image)}}" alt="{{$bikeOneDetails->bike_name}}" title="" class="img-thumbnail" />
                                             </td>
                                         </tr>
                                         <tr>

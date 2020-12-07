@@ -25,7 +25,7 @@
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/show/'.$details->image)}}">
-                                <img src="{{asset('public/image/show/'.$details->image)}}" alt=""></a>
+                                <img src="{{asset('public/image/show/'.$details->image)}}" alt="{{$details->name}}"></a>
                         </li>
                     </ul>
                 </div>

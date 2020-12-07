@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>News</title>
+    <title>{{$detail_news->headline}} | Bike News  In BD</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -33,7 +33,7 @@
                     <h1>{{$detail_news->headline}}</h1>
                     <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_news->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_news->created_at)->format('M')}}</time>
                 </div>
-                <img src="{{asset('public/image/news/'.$detail_news->image)}}" alt="" class="post-img">
+                <img src="{{asset('public/image/news/'.$detail_news->image)}}" alt="{{$detail_news->headline}}" class="post-img">
                 <p>{!! $detail_news->article !!}</p>
 
             </div>
@@ -49,18 +49,18 @@
                         <div class="popular">
                             <a href="{{url('news/details/'.$relate->url)}}" class="popular-link">
                                 <p class="popular-img">
-                                    <img src="{{asset('public/image/news/'.$relate->image)}}" alt="">
+                                    <img src="{{asset('public/image/news/'.$relate->image)}}" alt="{{$relate->headline}}">
                                 </p>
                                 <h3><span>{{$relate->headline}}</span></h3>
                             </a>
                         </div>
                     @endforeach
                 </div>
-                <ul class="pager">
+                {{--<ul class="pager">
                     <li>
                         <a></a>
                     </li>
-                </ul>
+                </ul>--}}
                 <span class="popular-line1"></span>
                 <span class="popular-line2"></span>
             </div>

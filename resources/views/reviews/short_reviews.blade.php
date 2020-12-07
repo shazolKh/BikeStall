@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Reviews</title>
+    <title>All the available Bike's Technical, User, Showroom & Our Expert Reviews in Bangladesh</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -47,7 +47,7 @@
                         @foreach($reviews as $rvw)
                         <div class="blog-i">
                             <a href="{{url('review/details/'.$rvw->url)}}" class="blog-img">
-                                <img href="{{url('review/details/'.$rvw->url)}}" src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
+                                <img href="{{url('review/details/'.$rvw->url)}}" src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="{{$rvw->title}}">
                             </a>
                             <p class="blog-info">
                                 <a>{{$rvw->written_by}}</a>

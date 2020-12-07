@@ -19,7 +19,7 @@
             <ul class="slides">
                 <li class="aboutus-slide">
                     <p class="aboutus-img">
-                        <img src="{{asset('public/image/about/'.$about->image)}}" alt="">
+                        <img src="{{asset('public/image/about/'.$about->image)}}" alt="{{$about->title}}">
                     </p>
                     <div class="aboutus-cont">
                         <h3>{{$about->title}}</h3>

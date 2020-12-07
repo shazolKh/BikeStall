@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>News</title>
+    <title>Get The Latest Bike News At BikeStall</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -46,7 +46,7 @@
                         @foreach($news as $nws)
                             <div class="blog-i">
                                 <a href="{{url('news/details/'.$nws->url)}}" class="blog-img">
-                                    <img href="{{url('news/details/'.$nws->url)}}" src="{{asset('public/image/news/'.$nws->image)}}" alt="">
+                                    <img href="{{url('news/details/'.$nws->url)}}" src="{{asset('public/image/news/'.$nws->image)}}" alt="{{$nws->headline}}">
                                 </a>
                                 <h3><a href="{{url('news/details/'.$nws->url)}}">{{$nws->headline}}</a></h3>
                                 <p>{{ \Illuminate\Support\Str::limit(strip_tags($nws->article, 100)) }}<a href="{{url('news/details/'.$nws->url)}}">read more</a></p>

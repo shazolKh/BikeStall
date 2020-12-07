@@ -80,8 +80,9 @@ Route::match(['get', 'post'], '/compare', 'IndexController@compare');
 Route::get('comparison', 'IndexController@comparison');
 
 // Accessories
-Route::get('/accessories', 'IndexController@accList');
+Route::get('/accessories', 'IndexController@accList')->name('accessories.list');
 Route::get('accessories/details/{url}', 'IndexController@accDetails');
+Route::get('/accessories/{id}', 'IndexController@accSingle')->name('single.acc');
 
 //Brand List
 Route::get('all-brands', 'IndexController@allBrand')->name('brand.list');
@@ -207,6 +208,16 @@ Route::group(['middleware' => ['auth']], function () {
         ->name('delete.showroom.image');
     Route::get('delete-showroom', 'ShowroomController@deleteShowroom')
         ->name('delete.showroom');
+
+
+    Route::match(['get', 'post'], 'add-accessories-category', 'CategoryController@addAccCategory')
+        ->name('add.acc.cate');
+    Route::match(['get', 'post'], 'manage-accessories-category', 'CategoryController@manageAccCategory')
+        ->name('manage.acc.cate');
+    Route::match(['get', 'post'], 'edit-accessories-category/{id}', 'CategoryController@editAccCategory')
+        ->name('edit.acc.cate');
+    Route::match(['get', 'post'], 'delete-accessories-category/{id}', 'CategoryController@deleteAccCategory')
+        ->name('delete.acc.cate');
 
 
 });

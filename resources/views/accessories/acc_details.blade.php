@@ -1,7 +1,7 @@
 @extends('layouts.frontLayout.front_design')
 
 @section('title')
-    <title>Accessories</title>
+    <title>{{$data->name}} Price in Bangladesh 2020 - BikeStall</title>
 @endsection
 
 @section('meta')
@@ -45,30 +45,30 @@
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/accessories/image/'.$data->image)}}">
-                                <img src="{{asset('public/image/accessories/image/'.$data->image)}}" alt=""></a>
+                                <img src="{{asset('public/image/accessories/image/'.$data->image)}}" alt="{{$data->name}}"></a>
                         </li>
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/accessories/image1/'.$data->image1)}}">
-                                <img src="{{asset('public/image/accessories/image1/'.$data->image1)}}" alt=""></a>
+                                <img src="{{asset('public/image/accessories/image1/'.$data->image1)}}" alt="{{$data->name}}"></a>
                         </li>
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/accessories/image2/'.$data->image2)}}">
-                                <img src="{{asset('public/image/accessories/image2/'.$data->image2)}}" alt=""></a>
+                                <img src="{{asset('public/image/accessories/image2/'.$data->image2)}}" alt="{{$data->name}}"></a>
                         </li>
                     </ul>
                 </div>
                 <div class="flexslider prod-thumbs" id="prod-thumbs">
                     <ul class="slides">
                         <li>
-                            <img src="{{asset('public/image/accessories/image/'.$data->image)}}" alt="">
+                            <img src="{{asset('public/image/accessories/image/'.$data->image)}}" alt="{{$data->name}}">
                         </li>
                         <li>
-                            <img src="{{asset('public/image/accessories/image1/'.$data->image1)}}" alt="">
+                            <img src="{{asset('public/image/accessories/image1/'.$data->image1)}}" alt="{{$data->name}}">
                         </li>
                         <li>
-                            <img src="{{asset('public/image/accessories/image2/'.$data->image2)}}" alt="">
+                            <img src="{{asset('public/image/accessories/image2/'.$data->image2)}}" alt="{{$data->name}}">
                         </li>
                     </ul>
                 </div>

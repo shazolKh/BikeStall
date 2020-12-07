@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Brands</title>
+    <title>All Branded  Bike Price in Bangladesh 2020, Specs, Reviews  & Showrooms - BikeStall</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -32,7 +32,7 @@
                     <div class="popular">
                         <a href="{{url('brands/'.$brand->url)}}" class="popular-link">
                             <p class="popular-img">
-                                <img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
+                                <img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="{{$brand->br_name}}">
                             </p>
                             <h3><span>{{$brand->br_name}}</span></h3>
                         </a>

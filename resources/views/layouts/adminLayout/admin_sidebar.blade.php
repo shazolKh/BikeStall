@@ -26,7 +26,7 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            Categories
+            Bikes
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
@@ -67,16 +67,6 @@
                 </div>
             </div>
         </li>
-
-
-        <hr class="sidebar-divider my-0">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            BIkes
-        </div>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                 <i class="fas fa-fw fa-bicycle"></i>
@@ -89,6 +79,32 @@
                 </div>
             </div>
         </li>
+
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Accessories
+        </div>
+
+        <!-- Nav Item - Utilities Collapse Menu -->
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities1000000" aria-expanded="true" aria-controls="collapseUtilities">
+                <i class="fas fa-fw fa-folder-plus"></i>
+                <span>Accessories Category</span>
+            </a>
+            <div id="collapseUtilities1000000" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="{{route('add.acc.cate')}}">Add</a>
+                    <a class="collapse-item" href="{{route('manage.acc.cate')}}">Manage</a>
+                </div>
+            </div>
+        </li>
+
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities1" aria-expanded="true" aria-controls="collapseUtilities">
                 <i class="fas fa-fw fa-tools"></i>
@@ -104,7 +120,7 @@
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities100" aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-tools"></i>
+                <i class="fas fa-fw fa-home"></i>
                 <span>Showroom</span>
             </a>
             <div id="collapseUtilities100" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">

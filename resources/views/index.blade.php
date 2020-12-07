@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>BikeStall</title>
+    <title>Bike Price in Bangladesh 2020,( ☑ Updated) Specs & Reviews - BikeStall</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -29,7 +29,7 @@
             @foreach ($slider as $sldr)
             <div class="slide">
 				<img src="{{asset('public/image/gallery/'.$sldr->image)}}"
-						data-position="45,430" data-in="fade" data-delay="0" data-out="fade" alt="American Legends">
+						data-position="45,430" data-in="fade" data-delay="0" data-out="fade" alt="{{$sldr->title}}">
 				<p class="caption1"	data-position="50,0" data-in="right" data-step="0" data-out="fade" data-delay="0">{{$sldr->title}}</p>
 				{{-- <p 		class="caption2"
 						data-position="150,0" data-in="right" data-step="0" data-out="fade" data-delay="0">LEGENDS</p> --}}
@@ -48,8 +48,8 @@
 		<a href="{{url('brands/'.$brand->url)}}">
 
 			<span class="frontcategs-img">
-				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
-				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="">
+				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="{{$brand->br_name}}">
+				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="{{$brand->br_name}}">
 			</span>
             <p>{{$brand->br_name}}</p>
 		</a>
@@ -157,7 +157,7 @@
 			</div>
 			<div class="frontsearch-cont" id="frontsearch-cont" data-lines-count="20">
 				<p class="frontsearch-img">
-					<img src="{{asset('public/image/about/'.$about->search_image)}}" alt="">
+					<img src="{{asset('public/image/about/'.$about->search_image)}}" alt="Search Image">
 				</p>
 				<p class="frontsearch-model">{{$about->search_title}}</p>
 
@@ -180,7 +180,7 @@
             <div class="popular">
 				<a href="{{route('bike.details', [$bk->url])}}" class="popular-link">
 					<p class="popular-img">
-						<img src="{{asset('public/image/images/image/large_image/'.$bk->image)}}" alt="">
+						<img src="{{asset('public/image/images/image/large_image/'.$bk->image)}}" alt="{{$bk->bike_name}}">
 					</p>
                     <h3><span>{{$bk->bike_name}}</span></h3>
 				</a>
@@ -211,7 +211,7 @@
                 <div class="popular">
                     <a href="{{url('news/details/'.$nws->url)}}" class="popular-link">
                         <p class="popular-img">
-                            <img src="{{asset('public/image/news/'.$nws->image)}}" alt="">
+                            <img src="{{asset('public/image/news/'.$nws->image)}}" alt="{{$nws->headline}}">
                         </p>
                         <h3><span>{{$nws->headline}}</span></h3>
                     </a>
@@ -241,7 +241,7 @@
                 <div class="popular">
                     <a href="{{url('review/details/'.$rvw->url)}}" class="popular-link">
                         <p class="popular-img">
-                            <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="">
+                            <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="{{$rvw->title}}">
                         </p>
                         <h3><span>{{$rvw->title}}</span></h3>
                     </a>

@@ -168,7 +168,7 @@ class BikeController extends Controller
 
 
        $categories = Category::get();
-        $categories_dropdown = "<option selected disabled> </option>";
+        $categories_dropdown = "";
         foreach ($categories as $cat){
             $categories_dropdown .= "<option value='".$cat->id."'>".$cat->ct_name."</option>";
             //$sub_categories = Category::where(['parent_id'=>$cat->id])->get();
@@ -179,13 +179,13 @@ class BikeController extends Controller
         }
 
         $brand = Brand::get();
-        $brand_dropdown = "<option selected disabled> </option>";
+        $brand_dropdown = "";
         foreach ($brand as $br){
             $brand_dropdown .= "<option value='".$br->id."'>".$br->br_name."</option>";
         }
 
         $sbrand = SubCategory::get();
-        $sbrand_dropdown = "<option selected disabled> </option>";
+        $sbrand_dropdown = "";
         foreach ($sbrand as $br){
             $sbrand_dropdown .= "<option value='".$br->id."'>".$br->sub_ct_name."</option>";
         }
@@ -195,7 +195,7 @@ class BikeController extends Controller
 
     public function viewBike()
     {
-        $bikes = Bike::orderBy('id', 'asc')->get();
+        $bikes = Bike::orderBy('id', 'ASC')->get();
 
         foreach ($bikes as $bike=>$val){
             $category_name = Category::where(['id'=>$val->category_id])->first();

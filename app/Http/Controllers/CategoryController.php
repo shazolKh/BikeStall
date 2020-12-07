@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Accessories;
+use App\AccessoriesCategory;
 use App\Bike;
 use App\Category;
 use App\SubCategory;
@@ -111,5 +113,58 @@ class CategoryController extends Controller
         //unlink('image/images/image1/small_image/'.$image);
         Category::where(['id'=>$id])->update(['cat_image'=>'']);
         return redirect()->back()->with('flash_message_success', 'Image has been Deleted');
+    }
+
+
+    //===========================================================================================
+    //===========================================================================================
+    //==================================ACCESSORIES CATEGORIES===================================
+    //===========================================================================================
+    //===========================================================================================
+
+    public function addAccCategory(Request $request)
+    {
+        if ($request->isMethod('post')){
+            $data = $request->all();
+            $acc_cate = new AccessoriesCategory();
+
+            $request->validate([
+                'acc_cate' => 'required',
+                //'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
+            $acc_cate->name = $data['acc_cate'];
+
+            $acc_cate->save();
+            return redirect(route('manage.acc.cate'))->with('flash_message_success', 'Category Added Successfully!!');
+        }
+
+        return view('admin.acc cate.add_cate');
+    }
+
+    public function manageAccCategory()
+    {
+        $data = AccessoriesCategory::get();
+        return view('admin.acc cate.manage_cate')->with(compact('data'));
+    }
+
+    public function editAccCategory(Request $request, $id)
+    {
+        if ($request->isMethod('post')){
+            $data = $request->all();
+
+            AccessoriesCategory::where(['id'=>$id])->update(['name'=>$data['acc_cate']]);
+            return redirect(route('manage.acc.cate'))->with('flash_message_success', 'Category Updated Successfully!!');
+        }
+
+        $data = AccessoriesCategory::where(['id'=>$id])->first();
+        return view('admin.acc cate.edit_cate')->with(compact('data'));
+    }
+
+    public function deleteAccCategory($id)
+    {
+        AccessoriesCategory::where(['id'=>$id])->delete();
+        Accessories::where(['category_id'=>$id])->delete();
+        return back()->with('flash_message_error', 'Category Deleted Successfully!!');
     }
 }

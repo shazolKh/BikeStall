@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Bike Details</title>
+    <title>{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall</title>
 @endsection
 
 @section('meta')
@@ -353,12 +353,12 @@
                         <div class="popular">
                             <a href="{{route('bike.details', [$relate->url])}}" class="popular-link">
                                 <p class="popular-img">
-                                    <img src="{{asset('public/image/images/image/large_image/'.$relate->image)}}" alt="">
+                                    <img src="{{asset('public/image/images/image/large_image/'.$relate->image)}}" alt="{{$relate->bike_name}}">
                                 </p>
                                 <h3><span>{{$relate->bike_name}}</span></h3>
                             </a>
                             <p class="popular-info">
-                                <span class="popular-price">{{$relate->price_comma}} TK</span>
+                                <span class="popular-price">{{$relate->price_comma}}</span>
                             </p>
                         </div>
                     @endforeach

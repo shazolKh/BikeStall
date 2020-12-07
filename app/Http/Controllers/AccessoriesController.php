@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Accessories;
+use App\AccessoriesCategory;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -25,6 +26,7 @@ class AccessoriesController extends Controller
             ]);
 
             $acc->name = $data['name'];
+            $acc->category_id = $data['category_id'];
             $acc->url = $data['url'];
             $acc->price = $data['price'];
             $acc->description = $data['description'];
@@ -62,12 +64,23 @@ class AccessoriesController extends Controller
             return redirect()->back()->with('flash_message_success', 'Accessories added successfully');
            // return redirect('/admin/view-accessories')->with('flash_message_success', 'Bike added successfully');
         }
-        return view('admin.accessories.add');
+
+        $acc = AccessoriesCategory::get();
+        $acc_dropdown = "";
+        foreach ($acc as $br){
+            $acc_dropdown .= "<option value='".$br->id."'>".$br->name."</option>";
+        }
+        return view('admin.accessories.add')->with(compact('acc_dropdown'));
     }
 
     public function viewAccessories()
     {
-        $details = Accessories::get();
+        $details = Accessories::latest()->get();
+
+        foreach ($details as $bike=>$val) {
+            $category_name = AccessoriesCategory::where(['id' => $val->category_id])->first();
+            $details[$bike]->cate_name = $category_name->name;
+        }
         return view('admin.accessories.manage')->with(compact('details'));
     }
 
@@ -143,15 +156,26 @@ class AccessoriesController extends Controller
             }*/
 
 
-            Accessories::where(['id'=>$id])->update(['name'=>$data['name'], 'url'=>$data['url'],
+            Accessories::where(['id'=>$id])->update(['name'=>$data['name'], 'category_id'=>$data['category_id'], 'url'=>$data['url'],
                 'description'=>$data['description'], 'image'=>$filename, 'image1'=>$filename1, 'image2'=>$filename2]);
 
             return redirect('/admin/view-accessories')->with('flash_message_success', 'Information Updated successfully');
 
         }
         $details = Accessories::where(['id'=>$id])->first();
+        $brand = AccessoriesCategory::get();
+        $brand_dropdown = "<option selected disabled> </option>";
+        foreach ($brand as $br){
+            if ($br->id==$details->category_id){
+                $selected = "selected";
+            }
+            else{
+                $selected ="";
+            }
+            $brand_dropdown .= "<option value='".$br->id."' ".$selected.">".$br->name."</option>";
+        }
 
-        return view('admin.accessories.edit')->with(compact('details'));
+        return view('admin.accessories.edit')->with(compact('details', 'brand_dropdown'));
     }
 
     public function deleteAccessories($id=null)

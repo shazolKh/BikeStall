@@ -30,7 +30,8 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead class="text-center">
                         <tr>
-                            <th>Name</th>
+                            <th style="color:red;">Name</th>
+                            <th>Category</th>
                             <th>URL</th>
                             <th>Price</th>
                             <th>Image</th>
@@ -40,7 +41,8 @@
                         <tbody>
                         @foreach($details as $item)
                             <tr class="text-center">
-                                <td>{{$item->name}}</td>
+                                <td class="bold" style="color: red">{{$item->name}}</td>
+                                <td>{{$item->cate_name}}</td>
                                 <td>{{$item->url}}</td>
                                 <td>{{$item->price}}</td>
                                 <td>

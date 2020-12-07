@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Accessories</title>
+    <title>Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall</title>
 @endsection
 
 @section('meta')
@@ -24,40 +24,57 @@
 @endsection
 
 @section('content')
-    <div class="populars-wrap">
-        <div class="cont populars">
-            <h2>ACCESSORIES</h2>
-            <p class="populars-count">{{$data->count()}} Accessories</p>
-            <div class="populars-list">
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="b-crumbs-wrap">
+        </div>
+
+        <div class="cont maincont">
+
+            <h1><span>ACCESSORIES</span></h1>
+            <p class="section-count">{{\App\Accessories::count()}} ITEMS</p>
+            <span class="maincont-line1 maincont-line12"></span>
+            <span class="maincont-line2 maincont-line22"></span>
+
+            <!-- Category Sections -->
+            <ul class="cont-sections">
+                <li class="active">
+                    <a href="{{route('accessories.list')}}">all</a>
+                </li>
+                @foreach($acc_cate as $cate)
+                    <li>
+                        <a href="{{route('single.acc', [$cate->id])}}">{{$cate->name}}</a>
+                    </li>
+                @endforeach
+            </ul>
+
+            <!-- Category Items - start -->
+            <div class="section-gallery">
                 @foreach ($data as $rvw)
-                    <div class="popular">
-                        <a href="{{url('accessories/details/'.$rvw->url)}}" class="popular-link">
-                            <p class="popular-img">
+                    <div class="sectgl">
+                        <a href="{{url('accessories/details/'.$rvw->url)}}" class="sectgl-link">
+                            <p class="sectgl-img">
                                 <img src="{{asset('public/image/accessories/image/'.$rvw->image)}}" alt="">
                             </p>
                             <h3><span>{{$rvw->name}}</span></h3>
                         </a>
-                        {{--<p class="popular-info">
-                            <a href="{{url('accessories/details/'.$rvw->url)}}" class="popular-categ">{{$rvw->created_at}}</a>
-                        </p>--}}
+                        <p class="sectgl-info">
+                            <a class="sectgl-categ">{{$rvw->cat_name}}</a>
+                            <span class="sectgl-price">{{$rvw->price}}</span>
+                            <a class="sectgl-add">{{$rvw->price}}</a>
+                        </p>
                     </div>
                 @endforeach
             </div>
+            <!-- Category Items - end -->
+
+            <!-- Pagination -->
             <ul class="pager">
                 <li>
-                    <a>{{ $data->render() }}</a>
+                    <a href="#">{{$data->links()}}</a>
                 </li>
             </ul>
-            <span class="popular-line1"></span>
-            <span class="popular-line2"></span>
         </div>
-    </div>
-    <!-- Category Items - end -->
+    </main>
 
-    <!-- Pagination -->
-    <ul class="pager">
-        <li>
-            <a href="#">{{$data->links()}}</a>
-        </li>
-    </ul>
 @endsection

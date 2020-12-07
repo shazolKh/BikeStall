@@ -30,7 +30,7 @@
                             </div>
                         @endif
                         <div class="card-header">
-                            <h3 class="card-title">Add Accessories</h3>
+                            <h3 class="card-title">Edit Info</h3>
                         </div>
                         <div class="card-body">
                             <form action="{{url('/admin/edit-accessories/'.$details->id)}}" enctype="multipart/form-data" method="post"
@@ -39,6 +39,14 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Name</label>
                                     <input type="text" class="form-control" name="name" id="name" value="{{$details->name}}">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Category</label>
+                                    <div class="controls">
+                                        <select class="form-control" name="category_id" id="category_id" style="width: 220px" >
+                                            <?php echo $brand_dropdown; ?>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">URL</label>

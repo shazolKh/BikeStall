@@ -13,7 +13,7 @@
                     <div class="popular">
                         <a href="{{route('show.details', [$rvw->id])}}" class="popular-link">
                             <p class="popular-img">
-                                <img src="{{asset('public/image/show/'.$rvw->image)}}" alt="">
+                                <img src="{{asset('public/image/show/'.$rvw->image)}}" alt="{{$rvw->name}}">
                             </p>
                             <h3><span>{{$rvw->name}}</span></h3>
                         </a>

@@ -1,6 +1,6 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Reviews</title>
+    <title>{{$detail_review->title}} | Bike Reviews In BD</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
@@ -40,13 +40,13 @@
                     <div class="post-slider">
                         <ul class="slides">
                             <li>
-                                <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="">
+                                <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="{{$detail_review->title}}">
                             </li>
                             <li>
-                                <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="">
+                                <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="{{$detail_review->title}}">
                             </li>
                             <li>
-                                <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="">
+                                <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="{{$detail_review->title}}">
                             </li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="popular">
                             <a href="{{url('review/details/'.$relate->url)}}" class="popular-link">
                                 <p class="popular-img">
-                                    <img src="{{asset('public/image/admin_review/image1/'.$relate->image1)}}" alt="">
+                                    <img src="{{asset('public/image/admin_review/image1/'.$relate->image1)}}" alt="{{$relate->title}}">
                                 </p>
                                 <h3><span>{{$relate->title}}</span></h3>
                             </a>

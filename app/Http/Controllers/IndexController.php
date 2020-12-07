@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\Accessories;
+use App\AccessoriesCategory;
 use App\AdminReview;
 use App\Bike;
 use App\Brand;
@@ -248,12 +249,34 @@ class IndexController extends Controller
     public function accList()
     {
         $categories = Category::with('categories')->get();
+        $acc_cate = AccessoriesCategory::get();
         $data = Accessories::orderBy('id', 'DESC')->paginate(16);
+        foreach ($data as $datum=>$val){
+            $cate_name = AccessoriesCategory::where(['id'=>$val->category_id])->first();
+            $data[$datum]->cat_name = $cate_name->name;
+        }
         $logo = Logo::first();
         $all_brands = Brand::get();
         $about = About::first();
 
-        return view('accessories.acc_list')->with(compact('categories', 'data', 'logo', 'all_brands', 'about'));
+        return view('accessories.acc_list')->with(compact('categories', 'data', 'logo', 'all_brands', 'about', 'acc_cate'));
+    }
+
+    public function accSingle($id)
+    {
+        $categories = Category::with('categories')->get();
+        $acc_cate = AccessoriesCategory::get();
+        $data = Accessories::orderBy('id', 'DESC')->where(['category_id'=>$id])->paginate(16);
+        foreach ($data as $datum=>$val){
+            $cate_name = AccessoriesCategory::where(['id'=>$val->category_id])->first();
+            $data[$datum]->cat_name = $cate_name->name;
+        }
+        $logo = Logo::first();
+        $all_brands = Brand::get();
+        $about = About::first();
+
+        return view('accessories.acc_list')->with(compact('categories', 'data', 'logo', 'all_brands', 'about', 'acc_cate'));
+
     }
 
     public function accDetails($url)

@@ -23,12 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="Final--- comparison fixed">
-      <change afterPath="$PROJECT_DIR$/node_modules.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/AccessoriesCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_06_151917_create_accessories_categories_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/647624.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/accessories/image/172190.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image/881246.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/accessories/image/976438.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image1/574819.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/accessories/image1/812391.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image2/453040.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/636713.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/67140.jpg" afterDir="false" />
@@ -41,15 +45,21 @@
       <change afterPath="$PROJECT_DIR$/public/image/gallery/1607186164.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/gallery/1607186173.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/image.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/129110.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/440399.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/478437.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/551879.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/large_image/723112.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/129110.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/440399.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/478437.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/551879.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/medium_image/723112.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/129110.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/440399.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/478437.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/551879.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/723112.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/338599.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/884998.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/medium_image/338599.jpg" afterDir="false" />
@@ -68,11 +78,41 @@
       <change afterPath="$PROJECT_DIR$/public/image/photo_gallery/1607186263.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/347411.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/acc cate/add_cate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/acc cate/edit_cate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/acc cate/manage_cate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccessoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccessoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/image-gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/image-gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accessories/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accessories/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accessories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accessories/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accessories/manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accessories/manage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/sub_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/sub_category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/compare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/compare.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comparison.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comparison.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,14 +328,9 @@
       <workItem from="1606982561489" duration="618000" />
       <workItem from="1607104954887" duration="878000" />
       <workItem from="1607175543723" duration="1547000" />
-      <workItem from="1607183371319" duration="2544000" />
-    </task>
-    <task id="LOCAL-00019" summary="Maybe Final 3">
-      <created>1603346707830</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1603346707830</updated>
+      <workItem from="1607183371319" duration="3285000" />
+      <workItem from="1607259753815" duration="9438000" />
+      <workItem from="1607338747666" duration="11824000" />
     </task>
     <task id="LOCAL-00020" summary="Maybe Final 3">
       <created>1603346958608</created>
@@ -633,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607175720930</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Final-- SubCategory, Gallery, Related Fixed">
+      <created>1607187141936</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1607187141937</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +695,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final 3.1" />
     <MESSAGE value="Maybe Final 3.1.2" />
     <MESSAGE value="Maybe Final 3.1.2.1" />
     <MESSAGE value="Maybe Final 3.1.2.2" />
@@ -678,7 +719,8 @@
     <MESSAGE value="Some Fixes" />
     <MESSAGE value="Final--- comparison fixed" />
     <MESSAGE value="Final--- Index search count fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final--- Index search count fixed" />
+    <MESSAGE value="Final-- SubCategory, Gallery, Related Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final-- SubCategory, Gallery, Related Fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -689,14 +731,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009028764" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606468504184">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607341593224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606468504184" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607175714701">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607341593224" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607187137989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607175714701" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607187137989" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -709,10 +751,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607175728946">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607187354620">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607175728946" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607187354620" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -725,20 +767,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php</url>
-          <line>12</line>
-          <properties>
-            <option name="className" value="\App\Http\Controllers\CategoryController" />
-            <option name="methodName" value="addCategory" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php</url>
-          <line>91</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AboutController.php</url>
           <line>50</line>
