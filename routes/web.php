@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 
 /* Route::get('/', function () {
     return view('welcome');
@@ -243,3 +244,5 @@ Route::get('/logout', 'AdminController@logout');
 Route::fallback(function (){
     return redirect('/');
 });
+
+URL::forceScheme('https');
