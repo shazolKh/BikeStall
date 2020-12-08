@@ -31,6 +31,7 @@ Route::match(['get', 'post'],'/bike/{url}/', 'IndexController@bikeDetails')->nam
 //Reviews
 Route::get('all/reviews/', 'IndexController@reviews')->name('review.list');
 Route::get('review/details/{url}', 'IndexController@reviewsDetails');
+Route::get('/reviews/{id}', 'IndexController@reviewsSingle')->name('single.reviews');
 
 //Gallery
 Route::get('photo/gallery/', 'IndexController@photoGallery')->name('ph.gallery');
@@ -209,7 +210,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('delete-showroom', 'ShowroomController@deleteShowroom')
         ->name('delete.showroom');
 
-
+    //Accessories Category
     Route::match(['get', 'post'], 'add-accessories-category', 'CategoryController@addAccCategory')
         ->name('add.acc.cate');
     Route::match(['get', 'post'], 'manage-accessories-category', 'CategoryController@manageAccCategory')
@@ -219,6 +220,16 @@ Route::group(['middleware' => ['auth']], function () {
     Route::match(['get', 'post'], 'delete-accessories-category/{id}', 'CategoryController@deleteAccCategory')
         ->name('delete.acc.cate');
 
+
+    //Reviews Category
+    Route::match(['get', 'post'], 'add-reviews-category', 'CategoryController@addReviewCategory')
+        ->name('add.review.cate');
+    Route::match(['get', 'post'], 'manage-reviews-category', 'CategoryController@manageReviewCategory')
+        ->name('manage.review.cate');
+    Route::match(['get', 'post'], 'edit-reviews-category/{id}', 'CategoryController@editReviewCategory')
+        ->name('edit.review.cate');
+    Route::match(['get', 'post'], 'delete-reviews-category/{id}', 'CategoryController@deleteReviewCategory')
+        ->name('delete.review.cate');
 
 });
 //Route::get('comments/{id}', 'IndexController@showedComment');

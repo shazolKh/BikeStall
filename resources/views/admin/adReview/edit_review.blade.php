@@ -43,6 +43,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="control-label">Category</label>
+                                    <div class="controls">
+                                        <select class="form-control" name="category_id" id="category_id" style="width: 220px" >
+                                            <?php echo $brand_dropdown; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputEmail1">URL</label>
                                     <div class="controls">
                                         <input type="text" class="form-control" name="url" id="url" value="{{$reviewdetails->url}}">

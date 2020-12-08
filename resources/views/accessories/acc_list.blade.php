@@ -32,7 +32,7 @@
         <div class="cont maincont">
 
             <h1><span>ACCESSORIES</span></h1>
-            <p class="section-count">{{\App\Accessories::count()}} ITEMS</p>
+            {{--<p class="section-count">{{\App\Accessories::count()}} ITEMS</p>--}}
             <span class="maincont-line1 maincont-line12"></span>
             <span class="maincont-line2 maincont-line22"></span>
 

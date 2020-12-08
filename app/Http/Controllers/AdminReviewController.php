@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\AdminReview;
+use App\ReviewsCategory;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -26,6 +27,7 @@ class AdminReviewController extends Controller
             ]);
 
             $review->title = $data['rvw_title'];
+            $review->category_id = $data['category_id'];
             $review->url = $data['url'];
             $review->details = $data['description'];
             $review->written_by = $data['writer'];
@@ -61,12 +63,23 @@ class AdminReviewController extends Controller
             $review->save();
             return redirect()->back()->with('flash_message_success', 'Review added successfully !!!');
         }
-        return view('admin.adReview.write_review');
+
+        $acc = ReviewsCategory::get();
+        $acc_dropdown = "";
+        foreach ($acc as $br){
+            $acc_dropdown .= "<option value='".$br->id."'>".$br->name."</option>";
+        }
+        return view('admin.adReview.write_review')->with(compact('acc_dropdown'));
     }
 
     public function allReviews()
     {
         $review = AdminReview::get();
+
+        foreach ($review as $bike=>$val) {
+            $category_name = ReviewsCategory::where(['id' => $val->category_id])->first();
+            $review[$bike]->cate_name = $category_name->name;
+        }
         return view('admin.adReview.all_reviews')->with(compact('review'));
     }
 
@@ -142,15 +155,26 @@ class AdminReviewController extends Controller
                 ]);
             }*/
 
-            AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'],'url'=>$data['url'], 'written_by'=>$data['writer'],
-                'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
+            AdminReview::where(['id'=>$id])->update(['title'=>$data['rvw_title'],'url'=>$data['url'], 'category_id'=>$data['category_id'],
+                'written_by'=>$data['writer'], 'details'=>$data['description'], 'image1'=>$filename1, 'image2'=>$filename2, 'image3'=>$filename3]);
 
             return redirect('/admin/all-reviews/')->with('flash_message_success', 'Info Updated successfully');
 
         }
         //get Review details
         $reviewdetails = AdminReview::where(['id'=>$id])->first();
-        return view('admin.adReview.edit_review')->with(compact('reviewdetails'));
+        $brand = ReviewsCategory::get();
+        $brand_dropdown = "<option selected disabled> </option>";
+        foreach ($brand as $br){
+            if ($br->id==$reviewdetails->category_id){
+                $selected = "selected";
+            }
+            else{
+                $selected ="";
+            }
+            $brand_dropdown .= "<option value='".$br->id."' ".$selected.">".$br->name."</option>";
+        }
+        return view('admin.adReview.edit_review')->with(compact('reviewdetails', 'brand_dropdown'));
     }
 
     public function deleteReview($id=null)

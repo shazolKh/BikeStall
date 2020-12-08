@@ -66,7 +66,7 @@
 <div class="frontsearch-wrap">
 	<div class="cont frontsearch text-center">
 		<h2>Search</h2>
-		<p class="frontsearch-count">{{\App\Bike::count()}} BIKES</p>
+		{{--<p class="frontsearch-count">{{\App\Bike::count()}} BIKES</p>--}}
 		<div class="frontsearch-wrap">
 			<div class="frontsearch-selects">
                 <div class="dropdown-wrap frontsearch-select">
@@ -174,7 +174,7 @@
 <div class="populars-wrap">
 	<div class="cont populars">
 		<h2>ALL BIKES</h2>
-		<p class="populars-count">{{\App\Bike::count()}} BIKES</p>
+		{{--<p class="populars-count">{{\App\Bike::count()}} BIKES</p>--}}
 		<div class="populars-list">
             @foreach ($bikes as $bk)
             <div class="popular">
@@ -205,7 +205,7 @@
 <div class="populars-wrap">
     <div class="cont populars">
         <h2>NEWS</h2>
-        <p class="populars-count">{{$news->count()}} News</p>
+        {{--<p class="populars-count">{{$news->count()}} News</p>--}}
         <div class="populars-list">
             @foreach ($news as $nws)
                 <div class="popular">
@@ -235,7 +235,7 @@
 <div class="populars-wrap">
     <div class="cont populars">
         <h2>REVIEWS</h2>
-        <p class="populars-count">{{$reviews->count()}} Expert Reviews</p>
+        {{--<p class="populars-count">{{$reviews->count()}} Expert Reviews</p>--}}
         <div class="populars-list">
             @foreach ($reviews as $rvw)
                 <div class="popular">

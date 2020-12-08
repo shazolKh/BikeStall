@@ -30,8 +30,8 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr class="text-center">
-                            <th>ID</th>
                             <th style="color: red">Title</th>
+                            <th>Category</th>
                             <th>URL</th>
                             <th>Image</th>
                             <th>Action</th>
@@ -40,8 +40,8 @@
                         <tbody>
                             @foreach($review as $rvw)
                                 <tr class="text-center">
-                                    <td>{{$rvw->id}}</td>
                                     <td>{{$rvw->title}}</td>
+                                    <td>{{$rvw->cate_name}}</td>
                                     <td>{{$rvw->url}}</td>
                                     <td>
                                         <img src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" style="width: 50px" data-lity>

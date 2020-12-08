@@ -33,24 +33,27 @@
                 <div class="post-info">
                     <a href="#">Reviews</a>
                     <h1>{{$detail_review->title}}</h1>
-                    <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_review->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_review->created_at)->format('M')}}</time>
+                    <time datetime="2016-04-07 12:00"><span >{{\Carbon\Carbon::parse($detail_review->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_review->created_at)->format('M')}}</time>
                 </div>
 
 
                     <div class="post-slider">
                         <ul class="slides">
                             <li>
-                                <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="{{$detail_review->title}}">
+                                <img src="{{asset('public/image/admin_review/image1/'.$detail_review->image1)}}" alt="">
                             </li>
                             <li>
-                                <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="{{$detail_review->title}}">
+                                <img src="{{asset('public/image/admin_review/image2/'.$detail_review->image2)}}" alt="">
                             </li>
                             <li>
-                                <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="{{$detail_review->title}}">
+                                <img src="{{asset('public/image/admin_review/image3/'.$detail_review->image3)}}" alt="">
                             </li>
                         </ul>
                     </div>
-                <p>{!! $detail_review->details !!}</p>
+                <br>
+                <div  style="color:#283346;">
+                    <p>{!! $detail_review->details!!}</p>
+                </div>
             </div>
         </div>
 

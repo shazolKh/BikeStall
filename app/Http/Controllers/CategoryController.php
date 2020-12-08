@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Accessories;
 use App\AccessoriesCategory;
+use App\AdminReview;
 use App\Bike;
 use App\Category;
+use App\ReviewsCategory;
 use App\SubCategory;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
@@ -165,6 +167,71 @@ class CategoryController extends Controller
     {
         AccessoriesCategory::where(['id'=>$id])->delete();
         Accessories::where(['category_id'=>$id])->delete();
+        return back()->with('flash_message_error', 'Category Deleted Successfully!!');
+    }
+
+    //===========================================================================================
+    //===========================================================================================
+    //==================================REVIEWS CATEGORIES===================================
+    //===========================================================================================
+    //===========================================================================================
+
+    public function addReviewCategory(Request $request)
+    {
+        if ($request->isMethod('post')){
+            $data = $request->all();
+            $review_cate = new ReviewsCategory();
+
+            $request->validate([
+                'acc_cate' => 'required',
+                //'cat_image' => 'required | mimes:jpeg,jpg,png, PNG',
+            ]);
+
+            $review_cate->name = $data['acc_cate'];
+
+            $review_cate->save();
+            return redirect(route('manage.review.cate'))->with('flash_message_success', 'Category Added Successfully!!');
+        }
+
+        return view('admin.review cate.add_cate');
+    }
+
+    public function manageReviewCategory()
+    {
+        $data = ReviewsCategory::get();
+        return view('admin.review cate.manage_cate')->with(compact('data'));
+    }
+
+    public function editReviewCategory(Request $request, $id)
+    {
+        if ($request->isMethod('post')){
+            $data = $request->all();
+
+            ReviewsCategory::where(['id'=>$id])->update(['name'=>$data['acc_cate']]);
+            return redirect(route('manage.review.cate'))->with('flash_message_success', 'Category Updated Successfully!!');
+        }
+
+        $data = ReviewsCategory::where(['id'=>$id])->first();
+        return view('admin.review cate.edit_cate')->with(compact('data'));
+    }
+
+    public function deleteReviewCategory($id)
+    {
+        ReviewsCategory::where(['id'=>$id])->delete();
+        $news = AdminReview::where(['category_id'=>$id])->first();
+        $image1 = $news->image1;
+        $image2 = $news->image2;
+        $image3 = $news->image3;
+        if (!empty($image1)){
+            unlink(public_path('image/admin_review/image1/'.$image1));
+        }
+        if (!empty($image2)){
+            unlink(public_path('image/admin_review/image2/'.$image2));
+        }
+        if (!empty($image3)){
+            unlink(public_path('image/admin_review/image3/'.$image3));
+        }
+        AdminReview::where(['category_id'=>$id])->delete();
         return back()->with('flash_message_error', 'Category Deleted Successfully!!');
     }
 }

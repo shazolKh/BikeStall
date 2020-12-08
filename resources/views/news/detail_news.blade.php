@@ -28,14 +28,17 @@
         <div class="cont post-sidebar">
             <!-- Post Content - start -->
             <div class="post">
-                <div class="post-info">
+                <div class="post-info" style="color: #283346">
                     <a href="#">News</a>
                     <h1>{{$detail_news->headline}}</h1>
-                    <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_news->created_at)->format('j')}}</span> {{\Carbon\Carbon::parse($detail_news->created_at)->format('M')}}</time>
+                    <time datetime="2016-04-07 12:00"><span>{{\Carbon\Carbon::parse($detail_news->created_at)->format('j')}}</span>
+                        {{\Carbon\Carbon::parse($detail_news->created_at)->format('M')}}</time>
                 </div>
                 <img src="{{asset('public/image/news/'.$detail_news->image)}}" alt="{{$detail_news->headline}}" class="post-img">
-                <p>{!! $detail_news->article !!}</p>
-
+                <br>
+                <div style="color: #0b0b0b;">
+                    <p>{!! $detail_news->article !!}</p>
+                </div>
             </div>
             <!-- Post Content - end -->
         </div>

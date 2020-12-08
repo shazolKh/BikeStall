@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/frontend/img/gal7b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/ReviewsCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_083229_create_reviews_categories_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/647624.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
@@ -34,11 +35,9 @@
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image1/812391.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image2/453040.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/636713.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image1/67140.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/admin_review/image2/200941.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image2/853471.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image3/666618.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/admin_review/image3/866956.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/admin_review/image3/888957.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/brand_image/959186.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/cat_image/614536.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/gallery/1607186164.jpg" afterDir="false" />
@@ -79,9 +78,26 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/review cate/add_cate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/review cate/edit_cate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/review cate/manage_cate.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/all_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/all_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/edit_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/edit_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/adReview/write_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/adReview/write_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminLayout/admin_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,18 +223,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/review cate" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="xpath.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BikeStall\resources\views\admin\review cate" />
       <recent name="F:\Pro\Laravel\ecomm - Copy\public\image\scat_image" />
       <recent name="F:\Pro\Laravel\ecomm - Copy\public\image\photo_gallery" />
       <recent name="F:\Pro\Laravel\ecomm - Copy\public\image\news" />
       <recent name="F:\Pro\Laravel\ecomm - Copy\public\image\images\image3\small_image" />
-      <recent name="F:\Pro\Laravel\ecomm - Copy\public\image\images\image3\medium_image" />
     </key>
   </component>
   <component name="RunManager">
@@ -298,14 +314,9 @@
       <workItem from="1607175543723" duration="1547000" />
       <workItem from="1607183371319" duration="3285000" />
       <workItem from="1607259753815" duration="9438000" />
-      <workItem from="1607338747666" duration="13147000" />
-    </task>
-    <task id="LOCAL-00021" summary="Maybe Final 3">
-      <created>1603347235292</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1603347235292</updated>
+      <workItem from="1607338747666" duration="13791000" />
+      <workItem from="1607371836119" duration="3684000" />
+      <workItem from="1607415794023" duration="4754000" />
     </task>
     <task id="LOCAL-00022" summary="Maybe Final 3">
       <created>1603348102830</created>
@@ -643,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607366105962</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Admin Panel image added">
+      <created>1607367050167</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1607367050167</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +691,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final 3.1.2.1" />
     <MESSAGE value="Maybe Final 3.1.2.2" />
     <MESSAGE value="Maybe Final 3.1.2.3" />
     <MESSAGE value="Maybe Final 3.1.2.4" />
@@ -698,7 +715,8 @@
     <MESSAGE value="Final--- Index search count fixed" />
     <MESSAGE value="Final-- SubCategory, Gallery, Related Fixed" />
     <MESSAGE value="Alt Image, Accessories Category Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alt Image, Accessories Category Added" />
+    <MESSAGE value="Admin Panel image added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Panel image added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -709,14 +727,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009028764" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607341593224">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607417608035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607341593224" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607366099600">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607367048379">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607366099600" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607367048379" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -729,10 +747,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607366114639">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607367055913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607366114639" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607367055913" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

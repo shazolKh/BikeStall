@@ -99,7 +99,7 @@
             <div class="prod-cont">
                 <div class="prod-desc">
                     <p class="prod-desc-ttl"><span>Description</span></p>
-                    <p>{!! $bk_details->description !!}</p>
+                    <p style="font-weight: bolder">{{\Illuminate\Support\Str::limit(strip_tags($bk_details->description, 500))}}<a id="prod-showdesc" href="#">read more</a></p>
                 </div>
                 <div class="prod-props">
                     <dl>
@@ -149,6 +149,9 @@
         <!-- Product Tabs - start -->
         <div class="prod-tabs-wrap">
             <ul class="prod-tabs">
+                <li data-prodtab-num="1" id="prod-desc" class="active">
+                    <a data-prodtab="#prod-tab-1" href="#">Description</a>
+                </li>
                 <li data-prodtab-num="2" id="prod-props">
                     <a data-prodtab="#prod-tab-2" href="#">Features</a>
                 </li>
@@ -159,6 +162,10 @@
 
             </ul>
             <div class="prod-tab-cont">
+                <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Description</p>
+                <div class="prod-tab prod-tab-desc" id="prod-tab-1" style="color: #283346">
+                    <p>{!! $bk_details->description !!}</p>
+                </div>
                 <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
                 <div class="prod-tab" id="prod-tab-2">
                     <dl class="prod-tab-props">

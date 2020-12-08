@@ -43,6 +43,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label class="control-label">Category</label>
+                                    <div class="controls">
+                                        <select class="form-control" name="category_id" id="category_id" style="width: 220px">
+                                            <?php echo $acc_dropdown; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputEmail1">URL(Whatever you write, will be displayed on url)</label>
                                     <div class="controls">
                                         <input type="text" class="form-control" name="url" id="url">

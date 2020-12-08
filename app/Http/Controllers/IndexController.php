@@ -14,6 +14,7 @@ use App\Gallery;
 use App\Logo;
 use App\News;
 use App\PhotoGallery;
+use App\ReviewsCategory;
 use App\Showroom;
 use App\SubCategory;
 
@@ -118,12 +119,34 @@ class IndexController extends Controller
     {
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
+        $reviews_cate = ReviewsCategory::get();
         $reviews = AdminReview::orderBy('id','DESC')->paginate(10);
+        foreach ($reviews as $datum=>$val){
+            $cate_name = ReviewsCategory::where(['id'=>$val->category_id])->first();
+            $reviews[$datum]->cat_name = $cate_name->name;
+        }
         $metareviews = AdminReview::first();
         $all_brands = Brand::get();
         $about = About::first();
         return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews', 'logo',
-        'all_brands', 'about'));
+        'all_brands', 'about', 'reviews_cate'));
+    }
+
+    public function reviewsSingle($id)
+    {
+        $categories = Category::with('categories')->get();
+        $logo = Logo::first();
+        $reviews_cate = ReviewsCategory::get();
+        $reviews = AdminReview::orderBy('id','DESC')->where(['category_id'=>$id])->paginate(10);
+        foreach ($reviews as $datum=>$val){
+            $cate_name = ReviewsCategory::where(['id'=>$val->category_id])->first();
+            $reviews[$datum]->cat_name = $cate_name->name;
+        }
+        $metareviews = AdminReview::first();
+        $all_brands = Brand::get();
+        $about = About::first();
+        return view('reviews.short_reviews')->with(compact('reviews', 'categories', 'metareviews', 'logo',
+            'all_brands', 'about', 'reviews_cate'));
     }
 
     public function reviewsDetails($url)

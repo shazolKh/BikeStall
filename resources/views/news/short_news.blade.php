@@ -48,8 +48,10 @@
                                 <a href="{{url('news/details/'.$nws->url)}}" class="blog-img">
                                     <img href="{{url('news/details/'.$nws->url)}}" src="{{asset('public/image/news/'.$nws->image)}}" alt="{{$nws->headline}}">
                                 </a>
+                                <br>
                                 <h3><a href="{{url('news/details/'.$nws->url)}}">{{$nws->headline}}</a></h3>
-                                <p>{{ \Illuminate\Support\Str::limit(strip_tags($nws->article, 100)) }}<a href="{{url('news/details/'.$nws->url)}}">read more</a></p>
+
+                                <p style="color:#283346; font-weight: bold">{{ \Illuminate\Support\Str::limit(strip_tags($nws->article, 100)) }}<a href="{{url('news/details/'.$nws->url)}}">read more</a></p>
                             </div>
                         @endforeach
                     </div>

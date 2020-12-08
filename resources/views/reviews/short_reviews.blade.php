@@ -36,6 +36,17 @@
         <span class="maincont-line1 maincont-line12"></span>
         <span class="maincont-line2 maincont-line22 blog-line"></span>
 
+        <!-- Category Sections -->
+        <ul class="cont-sections">
+            <li class="active">
+                <a href="{{route('review.list')}}">all</a>
+            </li>
+            @foreach($reviews_cate as $cate)
+                <li>
+                    <a href="{{route('single.reviews', [$cate->id])}}">{{$cate->name}}</a>
+                </li>
+            @endforeach
+        </ul>
         <!-- Blog Sections -->
 
         <div class="blog">
@@ -49,11 +60,11 @@
                             <a href="{{url('review/details/'.$rvw->url)}}" class="blog-img">
                                 <img href="{{url('review/details/'.$rvw->url)}}" src="{{asset('public/image/admin_review/image1/'.$rvw->image1)}}" alt="{{$rvw->title}}">
                             </a>
-                            <p class="blog-info">
-                                <a>{{$rvw->written_by}}</a>
+                            <p class="blog-info" style="color:#283346; font-weight: bold">
+                                <a>{{$rvw->cat_name}}</a>
                             </p>
                             <h3><a href="{{url('review/details/'.$rvw->url)}}">{{$rvw->title}}</a></h3>
-                            <p>{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->url)}}">read more</a></p>
+                            <p style="color:#283346; font-weight: bold">{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->url)}}">read more</a></p>
                         </div>
                         @endforeach
                     </div>
