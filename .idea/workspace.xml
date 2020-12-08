@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/HttpsProtocolMiddleware.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/647624.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
@@ -77,6 +78,8 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -297,14 +300,7 @@
       <workItem from="1607259753815" duration="9438000" />
       <workItem from="1607338747666" duration="13791000" />
       <workItem from="1607371836119" duration="3684000" />
-      <workItem from="1607415794023" duration="9059000" />
-    </task>
-    <task id="LOCAL-00024" summary="Maybe Final 3">
-      <created>1603349191111</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1603349191111</updated>
+      <workItem from="1607415794023" duration="13234000" />
     </task>
     <task id="LOCAL-00025" summary="Maybe Final 3">
       <created>1603353402309</created>
@@ -642,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607429223866</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="auto https added">
+      <created>1607432292416</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1607432292416</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final 3.1.2.4" />
     <MESSAGE value="Maybe Final" />
     <MESSAGE value="Maybe Final f" />
     <MESSAGE value="Maybe Final f1" />
@@ -697,7 +699,8 @@
     <MESSAGE value="Admin Panel image added" />
     <MESSAGE value="All Fixed" />
     <MESSAGE value="Access fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Access fixed" />
+    <MESSAGE value="auto https added" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto https added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -712,10 +715,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607429222409">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607432290924">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607429222409" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607432290924" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -728,18 +731,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607429230928">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607432299717">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607429230928" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607432299717" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1602835855299" />
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1604951993835">
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607439140050">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604951993835" />
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607439140050" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
