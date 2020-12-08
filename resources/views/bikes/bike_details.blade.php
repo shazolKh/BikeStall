@@ -99,7 +99,13 @@
             <div class="prod-cont">
                 <div class="prod-desc">
                     <p class="prod-desc-ttl"><span>Description</span></p>
-                    <p style="font-weight: bolder">{{\Illuminate\Support\Str::limit(strip_tags($bk_details->description, 500))}}<a id="prod-showdesc" href="#">read more</a></p>
+                    <p style="font-weight: bolder">{{\Illuminate\Support\Str::limit(strip_tags($bk_details->description, 500))}}
+                        <a id="prod-showprops" href="#">
+                            @if(!empty($bk_details->description))
+                                read more
+                            @endif
+                        </a>
+                    </p>
                 </div>
                 <div class="prod-props">
                     <dl>
@@ -113,7 +119,7 @@
                         <dd>{{$bk_details->max_power}}</dd>
                         <dt>Displacement (ml)</dt>
                         <dd>{{$bk_details->engine}}</dd>
-                        <dt><a id="prod-showprops" href="#">view all details</a></dt>
+                        <dt><a id="prod-showdesc" href="#">view all details</a></dt>
                         <dd></dd>
                     </dl>
                 </div>
@@ -150,11 +156,13 @@
         <div class="prod-tabs-wrap">
             <ul class="prod-tabs">
                 <li data-prodtab-num="1" id="prod-desc" class="active">
-                    <a data-prodtab="#prod-tab-1" href="#">Description</a>
+                    <a data-prodtab="#prod-tab-1" href="#">Feature</a>
                 </li>
-                <li data-prodtab-num="2" id="prod-props">
-                    <a data-prodtab="#prod-tab-2" href="#">Features</a>
-                </li>
+                @if(!empty($bk_details->description))
+                    <li data-prodtab-num="2" id="prod-props">
+                        <a data-prodtab="#prod-tab-2" href="#">Description</a>
+                    </li>
+                @endif
                 <li data-prodtab-num="3" id="prod-reviews">
                     <a data-prodtab="#prod-tab-3" href="#">Reviews <span>{{$bk_details->Comments()->where(['status'=>'1'])->count()}}</span></a>
                 </li>
@@ -162,12 +170,8 @@
 
             </ul>
             <div class="prod-tab-cont">
-                <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Description</p>
-                <div class="prod-tab prod-tab-desc" id="prod-tab-1" style="color: #283346">
-                    <p>{!! $bk_details->description !!}</p>
-                </div>
-                <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
-                <div class="prod-tab" id="prod-tab-2">
+                <p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Feature</p>
+                <div class="prod-tab prod-tab-desc" id="prod-tab-1" >
                     <dl class="prod-tab-props">
                         <h5>Engine</h5>
                         <hr>
@@ -329,6 +333,12 @@
                         <dd>{{$bk_details->signal_light}}</dd>
                     </dl>
                 </div>
+                @if(!empty($bk_details->description))
+                    <p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Description</p>
+                    <div class="prod-tab" id="prod-tab-2" style="color: #283346">
+                        <p>{!! $bk_details->description !!}</p>
+                    </div>
+                @endif
                 <p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>
                 <div class="prod-tab prod-reviews" id="prod-tab-3">
                     <form action="{{url('user-review/'.$bk_details->id)}}" method="post" class="prod-addreview-form" id="prod-addreview-form">

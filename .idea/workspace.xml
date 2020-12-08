@@ -79,6 +79,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +298,8 @@
       <workItem from="1607259753815" duration="9438000" />
       <workItem from="1607338747666" duration="13791000" />
       <workItem from="1607371836119" duration="3684000" />
-      <workItem from="1607415794023" duration="14549000" />
-    </task>
-    <task id="LOCAL-00027" summary="Maybe Final 3">
-      <created>1603536640364</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1603536640364</updated>
+      <workItem from="1607415794023" duration="15066000" />
+      <workItem from="1607444658139" duration="1211000" />
     </task>
     <task id="LOCAL-00028" summary="Maybe Final 3.1">
       <created>1603569890922</created>
@@ -642,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607439839886</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="auto https added">
+      <created>1607440593828</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1607440593828</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,10 +714,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607439838614">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607440592505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607439838614" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607440592505" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -728,18 +730,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607439846298">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607440599685">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607439846298" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607440599685" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1602835855299" />
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607439140050">
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607444684572">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607439140050" />
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607444684572" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
