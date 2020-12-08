@@ -245,4 +245,4 @@ Route::fallback(function (){
     return redirect('/');
 });
 
-//URL::forceScheme('https');
+URL::forceScheme('https');
