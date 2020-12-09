@@ -57,7 +57,7 @@
                         </div>
                         <div class="sectls-price-wrap">
                             <p>Price</p>
-                            <p class="sectls-price">{{$bike->price}}</p>
+                            <p class="sectls-price">{{$bike->price_comma}}</p>
                         </div>
 
                     </div>

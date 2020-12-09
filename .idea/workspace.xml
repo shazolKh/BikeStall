@@ -76,8 +76,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
@@ -302,14 +300,7 @@
       <workItem from="1607415794023" duration="15066000" />
       <workItem from="1607444658139" duration="1898000" />
       <workItem from="1607502603447" duration="93000" />
-      <workItem from="1607514575435" duration="298000" />
-    </task>
-    <task id="LOCAL-00029" summary="Maybe Final 3.1.2">
-      <created>1603621946756</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1603621946756</updated>
+      <workItem from="1607514575435" duration="783000" />
     </task>
     <task id="LOCAL-00030" summary="Maybe Final 3.1.2.1">
       <created>1603622425551</created>
@@ -647,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607445966797</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Filter Fixed">
+      <created>1607515116835</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1607515116836</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +675,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final f" />
     <MESSAGE value="Maybe Final f1" />
     <MESSAGE value="Maybe Final f12" />
     <MESSAGE value="Final f12" />
@@ -702,7 +699,8 @@
     <MESSAGE value="Access fixed" />
     <MESSAGE value="auto https added" />
     <MESSAGE value="Bike Details Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bike Details Fixed" />
+    <MESSAGE value="Filter Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filter Fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
