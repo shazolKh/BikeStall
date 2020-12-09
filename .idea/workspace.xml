@@ -78,7 +78,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,21 +299,7 @@
       <workItem from="1607415794023" duration="15066000" />
       <workItem from="1607444658139" duration="1898000" />
       <workItem from="1607502603447" duration="93000" />
-      <workItem from="1607514575435" duration="783000" />
-    </task>
-    <task id="LOCAL-00030" summary="Maybe Final 3.1.2.1">
-      <created>1603622425551</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1603622425552</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Maybe Final 3.1.2.1">
-      <created>1603637192804</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1603637192804</updated>
+      <workItem from="1607514575435" duration="1212000" />
     </task>
     <task id="LOCAL-00032" summary="Maybe Final 3.1.2.2">
       <created>1603637675179</created>
@@ -645,7 +630,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607515116836</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Filter Fixed 2">
+      <created>1607515388282</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1607515388282</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Filter Fixed 3">
+      <created>1607515578172</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1607515578172</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,8 +674,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final f1" />
-    <MESSAGE value="Maybe Final f12" />
     <MESSAGE value="Final f12" />
     <MESSAGE value="Final" />
     <MESSAGE value="Final ffffffffffff" />
@@ -700,7 +697,9 @@
     <MESSAGE value="auto https added" />
     <MESSAGE value="Bike Details Fixed" />
     <MESSAGE value="Filter Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filter Fixed" />
+    <MESSAGE value="Filter Fixed 2" />
+    <MESSAGE value="Filter Fixed 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filter Fixed 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -715,10 +714,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607515386723">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607515576678">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607515386723" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607515576678" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -731,18 +730,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607515123431">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607515583796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607515123431" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607515583796" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1602835855299" />
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607444684572">
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607515775262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607444684572" />
+    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607515775262" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
