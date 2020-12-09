@@ -76,9 +76,9 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,13 +304,7 @@
       <workItem from="1607529422861" duration="473000" />
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
-    </task>
-    <task id="LOCAL-00033" summary="Maybe Final 3.1.2.2">
-      <created>1603640269094</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1603640269094</updated>
+      <workItem from="1607543574331" duration="370000" />
     </task>
     <task id="LOCAL-00034" summary="Maybe Final 3.1.2.2">
       <created>1603640332686</created>
@@ -648,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607515922958</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Accessories Image alt Fix">
+      <created>1607543769736</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1607543769736</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,7 +679,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final" />
     <MESSAGE value="Final ffffffffffff" />
     <MESSAGE value="Final-- All Done" />
     <MESSAGE value="Final ff" />
@@ -703,7 +703,8 @@
     <MESSAGE value="Filter Fixed 2" />
     <MESSAGE value="Filter Fixed 3" />
     <MESSAGE value="Index Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index Fixed" />
+    <MESSAGE value="Accessories Image alt Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Accessories Image alt Fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
