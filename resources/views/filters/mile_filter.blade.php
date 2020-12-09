@@ -1,5 +1,7 @@
 @extends('layouts.frontLayout.front_design')
-
+@section('title')
+    <title>Result</title>
+@endsection
 @section('content')
     <div class="cont maincont">
         <h1><span>Result(s)</span></h1>
