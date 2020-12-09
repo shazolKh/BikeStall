@@ -77,9 +77,10 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +206,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/review cate" />
+    <property name="last_opened_file_path" value="F:/Pro/Laravel/upwirk" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="xpath.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -299,14 +300,9 @@
       <workItem from="1607338747666" duration="13791000" />
       <workItem from="1607371836119" duration="3684000" />
       <workItem from="1607415794023" duration="15066000" />
-      <workItem from="1607444658139" duration="1211000" />
-    </task>
-    <task id="LOCAL-00028" summary="Maybe Final 3.1">
-      <created>1603569890922</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1603569890922</updated>
+      <workItem from="1607444658139" duration="1898000" />
+      <workItem from="1607502603447" duration="93000" />
+      <workItem from="1607514575435" duration="298000" />
     </task>
     <task id="LOCAL-00029" summary="Maybe Final 3.1.2">
       <created>1603621946756</created>
@@ -644,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607440593828</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Bike Details Fixed">
+      <created>1607445966797</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1607445966797</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +677,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Maybe Final" />
     <MESSAGE value="Maybe Final f" />
     <MESSAGE value="Maybe Final f1" />
     <MESSAGE value="Maybe Final f12" />
@@ -699,7 +701,8 @@
     <MESSAGE value="All Fixed" />
     <MESSAGE value="Access fixed" />
     <MESSAGE value="auto https added" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto https added" />
+    <MESSAGE value="Bike Details Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bike Details Fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
@@ -714,26 +717,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607440592505">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607445964553">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607440592505" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607445964553" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009170413" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604508767791">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607502694984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604508767791" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607502694984" />
     <state x="152" y="18" key="SettingsEditor" timestamp="1602823715109">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607440599685">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607445970838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607440599685" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607445970838" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

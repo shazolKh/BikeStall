@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="cont maincont">
-        <h1><span>All Bikes of according to your requirement</span></h1>
+        <h1><span>Result(s)</span></h1>
         <p class="section-count"></p>
         <span class="maincont-line1 maincont-line12"></span>
         <span class="maincont-line2 maincont-line22"></span>

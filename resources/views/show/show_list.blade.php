@@ -7,7 +7,7 @@
     <div class="populars-wrap">
         <div class="cont populars">
             <h2>SHOWROOMS</h2>
-            <p class="populars-count">{{$data->count()}} Showrooms</p>
+            {{--<p class="populars-count">{{$data->count()}} Showrooms</p>--}}
             <div class="populars-list">
                 @foreach ($data as $rvw)
                     <div class="popular">

@@ -19,8 +19,9 @@ class FilterController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function thirtytofifty()
@@ -32,8 +33,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function fiftySeventy()
@@ -45,8 +47,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function Seventy()
@@ -58,8 +61,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function belowHun()
@@ -71,8 +75,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function hunToTwn()
@@ -84,8 +89,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function twentytofif()
@@ -97,8 +103,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function oneftwohun()
@@ -110,8 +117,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function twoTF()
@@ -123,8 +131,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function twoFtof()
@@ -136,8 +145,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands', 'about'));
     }
 
     public function abovf()
@@ -149,8 +159,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands', 'about'));
     }
 
     public function belowOne()
@@ -162,8 +173,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'logo', 'all_brands', 'about'));
     }
 
     public function belowTwo()
@@ -175,8 +187,9 @@ class FilterController extends Controller
 
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function belowThree()
@@ -187,8 +200,9 @@ class FilterController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function belowFour()
@@ -199,8 +213,9 @@ class FilterController extends Controller
         $brands = Brand::get();
         $logo = Logo::first();
         $all_brands = Brand::get();
+        $about = About::first();
 
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function aboveFive()
@@ -209,10 +224,11 @@ class FilterController extends Controller
         //$br_name_details = Brand::where(['br_name'=>$br_name])->first();
         $bikes = Bike::orderBy('price','asc')->where([['price','>', 400000]])->paginate(16);
         $brands = Brand::get();
+        $about = About::first();
 
         $logo = Logo::first();
         $all_brands = Brand::get();
-        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands'));
+        return view('filters.mile_filter')->with(compact( 'bikes','categories','brands', 'logo', 'all_brands', 'about'));
     }
 
     public function search()
