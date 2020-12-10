@@ -69,6 +69,19 @@
                 </div>
             </div>
             <!-- Post Content - end -->
+            <div class="blog-sb" style="margin-top: 150px">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bikestall_sidebar -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1900204270155608"
+                     data-ad-slot="5801691750"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </div>
 
         <div class="cont post-sidebar">

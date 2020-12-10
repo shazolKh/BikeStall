@@ -79,6 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -306,14 +307,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="17897000" />
-    </task>
-    <task id="LOCAL-00046" summary="Final">
-      <created>1604957335997</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1604957335997</updated>
+      <workItem from="1607586142477" duration="18568000" />
     </task>
     <task id="LOCAL-00047" summary="Final">
       <created>1605025242389</created>
@@ -651,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607626907491</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Ads test news details page">
+      <created>1607627143879</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1607627143879</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
