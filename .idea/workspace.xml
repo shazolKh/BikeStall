@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
+    <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="Ads test Index page">
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/975055.jpg" afterDir="false" />
@@ -79,6 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
@@ -307,14 +308,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="13220000" />
-    </task>
-    <task id="LOCAL-00038" summary="Maybe Final 3.1.2.4">
-      <created>1603708176264</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1603708176264</updated>
+      <workItem from="1607586142477" duration="13925000" />
     </task>
     <task id="LOCAL-00039" summary="Maybe Final">
       <created>1604470949263</created>
@@ -652,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607621154484</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Ads test Index page">
+      <created>1607621683250</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1607621683250</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

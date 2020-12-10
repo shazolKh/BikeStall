@@ -169,7 +169,7 @@
 	</div>
 </div>
 
-<div class="populars-wrap">
+<div class="populars-wrap" >
     <div class="cont populars">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- bikestall responsive -->
@@ -182,7 +182,7 @@
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        <span class="popular-line1"></span>
+<!--        <span class="popular-line1"></span>-->
         <span class="popular-line2"></span>
     </div>
 </div>
@@ -217,6 +217,19 @@
 		<span class="popular-line1"></span>
 		<span class="popular-line2"></span>
 	</div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- bikestall responsive -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1900204270155608"
+         data-ad-slot="5000779542"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <!--        <span class="popular-line1"></span>-->
+    <span class="popular-line2"></span>
 </div>
 
 <!-- News -->
