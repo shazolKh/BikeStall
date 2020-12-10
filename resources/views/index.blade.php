@@ -170,19 +170,19 @@
 </div>
 
 <div class="populars-wrap" >
-    <div class="cont populars">
+    <div class="cont populars" style="padding-bottom: 0px; padding-top: 0px;">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- bikestall responsive -->
+        <!-- bikestall_horizonal -->
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-1900204270155608"
-             data-ad-slot="5000779542"
+             data-ad-slot="3176536605"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-<!--        <span class="popular-line1"></span>-->
+        <!--        <span class="popular-line1"></span>-->
         <span class="popular-line2"></span>
     </div>
 </div>
@@ -220,13 +220,13 @@
 </div>
 
 <div class="populars-wrap" >
-    <div class="cont populars">
+    <div class="cont populars" style="padding-bottom: 0px; padding-top: 0px;">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- bikestall responsive -->
+        <!-- bikestall_horizonal -->
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-1900204270155608"
-             data-ad-slot="5000779542"
+             data-ad-slot="3176536605"
              data-ad-format="auto"
              data-full-width-responsive="true"></ins>
         <script>
