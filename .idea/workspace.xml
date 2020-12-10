@@ -81,7 +81,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,14 +308,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="16422000" />
-    </task>
-    <task id="LOCAL-00041" summary="Maybe Final f1">
-      <created>1604776059027</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1604776059027</updated>
+      <workItem from="1607586142477" duration="17166000" />
     </task>
     <task id="LOCAL-00042" summary="Maybe Final f12">
       <created>1604819830713</created>
@@ -653,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607622324313</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Ads test Index page">
+      <created>1607625673951</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1607625673951</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
