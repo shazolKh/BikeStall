@@ -120,6 +120,9 @@
                     <input type="submit" class="botarticle-more" value="Compare">
                 </div>
             </form>
+            <a href="#" class="botarticle-img">
+                <img src="{{asset('public/frontend/img/article1.jpg')}}" alt="">
+            </a>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- bikestall_horizonal -->
             <ins class="adsbygoogle"
@@ -131,10 +134,6 @@
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-
-            <a href="#" class="botarticle-img">
-                <img src="{{asset('public/frontend/img/article1.jpg')}}" alt="">
-            </a>
         </div>
     </div>
 </main>
