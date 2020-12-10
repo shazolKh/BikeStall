@@ -52,12 +52,36 @@
                 </div>
                 <img src="{{asset('public/image/news/'.$detail_news->image)}}" alt="{{$detail_news->headline}}" class="post-img">
                 <br>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bikestall_horizonal -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1900204270155608"
+                     data-ad-slot="3176536605"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
                 <div style="color: #0b0b0b;">
                     <p>{!! $detail_news->article !!}</p>
                 </div>
             </div>
             <!-- Post Content - end -->
         </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- bikestall_horizonal -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1900204270155608"
+             data-ad-slot="3176536605"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
 
         <div class="populars-wrap">
             <div class="cont populars">
