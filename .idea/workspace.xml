@@ -79,7 +79,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
@@ -308,14 +307,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="12747000" />
-    </task>
-    <task id="LOCAL-00037" summary="Maybe Final 3.1.2.3">
-      <created>1603707593321</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1603707593321</updated>
+      <workItem from="1607586142477" duration="13220000" />
     </task>
     <task id="LOCAL-00038" summary="Maybe Final 3.1.2.4">
       <created>1603708176264</created>
@@ -653,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607602963794</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Ads test Index page">
+      <created>1607621154484</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1607621154484</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +682,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final-- All Done" />
     <MESSAGE value="Final ff" />
     <MESSAGE value="Final---Done" />
     <MESSAGE value="Final-- 404 done" />
@@ -708,7 +706,8 @@
     <MESSAGE value="Index Fixed" />
     <MESSAGE value="Accessories Image alt Fix" />
     <MESSAGE value="Ads test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ads test" />
+    <MESSAGE value="Ads test Index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
