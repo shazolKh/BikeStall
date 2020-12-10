@@ -27,6 +27,21 @@
     <!-- Breadcrumbs -->
     <div class="b-crumbs-wrap">
         <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url('/brands/'.$brand->url)}}">{{$brand->br_name}}</a>
+                </li>
+                <li>
+                    <a href="#">{{$bk_details->bike_name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">-->
             @if($message = Session::get('flash_message_error'))
                 <div class="alert alert-danger alert-block">
                     <button type="button" class="close" data-dismiss="alert"></button>
@@ -40,8 +55,8 @@
                     <strong>{{$message}}</strong>
                 </div>
             @endif
-        </div>
-    </div>
+      {{--  </div>
+    </div>--}}
 
 
     <div class="cont maincont">
@@ -51,7 +66,7 @@
         <!-- Product - start -->
         <div class="prod">
             <!-- Product Slider - start -->
-            <div class="prod-slider-wrap">
+            <div class="prod-slider-wrap" style="height: 442px;">
                 <div class="flexslider prod-slider" id="prod-slider">
                     <ul class="slides">
                         <li>

@@ -25,6 +25,21 @@
 
 
 @section('content')
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url('brands/'.$br_name_details->url)}}">{{$br_name_details->br_name}}</a>
+                </li>
+<!--               <li>
+                    <a href="#">{{--{{$data->name}}--}}</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
     <div class="cont maincont">
         <h1><span>All Bikes of {{$br_name_details->br_name}}</span></h1>
         <p class="section-count"></p>

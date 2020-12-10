@@ -4,9 +4,20 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
     <div class="b-crumbs-wrap">
         <div class="cont b-crumbs">
-
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            <!--                    <li>
+                        <a href="#">{{--{{$data->name}}--}}</a>
+                    </li>-->
+            </ul>
         </div>
     </div>
 

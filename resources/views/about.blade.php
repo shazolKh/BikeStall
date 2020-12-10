@@ -4,8 +4,20 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
     <div class="b-crumbs-wrap">
         <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+<!--                <li>
+                    <a href="#"></a>
+                </li>-->
+            </ul>
         </div>
     </div>
 
@@ -18,7 +30,7 @@
         <div class="flexslider pagecont aboutus" id="aboutus">
             <ul class="slides">
                 <li class="aboutus-slide">
-                    <p class="aboutus-img">
+                    <p class="aboutus-img" style="width: 470px; height: 400px;">
                         <img src="{{asset('public/image/about/'.$about->image)}}" alt="{{$about->title}}">
                     </p>
                     <div class="aboutus-cont">

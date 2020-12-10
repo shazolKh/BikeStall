@@ -3,6 +3,22 @@
     <title>Result</title>
 @endsection
 @section('content')
+    <!-- Breadcrumbs -->
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">filter result</a>
+                </li>
+<!--                <li>
+                    <a href="#"></a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
     <div class="cont maincont">
         <h1><span>Result(s)</span></h1>
         <p class="section-count"></p>

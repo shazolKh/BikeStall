@@ -23,6 +23,22 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">Comparison</a>
+                </li>
+                <!--                <li>
+                                    <a href="#"></a>
+                                </li>-->
+            </ul>
+        </div>
+    </div>
     <section class="ptb-70">
         <div class="container">
             <div class="row">
@@ -52,15 +68,15 @@
                                                 <a href="{{route('bike.details', [$bikeTwoDetails->url])}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                             </td>
                                         </tr>
-                                        <tr>
+<!--                                        <tr>
                                             <td>Description</td>
                                             <td>
-                                                <p>{!! $bikeOneDetails->description !!}</p>
+                                                <p>{{--{!! $bikeOneDetails->description !!}--}}</p>
                                             </td>
                                             <td>
-                                                <p>{!! $bikeTwoDetails->description !!}</p>
+                                                <p>{{--{!! $bikeTwoDetails->description !!}--}}</p>
                                             </td>
-                                        </tr>
+                                        </tr>-->
                                         <tr>
                                             <td>Price</td>
                                             <td class="name">{{$bikeOneDetails->price_comma}} </td>

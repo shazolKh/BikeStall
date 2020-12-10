@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a33588e-6313-4bd0-8c59-c6552bd998ea" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/public/image/about/219678.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/about/647624.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/about/807051.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/about/975055.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image/172190.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image/881246.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/accessories/image/976438.jpg" afterDir="false" />
@@ -80,11 +80,29 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/compare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/compare.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/comparison.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comparison.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/frontLayout/front_design.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,14 +329,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="3398000" />
-    </task>
-    <task id="LOCAL-00035" summary="Maybe Final 3.1.2.3">
-      <created>1603706671804</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1603706671804</updated>
+      <workItem from="1607586142477" duration="10974000" />
     </task>
     <task id="LOCAL-00036" summary="Maybe Final 3.1.2.3">
       <created>1603706832495</created>
@@ -656,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607543960882</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Accessories Image alt Fix">
+      <created>1607592104724</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1607592104725</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

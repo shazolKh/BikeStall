@@ -168,12 +168,25 @@
 		<span class="frontsearch-line2"></span>
 	</div>
 </div>
+<div align="center">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- bikestall_horizonal -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1900204270155608"
+         data-ad-slot="3176536605"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
 
 <!-- Popular Items -->
 <div class="populars-wrap">
 	<div class="cont populars">
-		<h2>ALL BIKES</h2>
+		<h2>BIKES PRICE IN BANGLADESH</h2>
 		{{--<p class="populars-count">{{\App\Bike::count()}} BIKES</p>--}}
 		<div class="populars-list">
             @foreach ($bikes as $bk)

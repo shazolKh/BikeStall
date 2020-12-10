@@ -23,6 +23,22 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{route('news.list')}}">News</a>
+                </li>
+                <li>
+                    <a href="#">{{$detail_news->headline}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="maincont">
         <div class="cont post-sidebar">

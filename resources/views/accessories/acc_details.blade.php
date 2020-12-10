@@ -28,7 +28,17 @@
     <!-- Breadcrumbs -->
     <div class="b-crumbs-wrap">
         <div class="cont b-crumbs">
-
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{url('/accessories')}}">Accessories</a>
+                </li>
+                <li>
+                    <a href="#">{{$data->name}}</a>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -39,7 +49,7 @@
         <!-- Product - start -->
         <div class="prod">
             <!-- Product Slider - start -->
-            <div class="prod-slider-wrap">
+            <div class="prod-slider-wrap" style="height: 442px;">
                 <div class="flexslider prod-slider" id="prod-slider">
                     <ul class="slides">
                         <li>

@@ -41,6 +41,15 @@
     <link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/media.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96393550-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-96393550-2');
+    </script>
 
     <style>
         .select2-container--default .select2-selection--single .select2-selection__rendered {

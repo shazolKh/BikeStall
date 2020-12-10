@@ -24,6 +24,22 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="{{route('review.list')}}">Reviews</a>
+                </li>
+                <li>
+                    <a href="#">{{$detail_review->title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="maincont">
 

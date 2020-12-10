@@ -4,6 +4,22 @@
 @endsection
 
 @section('content')
+    <!-- Breadcrumbs -->
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">search Result</a>
+                </li>
+<!--                <li>
+                    <a href="#"></a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
     <div class="cont maincont">
         <h1><span>Search Result</span></h1>
         <p class="section-count"></p>

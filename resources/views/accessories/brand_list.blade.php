@@ -23,6 +23,21 @@
 @endsection
 
 @section('content')
+    <div class="b-crumbs-wrap">
+        <div class="cont b-crumbs">
+            <ul>
+                <li>
+                    <a href="{{url('/')}}">Home</a>
+                </li>
+                <li>
+                    <a href="#">Brands</a>
+                </li>
+<!--                <li>
+                    <a href="#">{{--{{$data->name}}--}}</a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
     <div class="populars-wrap">
         <div class="cont populars">
             <h2>BRANDS</h2>

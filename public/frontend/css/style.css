@@ -1969,7 +1969,7 @@ input:focus {
 .b-crumbs-wrap {
 	background: #fff;
 	border-bottom: 1px solid #e0e4f6;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 .b-crumbs-wrap.b-crumbs-wrap2 {
 	border-bottom: none;
@@ -3105,7 +3105,7 @@ ul.pager li.dots a {
 	content: '';
 }
 .prod .prod-slider-wrap {
-    height: 550px;
+    /*height: 550px;*/
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -6147,7 +6147,7 @@ div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-toda
 
 /* Compare Page CSS Start */
 .ptb-70 {
-	padding-top: 70px;
+	/*padding-top: 70px;*/
 	padding-bottom: 70px;
 }
 .compare-infomation{
