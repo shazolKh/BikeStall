@@ -31,11 +31,11 @@
                     <a href="{{url('/')}}">Home</a>
                 </li>
                 <li>
-                    <a href="#">Comparison</a>
+                    <a href="{{url('/compare')}}">Compare</a>
                 </li>
-                <!--                <li>
-                                    <a href="#"></a>
-                                </li>-->
+                <li>
+                    <a href="#">{{$bikeOneDetails->bike_name}} vs. {{$bikeTwoDetails->bike_name}}</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -56,7 +56,7 @@
                                             </td>
                                             <td class="image">
                                                 <a href="{{url('bike/details/'.$bikeTwoDetails->url)}}"></a>
-                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeTwoDetails->image)}}" alt="{{$bikeOneDetails->bike_name}}" title="" class="img-thumbnail" />
+                                                <img src="{{asset('public/image/images/image/large_image/'.$bikeTwoDetails->image)}}" alt="{{$bikeTwoDetails->bike_name}}" title="" class="img-thumbnail" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -65,7 +65,7 @@
                                                 <a href="{{route('bike.details', [$bikeOneDetails->url])}}" class="title">{{$bikeOneDetails->bike_name}}</a>
                                             </td>
                                             <td>
-                                                <a href="{{route('bike.details', [$bikeTwoDetails->url])}}" class="title">{{$bikeOneDetails->bike_name}}</a>
+                                                <a href="{{route('bike.details', [$bikeTwoDetails->url])}}" class="title">{{$bikeTwoDetails->bike_name}}</a>
                                             </td>
                                         </tr>
 <!--                                        <tr>
