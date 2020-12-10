@@ -79,8 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/compare.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/compare.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,14 +306,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="18568000" />
-    </task>
-    <task id="LOCAL-00047" summary="Final">
-      <created>1605025242389</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1605025242390</updated>
+      <workItem from="1607586142477" duration="19364000" />
     </task>
     <task id="LOCAL-00048" summary="Final">
       <created>1605030539287</created>
@@ -652,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607627143879</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="ADs-- News details page Side">
+      <created>1607627875511</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1607627875511</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final-- 404 done" />
     <MESSAGE value="Finalll" />
     <MESSAGE value="Final ffhhh" />
     <MESSAGE value="Contact Updated" />
@@ -707,7 +705,8 @@
     <MESSAGE value="Ads added Bike Details Page" />
     <MESSAGE value="Ads test Index page" />
     <MESSAGE value="Ads test news details page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ads test news details page" />
+    <MESSAGE value="ADs-- News details page Side" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADs-- News details page Side" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
