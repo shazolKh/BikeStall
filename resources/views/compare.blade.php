@@ -118,6 +118,7 @@
                         @endforeach
                     </select>
                     <input type="submit" class="botarticle-more" value="Compare">
+                    <br>
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- bikestall_horizonal -->
                     <ins class="adsbygoogle"
