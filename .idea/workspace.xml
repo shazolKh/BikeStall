@@ -79,8 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/detail_news.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,21 +306,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="17530000" />
-    </task>
-    <task id="LOCAL-00044" summary="Final">
-      <created>1604956636277</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1604956636277</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Final">
-      <created>1604957219959</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1604957219959</updated>
+      <workItem from="1607586142477" duration="17897000" />
     </task>
     <task id="LOCAL-00046" summary="Final">
       <created>1604957335997</created>
@@ -652,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607626597059</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Ads test Index page">
+      <created>1607626716802</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1607626716802</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Ads test news details page">
+      <created>1607626907491</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1607626907491</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final---Done" />
     <MESSAGE value="Final-- 404 done" />
     <MESSAGE value="Finalll" />
     <MESSAGE value="Final ffhhh" />
@@ -707,7 +705,8 @@
     <MESSAGE value="Ads test" />
     <MESSAGE value="Ads added Bike Details Page" />
     <MESSAGE value="Ads test Index page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
+    <MESSAGE value="Ads test news details page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ads test news details page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
