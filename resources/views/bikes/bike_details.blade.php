@@ -429,11 +429,11 @@
                         </div>
                     @endforeach
                 </div>
-                <ul class="pager">
+<!--                <ul class="pager">
                     <li>
                         <a></a>
                     </li>
-                </ul>
+                </ul>-->
                 <span class="popular-line1"></span>
                 <span class="popular-line2"></span>
             </div>
