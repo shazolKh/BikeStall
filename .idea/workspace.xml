@@ -306,21 +306,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="19364000" />
-    </task>
-    <task id="LOCAL-00048" summary="Final">
-      <created>1605030539287</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1605030539287</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Final">
-      <created>1605042390355</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1605042390355</updated>
+      <workItem from="1607586142477" duration="19732000" />
     </task>
     <task id="LOCAL-00050" summary="Final">
       <created>1605043624491</created>
@@ -651,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607627875511</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="ADs-- Compare page">
+      <created>1607631471851</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1607631471851</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Ads test Index page">
+      <created>1607631681512</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1607631681512</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +681,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finalll" />
     <MESSAGE value="Final ffhhh" />
     <MESSAGE value="Contact Updated" />
     <MESSAGE value="Final-- Sub-Category Fixed" />
@@ -703,10 +702,11 @@
     <MESSAGE value="Accessories Image alt Fix" />
     <MESSAGE value="Ads test" />
     <MESSAGE value="Ads added Bike Details Page" />
-    <MESSAGE value="Ads test Index page" />
     <MESSAGE value="Ads test news details page" />
     <MESSAGE value="ADs-- News details page Side" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADs-- News details page Side" />
+    <MESSAGE value="ADs-- Compare page" />
+    <MESSAGE value="Ads test Index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
