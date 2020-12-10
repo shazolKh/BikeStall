@@ -57,38 +57,38 @@
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image/large_image/'.$bk_details->image)}}">
-                                <img src="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}" alt=""></a>
+                                <img src="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}"></a>
                         </li>
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image1/large_image/'.$bk_details->image1)}}">
-                                <img src="{{asset('public/image/images/image1/medium_image/'.$bk_details->image1)}}" alt=""></a>
+                                <img src="{{asset('public/image/images/image1/medium_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}"></a>
                         </li>
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image2/large_image/'.$bk_details->image2)}}">
-                                <img src="{{asset('public/image/images/image2/medium_image/'.$bk_details->image2)}}" alt=""></a>
+                                <img src="{{asset('public/image/images/image2/medium_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}"></a>
                         </li>
                         <li>
                             <!-- <a> & <img> Without Spaces -->
                             <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image3/large_image/'.$bk_details->image3)}}">
-                                <img src="{{asset('public/image/images/image3/medium_image/'.$bk_details->image3)}}" alt=""></a>
+                                <img src="{{asset('public/image/images/image3/medium_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}"></a>
                         </li>
                     </ul>
                 </div>
                 <div class="flexslider prod-thumbs" id="prod-thumbs">
                     <ul class="slides">
                         <li>
-                            <img src="{{asset('public/image/images/image/small_image/'.$bk_details->image)}}" alt="">
+                            <img src="{{asset('public/image/images/image/small_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}">
                         </li>
                         <li>
-                            <img src="{{asset('public/image/images/image1/small_image/'.$bk_details->image1)}}" alt="">
+                            <img src="{{asset('public/image/images/image1/small_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}">
                         </li>
                         <li>
-                            <img src="{{asset('public/image/images/image2/small_image/'.$bk_details->image2)}}" alt="">
+                            <img src="{{asset('public/image/images/image2/small_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}">
                         </li>
                         <li>
-                            <img src="{{asset('public/image/images/image3/small_image/'.$bk_details->image3)}}" alt="">
+                            <img src="{{asset('public/image/images/image3/small_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}">
                         </li>
                     </ul>
                 </div>

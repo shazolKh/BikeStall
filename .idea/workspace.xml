@@ -57,10 +57,13 @@
       <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/551879.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image/small_image/723112.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/338599.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/537084.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/large_image/884998.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/medium_image/338599.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image1/medium_image/537084.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/medium_image/884998.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/small_image/338599.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/images/image1/small_image/537084.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image1/small_image/884998.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image2/large_image/620935.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/images/image2/medium_image/620935.jpg" afterDir="false" />
@@ -76,9 +79,12 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,14 +310,8 @@
       <workItem from="1607529422861" duration="473000" />
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
-      <workItem from="1607543574331" duration="370000" />
-    </task>
-    <task id="LOCAL-00034" summary="Maybe Final 3.1.2.2">
-      <created>1603640332686</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1603640332686</updated>
+      <workItem from="1607543574331" duration="478000" />
+      <workItem from="1607586142477" duration="3398000" />
     </task>
     <task id="LOCAL-00035" summary="Maybe Final 3.1.2.3">
       <created>1603706671804</created>
@@ -649,19 +649,26 @@
       <option name="project" value="LOCAL" />
       <updated>1607543769736</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Accessories Image alt Fix">
+      <created>1607543960882</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1607543960882</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -705,48 +712,6 @@
     <MESSAGE value="Index Fixed" />
     <MESSAGE value="Accessories Image alt Fix" />
     <option name="LAST_COMMIT_MESSAGE" value="Accessories Image alt Fix" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602742454811">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="438" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1602742454811" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603009028764">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009028764" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607417608035">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607417608035" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1607515921102">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607515921102" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1603009170413">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1603009170413" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607502694984">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607502694984" />
-    <state x="152" y="18" key="SettingsEditor" timestamp="1602823715109">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="152" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602823715109" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1607515928544">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607515928544" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602835855299">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1602835855299" />
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup" timestamp="1607515775262">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="538" y="111" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607515775262" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
