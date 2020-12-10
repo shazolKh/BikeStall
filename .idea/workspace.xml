@@ -79,8 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/comparison.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/comparison.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,14 +306,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="20367000" />
-    </task>
-    <task id="LOCAL-00053" summary="Final">
-      <created>1605437629689</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1605437629690</updated>
+      <workItem from="1607586142477" duration="20732000" />
     </task>
     <task id="LOCAL-00054" summary="Final ffffffffffff">
       <created>1605541097863</created>
@@ -652,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607632072348</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Ads test Index page">
+      <created>1607632519806</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1607632519806</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
