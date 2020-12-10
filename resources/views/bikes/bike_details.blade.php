@@ -72,7 +72,7 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
         <h1><span>{{$bk_details->bike_name}}</span></h1>
-        <span class="maincont-line1"></span>
+<!--        <span class="maincont-line1"></span>-->
         <span class="maincont-line2"></span>
         <!-- Product - start -->
         <div class="prod">

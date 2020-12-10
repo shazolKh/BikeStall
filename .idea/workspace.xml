@@ -79,7 +79,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
     </list>
@@ -308,21 +307,7 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="17166000" />
-    </task>
-    <task id="LOCAL-00042" summary="Maybe Final f12">
-      <created>1604819830713</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1604819830713</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Final f12">
-      <created>1604857011545</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1604857011545</updated>
+      <workItem from="1607586142477" duration="17530000" />
     </task>
     <task id="LOCAL-00044" summary="Final">
       <created>1604956636277</created>
@@ -653,7 +638,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607625673951</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Ads added Bike Details Page">
+      <created>1607626566283</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1607626566283</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Ads test Index page">
+      <created>1607626597059</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1607626597059</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +682,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final ff" />
     <MESSAGE value="Final---Done" />
     <MESSAGE value="Final-- 404 done" />
     <MESSAGE value="Finalll" />
@@ -707,6 +705,7 @@
     <MESSAGE value="Index Fixed" />
     <MESSAGE value="Accessories Image alt Fix" />
     <MESSAGE value="Ads test" />
+    <MESSAGE value="Ads added Bike Details Page" />
     <MESSAGE value="Ads test Index page" />
     <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
   </component>
