@@ -151,6 +151,21 @@
                             </table>
                             <table class="compare-info">
                                 <tbody>
+                                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                    <!-- bikestall_horizonal -->
+                                    <ins class="adsbygoogle"
+                                         style="display:block"
+                                         data-ad-client="ca-pub-1900204270155608"
+                                         data-ad-slot="3176536605"
+                                         data-ad-format="auto"
+                                         data-full-width-responsive="true"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </tbody>
+                            </table>
+                            <table class="compare-info">
+                                <tbody>
                                     <h5 style=" font-weight: 800; text-transform: uppercase; margin: 15px;">Dimensions & Weight</h5>
                                     <tr>
                                         <td class="first-column">Overall Length</td>
