@@ -79,6 +79,7 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,14 +308,7 @@
       <workItem from="1607543574331" duration="478000" />
       <workItem from="1607586142477" duration="20862000" />
       <workItem from="1607677551590" duration="772000" />
-      <workItem from="1607679697836" duration="5186000" />
-    </task>
-    <task id="LOCAL-00058" summary="Final---Done">
-      <created>1606246954051</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1606246954052</updated>
+      <workItem from="1607679697836" duration="5903000" />
     </task>
     <task id="LOCAL-00059" summary="Final-- 404 done">
       <created>1606294473836</created>
@@ -652,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607684949434</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Ads test Index page">
+      <created>1607685194044</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1607685194044</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -702,12 +703,12 @@
     <MESSAGE value="Ads test news details page" />
     <MESSAGE value="ADs-- News details page Side" />
     <MESSAGE value="ADs-- Compare page" />
-    <MESSAGE value="Ads test Index page" />
     <MESSAGE value="Ads Review Details" />
     <MESSAGE value="ADs added" />
     <MESSAGE value="All ADs Added" />
     <MESSAGE value="Ads Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ads Added" />
+    <MESSAGE value="Ads test Index page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
