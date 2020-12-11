@@ -76,6 +76,7 @@
                             <h3><a href="{{url('review/details/'.$rvw->url)}}">{{$rvw->title}}</a></h3>
                             <p style="color:#283346; font-weight: bold">{{ \Illuminate\Support\Str::limit(strip_tags($rvw->details, 100)) }}<a href="{{url('review/details/'.$rvw->url)}}">read more</a></p>
                         </div>
+                        <br>
                         @endforeach
                     </div>
                 </div>
@@ -86,9 +87,51 @@
                         <a>{{ $reviews->links() }}</a>
                     </li>
                 </ul>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bikestall_horizonal -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1900204270155608"
+                     data-ad-slot="3176536605"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
             <!-- Blog Posts List - end -->
+            <div class="blog-sb">
+                <div class="blog-featured-wrap">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- bikestall_sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1900204270155608"
+                         data-ad-slot="5801691750"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
 
+                </div>
+            </div>
+            <br>
+            <div class="blog-sb">
+                <div class="blog-featured-wrap">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- bikestall_sidebar -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-1900204270155608"
+                         data-ad-slot="5801691750"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

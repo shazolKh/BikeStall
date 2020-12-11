@@ -79,7 +79,21 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/detail_review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/filters/mile_filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gallery/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gallery/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/short_news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reviews/short_reviews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,14 +320,9 @@
       <workItem from="1607530143696" duration="265000" />
       <workItem from="1607531244860" duration="598000" />
       <workItem from="1607543574331" duration="478000" />
-      <workItem from="1607586142477" duration="20732000" />
-    </task>
-    <task id="LOCAL-00054" summary="Final ffffffffffff">
-      <created>1605541097863</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1605541097863</updated>
+      <workItem from="1607586142477" duration="20862000" />
+      <workItem from="1607677551590" duration="772000" />
+      <workItem from="1607679697836" duration="4086000" />
     </task>
     <task id="LOCAL-00055" summary="Final ff">
       <created>1605541682372</created>
@@ -651,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607632519806</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Ads Review Details">
+      <created>1607632828742</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1607632828742</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +697,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Final ffhhh" />
     <MESSAGE value="Contact Updated" />
     <MESSAGE value="Final-- Sub-Category Fixed" />
     <MESSAGE value="Final-- Search Fixed" />
@@ -706,7 +721,8 @@
     <MESSAGE value="ADs-- News details page Side" />
     <MESSAGE value="ADs-- Compare page" />
     <MESSAGE value="Ads test Index page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ads test Index page" />
+    <MESSAGE value="Ads Review Details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ads Review Details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

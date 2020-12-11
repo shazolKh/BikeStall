@@ -33,6 +33,21 @@
                     <p class="aboutus-img" style="width: 470px; height: 400px;">
                         <img src="{{asset('public/image/about/'.$about->image)}}" alt="{{$about->title}}">
                     </p>
+                    <br>
+                    <p class="aboutus-img" style="width: 470px; height: 400px;">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- bikestall_sidebar -->
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-client="ca-pub-1900204270155608"
+                             data-ad-slot="5801691750"
+                             data-ad-format="auto"
+                             data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+
+                    </p>
                     <div class="aboutus-cont">
                         <h3>{{$about->title}}</h3>
                         <p>{!! $about->details !!}</p>

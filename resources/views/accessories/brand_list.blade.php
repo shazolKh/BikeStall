@@ -41,7 +41,7 @@
     <div class="populars-wrap">
         <div class="cont populars">
             <h2>BRANDS</h2>
-            <p class="populars-count">{{$brandss->count()}} Brands</p>
+<!--            <p class="populars-count">{{$brandss->count()}} Brands</p>-->
             <div class="populars-list">
                 @foreach ($brandss as $brand)
                     <div class="popular">
@@ -66,4 +66,21 @@
             <a>{{ $brandss->render() }}</a>
         </li>
     </ul>
+    <div class="populars-wrap" >
+        <div class="cont populars" style="padding-bottom: 0px; padding-top: 0px;">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- bikestall_horizonal -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1900204270155608"
+                 data-ad-slot="3176536605"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <!--        <span class="popular-line1"></span>-->
+            <span class="popular-line2"></span>
+        </div>
+    </div>
 @endsection

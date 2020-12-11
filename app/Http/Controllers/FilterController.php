@@ -236,7 +236,7 @@ class FilterController extends Controller
         $categories = Category::with('categories')->get();
         $brands = Brand::all();
         $text = $_POST['query'];
-        $bikes = Bike::where('bike_name', 'LIKE', '%'.$text.'%')->get();
+        $bikes = Bike::where('bike_name', 'LIKE', '%'.$text.'%')->paginate(16);
         $logo = Logo::first();
         $about = About::first();
 

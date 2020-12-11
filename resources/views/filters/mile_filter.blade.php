@@ -20,48 +20,29 @@
         </div>
     </div>
     <div class="cont maincont">
+        <span class="maincont-line2 maincont-line22"></span>
+        <div class="section-list">
+            <div class="sectls">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bikestall_horizonal -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1900204270155608"
+                     data-ad-slot="3176536605"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="cont maincont">
         <h1><span>Result(s)</span></h1>
         <p class="section-count"></p>
         <span class="maincont-line1 maincont-line12"></span>
         <span class="maincont-line2 maincont-line22"></span>
 
-        <!-- Category Sections -->
-        <ul class="cont-sections">
-
-        </ul>
-
-        <!-- Category Filter - start -->
-        <div class="section-top">
-            <a href="#" class="section-menu-btn" id="section-menu-btn"></a>
-            <div class="section-view">
-            </div>
-            <div class="section-sort">
-            </div>
-            <div class="section-prices">
-            </div>
-            <div class="section-menu-wrap" id="section-menu-wrap">
-
-                <div class="section-menu">
-                    <p class="section-menu-ttl">Bike Brands</p>
-                    <ul class="section-menu-list">
-                        @foreach($brands as $br_name)
-                            <li><a href="{{url('brands/'.$br_name->br_name)}}">{{$br_name->br_name}}</a></li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="section-menu">
-                    <p class="section-menu-ttl">Bike Category</p>
-                    <ul class="section-menu-list">
-                        @foreach($categories as $cat)
-                            <li><a href="{{url('category/bikes/'.$cat->ct_name)}}">{{$cat->ct_name}}</a></li>
-                        @endforeach
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <!-- Category Filter - end -->
-        <!-- Category Items - start -->
         <div class="section-list">
             @foreach($bikes as $bike)
                 <div class="sectls">
@@ -99,4 +80,22 @@
             <a href="#">{{$bikes->links()}}</a>
         </li>
     </ul>
+    <div class="cont maincont">
+        <span class="maincont-line2 maincont-line22"></span>
+        <div class="section-list">
+            <div class="sectls">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bikestall_horizonal -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-1900204270155608"
+                     data-ad-slot="3176536605"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
 @endsection
