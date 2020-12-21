@@ -413,7 +413,7 @@
         <div class="populars-wrap">
             <div class="cont populars">
                 <h2>Related Bike(s)</h2>
-                <p class="populars-count">{{$related->count()}} BIKE(S)</p>
+{{--                <p class="populars-count">{{$related->count()}} BIKE(S)</p>--}}
                 <div class="populars-list">
                     @foreach($related as $relate)
                         <div class="popular">
