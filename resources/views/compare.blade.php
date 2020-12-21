@@ -33,11 +33,11 @@
     <link href="{{asset('public/select2-4.0.13/dist/css/select2.min.css')}}" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/zabuto_calendar.css')}}">
+{{--    <link rel="stylesheet" href="{{asset('public/frontend/css/zabuto_calendar.css')}}">--}}
     <link rel="stylesheet" href="{{asset('public/frontend/css/flexslider.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/jquery.fancybox.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.skinFlat.css')}}">
+{{--    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.css')}}">--}}
+{{--    <link rel="stylesheet" href="{{asset('public/frontend/css/ion.rangeSlider.skinFlat.css')}}">--}}
     <link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('public/frontend/css/media.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('public/frontend/css/bootstrap.css')}}"/>
