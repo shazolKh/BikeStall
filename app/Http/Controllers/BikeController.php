@@ -123,7 +123,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp1)->save($large_image_path1);
                 Image::make($image_temp1)->resize(600,600)->save($medium_image_path1);
-                Image::make($image_temp1)->resize(300,300)->save($small_image_path1);
+                Image::make($image_temp1)->resize(222,222)->save($small_image_path1);
 
                 $bike->image1 = $filename1;
             }
@@ -140,7 +140,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp2)->save($large_image_path2);
                 Image::make($image_temp2)->resize(600,600)->save($medium_image_path2);
-                Image::make($image_temp2)->resize(300,300)->save($small_image_path2);
+                Image::make($image_temp2)->resize(222,222)->save($small_image_path2);
 
                 $bike->image2 = $filename2;
             }
@@ -157,7 +157,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp3)->save($large_image_path3);
                 Image::make($image_temp3)->resize(600,600)->save($medium_image_path3);
-                Image::make($image_temp3)->resize(300,300)->save($small_image_path3);
+                Image::make($image_temp3)->resize(222,222)->save($small_image_path3);
 
                 $bike->image3 = $filename3;
             }
@@ -234,7 +234,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp)->save($large_image_path);
                 Image::make($image_temp)->resize(600,600)->save($medium_image_path);
-                Image::make($image_temp)->resize(300,300)->save($small_image_path);
+                Image::make($image_temp)->resize(222,222)->save($small_image_path);
             }else{
                 $filename = $data['current_image'];
             }
@@ -251,7 +251,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp1)->save($large_image_path1);
                 Image::make($image_temp1)->resize(600,600)->save($medium_image_path1);
-                Image::make($image_temp1)->resize(300,300)->save($small_image_path1);
+                Image::make($image_temp1)->resize(222,222)->save($small_image_path1);
             }else{
                 $filename1 = $data['current_image1'];
             }
@@ -268,7 +268,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp2)->save($large_image_path2);
                 Image::make($image_temp2)->resize(600,600)->save($medium_image_path2);
-                Image::make($image_temp2)->resize(300,300)->save($small_image_path2);
+                Image::make($image_temp2)->resize(222,222)->save($small_image_path2);
             }else{
                 $filename2 = $data['current_image2'];
             }
@@ -285,7 +285,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp3)->save($large_image_path3);
                 Image::make($image_temp3)->resize(600,600)->save($medium_image_path3);
-                Image::make($image_temp3)->resize(300,300)->save($small_image_path3);
+                Image::make($image_temp3)->resize(222,222)->save($small_image_path3);
             }else{
                 $filename3 = $data['current_image3'];
             }

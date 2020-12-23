@@ -79,9 +79,8 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BikeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BrandController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,14 +312,7 @@
       <workItem from="1607679697836" duration="6668000" />
       <workItem from="1608299689343" duration="51000" />
       <workItem from="1608539998743" duration="10292000" />
-      <workItem from="1608732272649" duration="3483000" />
-    </task>
-    <task id="LOCAL-00066" summary="Final--- comparison fixed">
-      <created>1607105214812</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1607105214812</updated>
+      <workItem from="1608732272649" duration="4435000" />
     </task>
     <task id="LOCAL-00067" summary="Final--- Index search count fixed">
       <created>1607175720929</created>
@@ -658,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608735307283</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="Image Resized">
+      <created>1608736565254</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1608736565254</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="All Fixed" />
     <MESSAGE value="Access fixed" />
     <MESSAGE value="auto https added" />
     <MESSAGE value="Bike Details Fixed" />
@@ -713,7 +711,8 @@
     <MESSAGE value="A Fix" />
     <MESSAGE value="Image fix" />
     <MESSAGE value="HtAccess Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="HtAccess Updated" />
+    <MESSAGE value="Image Resized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Resized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
