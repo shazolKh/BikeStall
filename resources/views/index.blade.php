@@ -49,7 +49,6 @@
 
 			<span class="frontcategs-img">
 				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="{{$brand->br_name}}">
-				<img src="{{asset('public/image/brand_image/'.$brand->image)}}" alt="{{$brand->br_name}}">
 			</span>
             <p>{{$brand->br_name}}</p>
 		</a>
