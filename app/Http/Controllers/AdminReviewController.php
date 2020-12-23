@@ -38,7 +38,7 @@ class AdminReviewController extends Controller
                 $extension1 = $image_temp1->getClientOriginalExtension();
                 $filename1 = rand(111, 999999).'.'.$extension1;
                 $large_image_path1 = public_path('image/admin_review/image1/'.$filename1);
-                Image::make($image_temp1)->save($large_image_path1);
+                Image::make($image_temp1)->resize(528, 400)->save($large_image_path1);
                 $review->image1 = $filename1;
             }
             //Image2
@@ -47,7 +47,7 @@ class AdminReviewController extends Controller
                 $extension2 = $image_temp2->getClientOriginalExtension();
                 $filename2 = rand(111, 999999).'.'.$extension2;
                 $large_image_path2 = public_path('image/admin_review/image2/'.$filename2);
-                Image::make($image_temp2)->save($large_image_path2);
+                Image::make($image_temp2)->resize(528, 400)->save($large_image_path2);
                 $review->image2 = $filename2;
             }
             //Image3
@@ -56,7 +56,7 @@ class AdminReviewController extends Controller
                 $extension3 = $image_temp3->getClientOriginalExtension();
                 $filename3 = rand(111, 999999).'.'.$extension3;
                 $large_image_path3 = public_path('image/admin_review/image3/'.$filename3);
-                Image::make($image_temp3)->save($large_image_path3);
+                Image::make($image_temp3)->resize(528, 400)->save($large_image_path3);
                 $review->image3 = $filename3;
             }
             //return response()->json($review);
@@ -106,7 +106,7 @@ class AdminReviewController extends Controller
 
                 $large_image_path1 = public_path('image/admin_review/image1/'.$filename1);
 
-                Image::make($image_temp1)->save($large_image_path1);
+                Image::make($image_temp1)->resize(528, 400)->save($large_image_path1);
             }else{
                 $filename1 = $data['current_image1'];
             }
@@ -119,7 +119,7 @@ class AdminReviewController extends Controller
 
                 $large_image_path2 = public_path('image/admin_review/image2/'.$filename2);
 
-                Image::make($image_temp2)->save($large_image_path2);
+                Image::make($image_temp2)->resize(528, 400)->save($large_image_path2);
             }else{
                 $filename2 = $data['current_image2'];
             }
@@ -132,7 +132,7 @@ class AdminReviewController extends Controller
 
                 $large_image_path3 = public_path('image/admin_review/image3/'.$filename3);
 
-                Image::make($image_temp3)->save($large_image_path3);
+                Image::make($image_temp3)->resize(528, 400)->save($large_image_path3);
             }else{
                 $filename3 = $data['current_image3'];
             }

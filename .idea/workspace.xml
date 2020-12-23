@@ -80,7 +80,8 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,14 +313,7 @@
       <workItem from="1607679697836" duration="6668000" />
       <workItem from="1608299689343" duration="51000" />
       <workItem from="1608539998743" duration="10292000" />
-      <workItem from="1608732272649" duration="7646000" />
-    </task>
-    <task id="LOCAL-00068" summary="Final-- SubCategory, Gallery, Related Fixed">
-      <created>1607187141936</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1607187141937</updated>
+      <workItem from="1608732272649" duration="9000000" />
     </task>
     <task id="LOCAL-00069" summary="Alt Image, Accessories Category Added">
       <created>1607366105961</created>
@@ -657,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608737911488</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="Image fix 3">
+      <created>1608741185002</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1608741185003</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +688,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="auto https added" />
     <MESSAGE value="Bike Details Fixed" />
     <MESSAGE value="Filter Fixed" />
     <MESSAGE value="Filter Fixed 2" />
@@ -712,7 +712,8 @@
     <MESSAGE value="HtAccess Updated" />
     <MESSAGE value="Image Resized" />
     <MESSAGE value="Image fix 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image fix 2" />
+    <MESSAGE value="Image fix 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image fix 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
