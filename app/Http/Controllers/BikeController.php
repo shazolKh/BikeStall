@@ -106,7 +106,7 @@ class BikeController extends Controller
 
                 Image::make($image_temp)->save($large_image_path);
                 Image::make($image_temp)->resize(600,600)->save($medium_image_path);
-                Image::make($image_temp)->resize(300,300)->save($small_image_path);
+                Image::make($image_temp)->resize(222,222)->save($small_image_path);
 
                 $bike->image = $filename;
             }

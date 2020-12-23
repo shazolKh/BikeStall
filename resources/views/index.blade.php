@@ -198,7 +198,7 @@
             <div class="popular">
 				<a href="{{route('bike.details', [$bk->url])}}" class="popular-link">
 					<p class="popular-img">
-						<img src="{{asset('public/image/images/image/large_image/'.$bk->image)}}" alt="{{$bk->bike_name}}">
+						<img src="{{asset('public/image/images/image/small_image/'.$bk->image)}}" alt="{{$bk->bike_name}}">
 					</p>
                     <h3><span>{{$bk->bike_name}}</span></h3>
 				</a>

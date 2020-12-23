@@ -33,7 +33,7 @@ class BrandController extends Controller
                 $filename = rand(111, 999999).'.'.$extension;
 
                 $large_image_path = public_path('image/brand_image/'.$filename);
-                Image::make($image_temp)->save($large_image_path);
+                Image::make($image_temp)->resize(100,60)->save($large_image_path);
 
                 $brand->image = $filename;
             }
