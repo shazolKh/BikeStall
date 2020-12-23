@@ -16,10 +16,6 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('public/backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-{{--    <link href="{{asset('public/backend/css/sb-admin-2.min.css')}}" rel="stylesheet">--}}
-
     <!-- Custom styles for this page -->
     <link href="{{asset('public/backend/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
@@ -42,13 +38,6 @@
 
 <!-- Custom scripts for all pages-->
 <script src="{{asset('public/backend/js/sb-admin-2.min.js')}}"></script>
-
-<!-- Page level plugins -->
-{{--<script src="{{asset('public/backend/vendor/chart.js/Chart.min.js')}}"></script>--}}
-
-<!-- Page level custom scripts -->
-{{--<script src="{{asset('public/backend/js/demo/chart-area-demo.js')}}"></script>--}}
-{{--<script src="{{asset('public/backend/js/demo/chart-pie-demo.js')}}"></script>--}}
 
 <script src="{{asset('public/ckeditor/ckeditor.js')}}"></script>
 
