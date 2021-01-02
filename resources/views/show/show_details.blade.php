@@ -10,14 +10,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{route('show.details', [\Illuminate\Support\Str::lower($details->name)])}}">
+    <meta property="og:url" content="{{route('show.details', [$details->id])}}">
     <meta property="og:title" content="{{$details->name}} | BikeStall">
     <meta property="og:description" content="{{$details->name}}.  Now take a tour to know about you curiosity  about Bike\Motorcycle, Bike Price and Others Bike Information">
     <meta property="og:image" content="{{asset('public/image/show/'.$details->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/show/'.$details->image)}}">
-    <meta property="twitter:url" content="{{route('show.details', [\Illuminate\Support\Str::lower($details->name)])}}">
+    <meta property="twitter:url" content="{{route('show.details', [$details->id])}}">
     <meta property="twitter:title" content="{{$details->name}} | BikeStall">
     <meta property="twitter:description" content="{{$details->name}}.  Now take a tour to know about you curiosity  about Bike\Motorcycle, Bike Price and Others Bike Information">
     <meta property="twitter:image" content="{{asset('public/image/show/'.$details->image)}}">

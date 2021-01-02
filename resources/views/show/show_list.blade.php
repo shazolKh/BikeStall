@@ -64,7 +64,7 @@
             <div class="populars-list">
                 @foreach ($data as $rvw)
                     <div class="popular">
-                        <a href="{{route('show.details', [\Illuminate\Support\Str::lower($rvw->name)])}}" class="popular-link">
+                        <a href="{{route('show.details', [$rvw->id])}}" class="popular-link">
                             <p class="popular-img">
                                 <img src="{{asset('public/image/show/'.$rvw->image)}}" alt="{{$rvw->name}}">
                             </p>

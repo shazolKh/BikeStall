@@ -82,13 +82,6 @@
       <change afterPath="$PROJECT_DIR$/public/image/show/746648.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShowroomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShowroomController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -324,14 +317,7 @@
       <workItem from="1608299689343" duration="51000" />
       <workItem from="1608539998743" duration="10292000" />
       <workItem from="1608732272649" duration="9812000" />
-      <workItem from="1609577385969" duration="4140000" />
-    </task>
-    <task id="LOCAL-00070" summary="Admin Panel image added">
-      <created>1607367050167</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1607367050167</updated>
+      <workItem from="1609577385969" duration="4828000" />
     </task>
     <task id="LOCAL-00071" summary="All Fixed">
       <created>1607421936378</created>
@@ -669,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608743766346</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Year, Showroom Fixed">
+      <created>1609582395166</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1609582395167</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +692,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Filter Fixed" />
     <MESSAGE value="Filter Fixed 2" />
     <MESSAGE value="Filter Fixed 3" />
     <MESSAGE value="Index Fixed" />
@@ -724,7 +716,8 @@
     <MESSAGE value="Image fix 2" />
     <MESSAGE value="Image fix 3" />
     <MESSAGE value="Image Resized review, news" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image Resized review, news" />
+    <MESSAGE value="Year, Showroom Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Year, Showroom Fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

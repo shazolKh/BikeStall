@@ -93,7 +93,7 @@ Route::group(['middleware' => ['HtmlMinifier']], function (){
 
 //ShowRoom
     Route::get('showroom', 'IndexController@showroom')->name('all.showroom');
-    Route::get('showroom/{name}', 'IndexController@showroomDetails')->name('show.details');
+    Route::get('showroom/{id}', 'IndexController@showroomDetails')->name('show.details');
 
     //Admin Panel Start
     Route::match(['get', 'post'], '/admin', 'AdminController@login');
