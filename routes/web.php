@@ -93,7 +93,7 @@ Route::group(['middleware' => ['HtmlMinifier']], function (){
 
 //ShowRoom
     Route::get('showroom', 'IndexController@showroom')->name('all.showroom');
-    Route::get('showroom/{id}', 'IndexController@showroomDetails')->name('show.details');
+    Route::get('showroom/{name}', 'IndexController@showroomDetails')->name('show.details');
 
     //Admin Panel Start
     Route::match(['get', 'post'], '/admin', 'AdminController@login');
@@ -206,7 +206,7 @@ Route::group(['middleware' => ['HtmlMinifier']], function (){
             ->name('manage.showroom');
         Route::match(['get', 'post'], 'edit-showroom/{id}', 'ShowroomController@editShowroom')
             ->name('edit.showroom');
-        Route::get('delete-showroom-image', 'ShowroomController@deleteShowroomImage')
+        Route::get('delete-showroom-image/{id}', 'ShowroomController@deleteShowroomImage')
             ->name('delete.showroom.image');
         Route::get('delete-showroom', 'ShowroomController@deleteShowroom')
             ->name('delete.showroom');

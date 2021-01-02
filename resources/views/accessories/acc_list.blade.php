@@ -1,25 +1,25 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall</title>
+    <title>Bike Accessories Price in Bangladesh {{date('Y')}},( ☑ Updated) - BikeStall</title>
 @endsection
 
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall">
-    <meta name="description" content="Bike Accessories Price in Bangladesh 2020 ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
+    <meta name="title" content="Bike Accessories Price in Bangladesh {{date('Y')}},( ☑ Updated) - BikeStall">
+    <meta name="description" content="Bike Accessories Price in Bangladesh {{date('Y')}} ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{url('/accessories')}}">
-    <meta property="og:title" content="Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall">
-    <meta property="og:description" content="Bike Accessories Price in Bangladesh 2020 ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
+    <meta property="og:title" content="Bike Accessories Price in Bangladesh {{date('Y')}},( ☑ Updated) - BikeStall">
+    <meta property="og:description" content="Bike Accessories Price in Bangladesh {{date('Y')}} ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
     <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
     <meta property="twitter:url" content="{{url('/accessories')}}">
-    <meta property="twitter:title" content="Bike Accessories Price in Bangladesh 2020,( ☑ Updated) - BikeStall">
-    <meta property="twitter:description" content="Bike Accessories Price in Bangladesh 2020 ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
+    <meta property="twitter:title" content="Bike Accessories Price in Bangladesh {{date('Y')}},( ☑ Updated) - BikeStall">
+    <meta property="twitter:description" content="Bike Accessories Price in Bangladesh {{date('Y')}} ( ☑ Updated). Check All Kinds Of Accessories Full specs, reviews, colours, image & Updated price in BD.">
     <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 @endsection
 

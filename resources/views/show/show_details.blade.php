@@ -1,7 +1,27 @@
 @extends('layouts.frontLayout.front_design')
 
 @section('title')
-    <title>Showroom Details</title>
+    <title>{{$details->name}} | BikeStall</title>
+@endsection
+@section('meta')
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{$details->name}} | BikeStall">
+    <meta name="description" content="{{$details->name}}.  Now take a tour to know about you curiosity  about Bike/Motorcycle, Bike Price and Others Bike Information">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{route('show.details', [\Illuminate\Support\Str::lower($details->name)])}}">
+    <meta property="og:title" content="{{$details->name}} | BikeStall">
+    <meta property="og:description" content="{{$details->name}}.  Now take a tour to know about you curiosity  about Bike\Motorcycle, Bike Price and Others Bike Information">
+    <meta property="og:image" content="{{asset('public/image/show/'.$details->image)}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="{{asset('public/image/show/'.$details->image)}}">
+    <meta property="twitter:url" content="{{route('show.details', [\Illuminate\Support\Str::lower($details->name)])}}">
+    <meta property="twitter:title" content="{{$details->name}} | BikeStall">
+    <meta property="twitter:description" content="{{$details->name}}.  Now take a tour to know about you curiosity  about Bike\Motorcycle, Bike Price and Others Bike Information">
+    <meta property="twitter:image" content="{{asset('public/image/show/'.$details->image)}}">
+
 @endsection
 
 @section('content')
@@ -40,8 +60,8 @@
         <!-- Product - start -->
         <div class="prod">
             <!-- Product Slider - start -->
-            <div class="prod-slider-wrap">
-                <div class="flexslider prod-slider" id="prod-slider">
+            <div class="prod-slider-wrap" style="height: 442px">
+                <div class="flexslider prod-slider" id="prod-slider" style="height: 341px">
                     <ul class="slides">
                         <li>
                             <!-- <a> & <img> Without Spaces -->

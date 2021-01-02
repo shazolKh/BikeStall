@@ -79,9 +79,19 @@
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/480165.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/555435.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/image/scat_image/719497.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/show/746648.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShowroomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShowroomController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/acc_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accessories/brand_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_brand.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/bikes/bike_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show/show_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,14 +323,8 @@
       <workItem from="1607679697836" duration="6668000" />
       <workItem from="1608299689343" duration="51000" />
       <workItem from="1608539998743" duration="10292000" />
-      <workItem from="1608732272649" duration="9000000" />
-    </task>
-    <task id="LOCAL-00069" summary="Alt Image, Accessories Category Added">
-      <created>1607366105961</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1607366105962</updated>
+      <workItem from="1608732272649" duration="9812000" />
+      <workItem from="1609577385969" duration="4140000" />
     </task>
     <task id="LOCAL-00070" summary="Admin Panel image added">
       <created>1607367050167</created>
@@ -658,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608741185003</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Image Resized review, news">
+      <created>1608743766346</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1608743766346</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Bike Details Fixed" />
     <MESSAGE value="Filter Fixed" />
     <MESSAGE value="Filter Fixed 2" />
     <MESSAGE value="Filter Fixed 3" />
@@ -713,7 +723,8 @@
     <MESSAGE value="Image Resized" />
     <MESSAGE value="Image fix 2" />
     <MESSAGE value="Image fix 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image fix 3" />
+    <MESSAGE value="Image Resized review, news" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Resized review, news" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,6 +17,7 @@ use App\PhotoGallery;
 use App\ReviewsCategory;
 use App\Showroom;
 use App\SubCategory;
+use Illuminate\Support\Str;
 
 class IndexController extends Controller
 {
@@ -323,11 +324,11 @@ class IndexController extends Controller
         return view('show.show_list')->with(compact('data', 'logo', 'categories', 'all_brands', 'about'));
     }
 
-    public function showroomDetails($id)
+    public function showroomDetails($name)
     {
         $categories = Category::with('categories')->get();
         $logo = Logo::first();
-        $details = Showroom::where(['id'=>$id])->first();
+        $details = Showroom::where(['name'=>$name])->first();
         $all_brands = Brand::get();
         $about = About::first();
         return view('show.show_details')->with(compact('details', 'logo', 'categories', 'all_brands', 'about'));

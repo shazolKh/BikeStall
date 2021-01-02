@@ -1,6 +1,26 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Showroom</title>
+    <title>All Branded Motorcycle Showroom Location in Bangladesh are Available Here.</title>
+@endsection
+@section('meta')
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here.">
+    <meta name="description" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here. Search nearest bike showroom  in this site and get it easily find out.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{route('all.showroom')}}">
+    <meta property="og:title" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here.">
+    <meta property="og:description" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here. Search nearest bike showroom  in this site and get it easily find out.">
+    <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
+    <meta property="twitter:url" content="{{route('all.showroom')}}">
+    <meta property="twitter:title" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here.">
+    <meta property="twitter:description" content="All Branded Motorcycle Showroom Location in Bangladesh are Available Here. Search nearest bike showroom  in this site and get it easily find out.">
+    <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
+
 @endsection
 
 @section('content')
@@ -44,7 +64,7 @@
             <div class="populars-list">
                 @foreach ($data as $rvw)
                     <div class="popular">
-                        <a href="{{route('show.details', [$rvw->id])}}" class="popular-link">
+                        <a href="{{route('show.details', [\Illuminate\Support\Str::lower($rvw->name)])}}" class="popular-link">
                             <p class="popular-img">
                                 <img src="{{asset('public/image/show/'.$rvw->image)}}" alt="{{$rvw->name}}">
                             </p>
@@ -82,4 +102,5 @@
             <span class="popular-line2"></span>
         </div>
     </div>
+    <br>
 @endsection

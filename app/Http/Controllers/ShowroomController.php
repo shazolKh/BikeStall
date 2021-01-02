@@ -29,7 +29,7 @@ class ShowroomController extends Controller
                 $extension = $image_temp->getClientOriginalExtension();
                 $filename = rand(111, 999999).'.'.$extension;
                 $large_image_path = public_path('image/show/'.$filename);
-                Image::make($image_temp)->save($large_image_path);
+                Image::make($image_temp)->resize(467, 341)->save($large_image_path);
                 $news->image = $filename;
             }
             //return response()->json($news);
@@ -64,7 +64,7 @@ class ShowroomController extends Controller
 
                 $large_image_path = public_path('image/show/'.$filename);
 
-                Image::make($image_temp)->save($large_image_path);
+                Image::make($image_temp)->resize(467, 341)->save($large_image_path);
             }else{
                 $filename = $data['current_image'];
             }

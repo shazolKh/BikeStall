@@ -1,26 +1,26 @@
 @extends('layouts.frontLayout.front_design')
 
 @section('title')
-    <title>{{$data->name}} Price in Bangladesh 2020 - BikeStall</title>
+    <title>{{$data->name}} Price in Bangladesh {{date('Y')}} - BikeStall</title>
 @endsection
 
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
-    <meta name="description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
+    <meta name="title" content="{{$data->name}} Price in Bangladesh {{date('Y')}} - BikeStall">
+    <meta name="description" content="{{$data->name}} Price in Bangladesh {{date('Y')}}. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{url('accessories/details/'.$data->url)}}">
-    <meta property="og:title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
-    <meta property="og:description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
+    <meta property="og:title" content="{{$data->name}} Price in Bangladesh {{date('Y')}} - BikeStall">
+    <meta property="og:description" content="{{$data->name}} Price in Bangladesh {{date('Y')}}. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
     <meta property="og:image" content="{{asset('public/image/accessories/image/'.$data->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/accessories/image/'.$data->image)}}">
     <meta property="twitter:url" content="{{url('accessories/details/'.$data->url)}}">
-    <meta property="twitter:title" content="{{$data->name}} Price in Bangladesh 2020 - BikeStall">
-    <meta property="twitter:description" content="{{$data->name}} Price in Bangladesh 2020. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
+    <meta property="twitter:title" content="{{$data->name}} Price in Bangladesh {{date('Y')}} - BikeStall">
+    <meta property="twitter:description" content="{{$data->name}} Price in Bangladesh {{date('Y')}}. Check {{$data->name}} Full specs, reviews, news & Updated price in BD.">
     <meta property="twitter:image" content="{{asset('public/image/accessories/image/'.$data->image)}}">
 @endsection
 

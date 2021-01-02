@@ -1,25 +1,25 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall</title>
+    <title>{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated) & Specs - BikeStall</title>
 @endsection
 
 @section('meta')
 <!-- Primary Meta Tags -->
-<meta name="title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-<meta name="description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<meta name="title" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated) & Specs - BikeStall">
+<meta name="description" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{route('bike.details', [$bk_details->url])}}">
-<meta property="og:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-<meta property="og:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<meta property="og:title" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated) & Specs - BikeStall">
+<meta property="og:description" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
 <meta property="og:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
 <meta property="twitter:url" content="{{route('bike.details', [$bk_details->url])}}">
-<meta property="twitter:title" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated) & Specs - BikeStall">
-<meta property="twitter:description" content="{{$bk_details->bike_name}} Price in Bangladesh 2020 ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
+<meta property="twitter:title" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated) & Specs - BikeStall">
+<meta property="twitter:description" content="{{$bk_details->bike_name}} Price in Bangladesh {{date('Y')}} ( ☑️ Updated), Specs & Reviews. Check {{$bk_details->bike_name}}  Full specs, reviews, colours, image, mileage & Updated price in Bangladesh.">
 <meta property="twitter:image" content="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}">
 @endsection
 
@@ -80,42 +80,54 @@
             <div class="prod-slider-wrap" style="height: 442px;">
                 <div class="flexslider prod-slider" id="prod-slider">
                     <ul class="slides">
-                        <li>
-                            <!-- <a> & <img> Without Spaces -->
-                            <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image/large_image/'.$bk_details->image)}}">
-                                <img src="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}"></a>
-                        </li>
-                        <li>
-                            <!-- <a> & <img> Without Spaces -->
-                            <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image1/large_image/'.$bk_details->image1)}}">
-                                <img src="{{asset('public/image/images/image1/medium_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}"></a>
-                        </li>
-                        <li>
-                            <!-- <a> & <img> Without Spaces -->
-                            <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image2/large_image/'.$bk_details->image2)}}">
-                                <img src="{{asset('public/image/images/image2/medium_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}"></a>
-                        </li>
-                        <li>
-                            <!-- <a> & <img> Without Spaces -->
-                            <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image3/large_image/'.$bk_details->image3)}}">
-                                <img src="{{asset('public/image/images/image3/medium_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}"></a>
-                        </li>
+                        @if(!empty($bk_details->image))
+                            <li>
+                                <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image/large_image/'.$bk_details->image)}}">
+                                    <img src="{{asset('public/image/images/image/medium_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}"></a>
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image1))
+                            <li>
+                                <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image1/large_image/'.$bk_details->image1)}}">
+                                    <img src="{{asset('public/image/images/image1/medium_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}"></a>
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image2))
+                            <li>
+                                <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image2/large_image/'.$bk_details->image2)}}">
+                                    <img src="{{asset('public/image/images/image2/medium_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}"></a>
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image3))
+                            <li>
+                                <a data-fancybox-group="prod" class="fancy-img" href="{{asset('public/image/images/image3/large_image/'.$bk_details->image3)}}">
+                                    <img src="{{asset('public/image/images/image3/medium_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}"></a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
                 <div class="flexslider prod-thumbs" id="prod-thumbs">
                     <ul class="slides">
-                        <li>
-                            <img src="{{asset('public/image/images/image/small_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}">
-                        </li>
-                        <li>
-                            <img src="{{asset('public/image/images/image1/small_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}">
-                        </li>
-                        <li>
-                            <img src="{{asset('public/image/images/image2/small_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}">
-                        </li>
-                        <li>
-                            <img src="{{asset('public/image/images/image3/small_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}">
-                        </li>
+                        @if(!empty($bk_details->image))
+                            <li>
+                                <img src="{{asset('public/image/images/image/small_image/'.$bk_details->image)}}" alt="{{$bk_details->bike_name}}">
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image1))
+                            <li>
+                                <img src="{{asset('public/image/images/image1/small_image/'.$bk_details->image1)}}" alt="{{$bk_details->bike_name}}">
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image2))
+                            <li>
+                                <img src="{{asset('public/image/images/image2/small_image/'.$bk_details->image2)}}" alt="{{$bk_details->bike_name}}">
+                            </li>
+                        @endif
+                        @if(!empty($bk_details->image3))
+                            <li>
+                                <img src="{{asset('public/image/images/image3/small_image/'.$bk_details->image3)}}" alt="{{$bk_details->bike_name}}">
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>

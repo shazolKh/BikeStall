@@ -1,24 +1,24 @@
 @extends('layouts.frontLayout.front_design')
 @section('title')
-    <title>Bike Price in Bangladesh 2020,( ☑ Updated) Specs & Reviews - BikeStall</title>
+    <title>Bike Price in Bangladesh {{date('Y')}},( ☑ Updated) Specs & Reviews - BikeStall</title>
 @endsection
 @section('meta')
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Bike Price in Bangladesh 2020,( ☑ Updated) Specs & Reviews - BikeStall">
-    <meta name="description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta name="title" content="Bike Price in Bangladesh {{date('Y')}},( ☑ Updated) Specs & Reviews - BikeStall">
+    <meta name="description" content="Bike Price in Bangladesh {{date('Y')}}. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.bikestall.com/">
-    <meta property="og:title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="og:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta property="og:title" content="Bike Price in Bangladesh {{date('Y')}},( ☑️ Updated) Specs & Reviews - BikeStall">
+    <meta property="og:description" content="Bike Price in Bangladesh {{date('Y')}}. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
     <meta property="og:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="{{asset('public/image/logo/'.$logo->image)}}">
     <meta property="twitter:url" content="https://www.bikestall.com/">
-    <meta property="twitter:title" content="Bike Price in Bangladesh 2020,( ☑️ Updated) Specs & Reviews - BikeStall">
-    <meta property="twitter:description" content="Bike Price in Bangladesh 2020. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
+    <meta property="twitter:title" content="Bike Price in Bangladesh {{date('Y')}},( ☑️ Updated) Specs & Reviews - BikeStall">
+    <meta property="twitter:description" content="Bike Price in Bangladesh {{date('Y')}}. Here All the famous branded Bike/Motorcycle are described with their full Specs, Reviews, Mileage, Colours & Price in Bangladesh.">
     <meta property="twitter:image" content="{{asset('public/image/logo/'.$logo->image)}}">
 @endsection
 
